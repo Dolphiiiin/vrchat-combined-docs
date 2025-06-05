@@ -1,22 +1,14 @@
-# worlds 統合ドキュメント
+# worlds Documentation
 
-以下は自動収集された全ドキュメントのコンテンツです。各セクションの始めにメタデータが記載されています。
+This document contains automatically collected documentation with metadata headers for each section.
 
 
 
 ---
 
-## ドキュメント: creating-your-first-world.md
+## Document: creating-your-first-world.md
 
-```metadata
-階層: /worlds/creating-your-first-world.md
-ディレクトリ: worlds
-ファイル名: creating-your-first-world.md
-拡張子: .md
-サイズ: 8.40 KB
-最終更新: 2025-06-05T03:07:52.784Z
-```
-
+Path: /worlds/creating-your-first-world.md
 ---
 sidebar_position: -2
 ---
@@ -44,14 +36,14 @@ The first thing you need is a Unity scene. You can either create a new scene, or
 
 With the scene open, you need to add a **VRC Scene Descriptor** to your scene. You can easily add it with the VRChat SDK:
 
-![Adding a scene descriptor automatically via the VRChat SDK build panel.](/img/worlds/build-panel-add-vrc-scene-descriptor.png)
+[IMAGE: Adding a scene descriptor automatically via the VRChat SDK build panel.]
 
 1. Click **VRChat SDK** > **Show Control Panel**.
 	- If you do not see this menu at the top of your Unity window, your SDK may not be installed correctly. Try clicking **Assets** > **Reimport All**, and check our [SDK troubleshooting guide](/sdk/sdk-troubleshooting).
 2. In the **Authentication**, log into your VRChat account.
 3. Switch to the **Builder** tab and click **Add a VRCSceneDescriptor**.
 
-![Adding a scene descriptor automatically via the VRChat SDK build panel.](/img/worlds/vrcworld-prefab-in-scene.png)
+[IMAGE: Adding a scene descriptor automatically via the VRChat SDK build panel.]
 
 A Game Object called **VRCWorld** will automatically be added to your scene. It contains a **VRC Scene Descriptor** and other helpful components. Click on VRCWorld in your hierarchy to inspect its settings.
 
@@ -59,7 +51,7 @@ A Game Object called **VRCWorld** will automatically be added to your scene. It 
 
 Your world needs at least one spawn point. When players join your world, that's where they'll appear. By default, players will spawn at the location of your VRCWorld prefab. Simply move the VRCWorld prefab to wherever you'd like users to spawn.
 
-![Move your scene descriptor to change your spawn.](/img/worlds/vrc-scene-descriptor-gizmo.png)
+[IMAGE: Move your scene descriptor to change your spawn.]
 
 If you'd like to create additional spawn points, create an empty Game Object and place it where you want users to appear. Add the Game Object to the **Spawns** list in the [VRC_SceneDescriptor](/worlds/components/vrc_scenedescriptor) component. Do this for as many spawn points as you want.
 
@@ -82,7 +74,7 @@ More settings can be found on the [VRC_SceneDescriptor](/worlds/components/vrc_s
 
 Click  `VRChat SDK > Show Control Panel`. Before you can upload your world, you need to give VRChat some basic information about it, such as the world's name, capacity, or content warnings.
 
-![VRChat's SDK World build panel.](/img/worlds/build-panel-worlds-2023.png)
+[IMAGE: VRChat's SDK World build panel.]
 
 - World name - The name of your world, as shown to everyone.
 - Description - This will be displayed on the 'World Details' page in VRChat and on the website.
@@ -110,7 +102,7 @@ If you uploaded your VRChat world with an old VRChast SDK, without 'recommended 
 
 ## Step 5 - Check for warnings or validation messages
 
-![Validations in the SDK build panel.](/img/worlds/build-panel-validations-everything-looks-good.png)
+[IMAGE: Validations in the SDK build panel.]
 
 At the bottom of the VRChat SDK build panel, you'll find a section called **Validations**. It contains suggestions on how to set up your scene and build your world. For example:
 
@@ -124,7 +116,7 @@ The SDK will often give you the option to fix these issues automatically. If not
 
 Next, you need to build the world! You'll need to choose what you will be doing first: You can either make a **test build** to test your world without uploading it or **publish** your world directly to VRChat. Under both "Offline Testing" and "Online Publishing" headings, you will find buttons to publish a new build or your last build. Last Build takes the last successful build of the world to either test or upload. New Build puts a new world together to either test or upload.
 
-![Validations in the SDK build panel.](/img/worlds/build-panel-upload-or-test.png)
+[IMAGE: Validations in the SDK build panel.]
 
 _(Optional)_  
 If you wish to test your world, go to **Offline Testing** and click **Build & Test New Build**. This will build a new version of your world and launch into the world in VRChat. The **Number of Clients** option is used when you want to open multiple VRChat windows for testing your world with multiple players.
@@ -144,17 +136,9 @@ Check our other documentation, the [Ask Forum](https://ask.vrchat.com/),  or ask
 
 ---
 
-## ドキュメント: index.md
+## Document: index.md
 
-```metadata
-階層: /worlds/index.md
-ディレクトリ: worlds
-ファイル名: index.md
-拡張子: .md
-サイズ: 645 B
-最終更新: 2025-06-05T03:07:52.800Z
-```
-
+Path: /worlds/index.md
 ---
 sidebar_position: 1
 ---
@@ -176,17 +160,9 @@ import DocCardList from '@theme/DocCardList';
 
 ---
 
-## ドキュメント: layers.md
+## Document: layers.md
 
-```metadata
-階層: /worlds/layers.md
-ディレクトリ: worlds
-ファイル名: layers.md
-拡張子: .md
-サイズ: 11.08 KB
-最終更新: 2025-06-05T03:07:52.801Z
-```
-
+Path: /worlds/layers.md
 import UnityVersionedLink from '@site/src/components/UnityVersionedLink.js';
 
 # Unity Layers in VRChat 
@@ -255,17 +231,9 @@ Interaction through User layers is blocked by default. Use the "Interact Passthr
 
 ---
 
-## ドキュメント: sdk-prefabs.md
+## Document: sdk-prefabs.md
 
-```metadata
-階層: /worlds/sdk-prefabs.md
-ディレクトリ: worlds
-ファイル名: sdk-prefabs.md
-拡張子: .md
-サイズ: 2.29 KB
-最終更新: 2025-06-05T03:07:52.801Z
-```
-
+Path: /worlds/sdk-prefabs.md
 ---
 title: "SDK Prefabs"
 slug: "sdk-prefabs"
@@ -325,17 +293,9 @@ Found in `Packages > VRChat SDK - Worlds > Samples > UdonExampleScene > Prefabs 
 
 ---
 
-## ドキュメント: submitting-a-world-to-be-made-public.md
+## Document: submitting-a-world-to-be-made-public.md
 
-```metadata
-階層: /worlds/submitting-a-world-to-be-made-public.md
-ディレクトリ: worlds
-ファイル名: submitting-a-world-to-be-made-public.md
-拡張子: .md
-サイズ: 8.57 KB
-最終更新: 2025-06-05T03:07:52.802Z
-```
-
+Path: /worlds/submitting-a-world-to-be-made-public.md
 ---
 title: "World Creation, Optimization, and Community Labs Tips"
 slug: "submitting-a-world-to-be-made-public"
@@ -437,17 +397,9 @@ To categorize your world as a game world, add the tag `game`.
 
 ---
 
-## ドキュメント: supported-assets.md
+## Document: supported-assets.md
 
-```metadata
-階層: /worlds/supported-assets.md
-ディレクトリ: worlds
-ファイル名: supported-assets.md
-拡張子: .md
-サイズ: 1.79 KB
-最終更新: 2025-06-05T03:07:52.802Z
-```
-
+Path: /worlds/supported-assets.md
 ---
 title: "Supported Scripted Assets"
 slug: "supported-assets"
@@ -485,17 +437,9 @@ Do not import the `Test` folder when importing post-processing. It will cause sc
 
 ---
 
-## ドキュメント: whitelisted-world-components.md
+## Document: whitelisted-world-components.md
 
-```metadata
-階層: /worlds/whitelisted-world-components.md
-ディレクトリ: worlds
-ファイル名: whitelisted-world-components.md
-拡張子: .md
-サイズ: 6.72 KB
-最終更新: 2025-06-05T03:07:52.835Z
-```
-
+Path: /worlds/whitelisted-world-components.md
 import UnityVersionedLink from '@site/src/components/UnityVersionedLink.js';
 
 # Allowlisted World Components
@@ -774,4 +718,4 @@ If you discover a bug, please [let us know](https://feedback.vrchat.com).
 
 ---
 
-# ドキュメント終了
+# End of Documentation

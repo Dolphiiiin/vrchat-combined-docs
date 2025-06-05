@@ -1,22 +1,14 @@
-# udonsharp 統合ドキュメント
+# udonsharp Documentation
 
-以下は自動収集された全ドキュメントのコンテンツです。各セクションの始めにメタデータが記載されています。
+This document contains automatically collected documentation with metadata headers for each section.
 
 
 
 ---
 
-## ドキュメント: attributes.md
+## Document: attributes.md
 
-```metadata
-階層: /worlds/udon/udonsharp/attributes.md
-ディレクトリ: worlds\udon\udonsharp
-ファイル名: attributes.md
-拡張子: .md
-サイズ: 3.85 KB
-最終更新: 2025-06-05T03:07:52.826Z
-```
-
+Path: /worlds/udon/udonsharp/attributes.md
 # Attributes
 
 Attributes extend the functionality of your UdonSharp classes, fields, and methods. UdonSharp adds new attributes, but also supports many existing C# and Unity attributes.
@@ -88,17 +80,9 @@ Use this in conjunction with [UdonBehaviourSyncMode](#udonbehavioursyncmode) to 
 
 ---
 
-## ドキュメント: class-exposure-tree.md
+## Document: class-exposure-tree.md
 
-```metadata
-階層: /worlds/udon/udonsharp/class-exposure-tree.md
-ディレクトリ: worlds\udon\udonsharp
-ファイル名: class-exposure-tree.md
-拡張子: .md
-サイズ: 583 B
-最終更新: 2025-06-05T03:07:52.827Z
-```
-
+Path: /worlds/udon/udonsharp/class-exposure-tree.md
 # Class Exposure Tree
 
 The Class Exposure Tree shows you which classes and methods are available in UdonSharp.
@@ -108,28 +92,20 @@ You can open the window by going to "VRChat SDK" > "Udon Sharp" > "Class Exposur
 - Red = Not exposed to Udon
 - Green = Exposed to Udon
 
-![Udon Type Exposure Tree](/img/worlds/udon/udonsharp/type-exposure-tree.png)
+[IMAGE: Udon Type Exposure Tree]
 
 The "Show base members" toggle shows methods inherited from base classes that are exposed. For example, any class inheriting from `UnityEngine.Component` will show `GetComponent<T>()` functions because they're defined in the base class.
 
 ---
 
-## ドキュメント: configuration.md
+## Document: configuration.md
 
-```metadata
-階層: /worlds/udon/udonsharp/configuration.md
-ディレクトリ: worlds\udon\udonsharp
-ファイル名: configuration.md
-拡張子: .md
-サイズ: 1.51 KB
-最終更新: 2025-06-05T03:07:52.827Z
-```
-
+Path: /worlds/udon/udonsharp/configuration.md
 # Configuration
 
 UdonSharp's settings can be found at `Edit > Project Settings > Udon Sharp`.
 
-![UdonSharp Settings window](/img/worlds/udon/udonsharp/udon-sharp-settings.png)
+[IMAGE: UdonSharp Settings window]
 
 ## Udon Sharp
 
@@ -179,17 +155,9 @@ This will listen for exceptions from the output log the VRChat client makes, the
 
 ---
 
-## ドキュメント: editorscripting.md
+## Document: editorscripting.md
 
-```metadata
-階層: /worlds/udon/udonsharp/editorscripting.md
-ディレクトリ: worlds\udon\udonsharp
-ファイル名: editorscripting.md
-拡張子: .md
-サイズ: 12.90 KB
-最終更新: 2025-06-05T03:07:52.827Z
-```
-
+Path: /worlds/udon/udonsharp/editorscripting.md
 # Editor Scripting
 
 UdonSharp includes an editor scripting API that allows you to make custom editors and editor scripts that interact with UdonSharpBehaviours the same as you would interact with the normal C# version of a behaviour.
@@ -398,17 +366,9 @@ You should use the UdonSharpEditorUtility.DestroyImmediate() method to destroy U
 
 ---
 
-## ドキュメント: index.md
+## Document: index.md
 
-```metadata
-階層: /worlds/udon/udonsharp/index.md
-ディレクトリ: worlds\udon\udonsharp
-ファイル名: index.md
-拡張子: .md
-サイズ: 6.64 KB
-最終更新: 2025-06-05T03:07:52.828Z
-```
-
+Path: /worlds/udon/udonsharp/index.md
 ---
 sidebar_position: -1
 ---
@@ -554,17 +514,9 @@ If you are learning UdonSharp and not familiar with C# already, you may run acro
 
 ---
 
-## ドキュメント: migration.md
+## Document: migration.md
 
-```metadata
-階層: /worlds/udon/udonsharp/migration.md
-ディレクトリ: worlds\udon\udonsharp
-ファイル名: migration.md
-拡張子: .md
-サイズ: 4.31 KB
-最終更新: 2025-06-05T03:07:52.828Z
-```
-
+Path: /worlds/udon/udonsharp/migration.md
 ---
 unlisted: true
 ---
@@ -648,17 +600,9 @@ Follow these steps to upgrade a project that uses a version of UdonSharp below 1
 
 ---
 
-## ドキュメント: performance-tips.md
+## Document: performance-tips.md
 
-```metadata
-階層: /worlds/udon/udonsharp/performance-tips.md
-ディレクトリ: worlds\udon\udonsharp
-ファイル名: performance-tips.md
-拡張子: .md
-サイズ: 2.10 KB
-最終更新: 2025-06-05T03:07:52.829Z
-```
-
+Path: /worlds/udon/udonsharp/performance-tips.md
 
 # Performance Tips
 
@@ -689,4 +633,4 @@ You should only use `GetComponent<T>` in the `Start()` event or event that happe
 
 ---
 
-# ドキュメント終了
+# End of Documentation

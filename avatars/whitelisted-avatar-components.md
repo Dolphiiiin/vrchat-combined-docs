@@ -1,22 +1,14 @@
-# whitelisted-avatar-components 統合ドキュメント
+# whitelisted-avatar-components Documentation
 
-以下は自動収集された全ドキュメントのコンテンツです。各セクションの始めにメタデータが記載されています。
+This document contains automatically collected documentation with metadata headers for each section.
 
 
 
 ---
 
-## ドキュメント: index.md
+## Document: index.md
 
-```metadata
-階層: /avatars/whitelisted-avatar-components/index.md
-ディレクトリ: avatars\whitelisted-avatar-components
-ファイル名: index.md
-拡張子: .md
-サイズ: 7.51 KB
-最終更新: 2025-06-05T03:07:52.736Z
-```
-
+Path: /avatars/whitelisted-avatar-components/index.md
 ---
 slug: "whitelisted-avatar-components"
 ---
@@ -120,4 +112,4 @@ Support for Dynamic Bone is deprecated. You should use [PhysBones](/avatars/avat
 
 ---
 
-# ドキュメント終了
+# End of Documentation

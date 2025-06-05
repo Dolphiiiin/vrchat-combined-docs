@@ -1,39 +1,23 @@
-# editor 統合ドキュメント
+# editor Documentation
 
-以下は自動収集された全ドキュメントのコンテンツです。各セクションの始めにメタデータが記載されています。
+This document contains automatically collected documentation with metadata headers for each section.
 
 
 
 ---
 
-## ドキュメント: editor-runtime-linker.md
+## Document: editor-runtime-linker.md
 
-```metadata
-階層: /worlds/clientsim/systems/editor/editor-runtime-linker.md
-ディレクトリ: worlds\clientsim\systems\editor
-ファイル名: editor-runtime-linker.md
-拡張子: .md
-サイズ: 262 B
-最終更新: 2025-06-05T03:07:52.766Z
-```
-
+Path: /worlds/clientsim/systems/editor/editor-runtime-linker.md
 # Editor Runtime Linker
 
 This system links and unlinks, on enter and exit playmode, the Editor only hooks in the [ClientSim Menu](../runtime/menu.md) for checking if settings are invalid and a method to open the [ClientSim Settings Window](settings-window.md).
 
 ---
 
-## ドキュメント: helper-editors.md
+## Document: helper-editors.md
 
-```metadata
-階層: /worlds/clientsim/systems/editor/helper-editors.md
-ディレクトリ: worlds\clientsim\systems\editor
-ファイル名: helper-editors.md
-拡張子: .md
-サイズ: 855 B
-最終更新: 2025-06-05T03:07:52.766Z
-```
-
+Path: /worlds/clientsim/systems/editor/helper-editors.md
 # Helper Editors
 
 Some of the ClientSim SDK Helper components have specialized editors that offer insight into the VRC component.
@@ -61,34 +45,18 @@ Some of the ClientSim SDK Helper components have specialized editors that offer 
 
 ---
 
-## ドキュメント: index.md
+## Document: index.md
 
-```metadata
-階層: /worlds/clientsim/systems/editor/index.md
-ディレクトリ: worlds\clientsim\systems\editor
-ファイル名: index.md
-拡張子: .md
-サイズ: 65 B
-最終更新: 2025-06-05T03:07:52.767Z
-```
-
+Path: /worlds/clientsim/systems/editor/index.md
 # Editor
 
 These systems help set things up in the Unity Editor.
 
 ---
 
-## ドキュメント: settings-window.md
+## Document: settings-window.md
 
-```metadata
-階層: /worlds/clientsim/systems/editor/settings-window.md
-ディレクトリ: worlds\clientsim\systems\editor
-ファイル名: settings-window.md
-拡張子: .md
-サイズ: 1.72 KB
-最終更新: 2025-06-05T03:07:52.767Z
-```
-
+Path: /worlds/clientsim/systems/editor/settings-window.md
 # Settings Window
 
 The Settings window displays all the [ClientSim Settings](../runtime/settings.md) that can be edited. Some of these values cannot be changed at runtime. There is also a button to spawn remote players and a text field to give those remote players a custom name.
@@ -116,4 +84,4 @@ The user must open the VRChat Build Control Panel to properly set this.
 
 ---
 
-# ドキュメント終了
+# End of Documentation

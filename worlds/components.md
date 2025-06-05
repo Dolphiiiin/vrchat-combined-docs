@@ -1,22 +1,14 @@
-# components 統合ドキュメント
+# components Documentation
 
-以下は自動収集された全ドキュメントのコンテンツです。各セクションの始めにメタデータが記載されています。
+This document contains automatically collected documentation with metadata headers for each section.
 
 
 
 ---
 
-## ドキュメント: index.md
+## Document: index.md
 
-```metadata
-階層: /worlds/components/index.md
-ディレクトリ: worlds\components
-ファイル名: index.md
-拡張子: .md
-サイズ: 1.76 KB
-最終更新: 2025-06-05T03:07:52.777Z
-```
-
+Path: /worlds/components/index.md
 ---
 title: "Scene Components"
 hidden: false
@@ -44,17 +36,9 @@ Please consult [Allowlisted World Components](/worlds/whitelisted-world-componen
 
 ---
 
-## ドキュメント: vrcenablepersistence.md
+## Document: vrcenablepersistence.md
 
-```metadata
-階層: /worlds/components/vrcenablepersistence.md
-ディレクトリ: worlds\components
-ファイル名: vrcenablepersistence.md
-拡張子: .md
-サイズ: 344 B
-最終更新: 2025-06-05T03:07:52.783Z
-```
-
+Path: /worlds/components/vrcenablepersistence.md
 ---
 title: "VRC Enable Persistence"
 slug: "vrc_enablepersistence"
@@ -65,17 +49,9 @@ It requires a PlayerObject component on the same game object.
 
 ---
 
-## ドキュメント: vrc_avatarpedestal.md
+## Document: vrc_avatarpedestal.md
 
-```metadata
-階層: /worlds/components/vrc_avatarpedestal.md
-ディレクトリ: worlds\components
-ファイル名: vrc_avatarpedestal.md
-拡張子: .md
-サイズ: 866 B
-最終更新: 2025-06-05T03:07:52.779Z
-```
-
+Path: /worlds/components/vrc_avatarpedestal.md
 # VRC Avatar Pedestal
 
 Displays an avatar and allows users interact with the pedestal to switch into the avatar.
@@ -91,17 +67,9 @@ You can find an example in the SDK named [AvatarPedestal](/worlds/examples/udon-
 
 ---
 
-## ドキュメント: vrc_mirrorreflection.md
+## Document: vrc_mirrorreflection.md
 
-```metadata
-階層: /worlds/components/vrc_mirrorreflection.md
-ディレクトリ: worlds\components
-ファイル名: vrc_mirrorreflection.md
-拡張子: .md
-サイズ: 2.73 KB
-最終更新: 2025-06-05T03:07:52.779Z
-```
-
+Path: /worlds/components/vrc_mirrorreflection.md
 ---
 title: "VRC Mirror Reflection"
 slug: "vrc_mirrorreflection"
@@ -134,17 +102,9 @@ Mirrors can drastically reduce the framerate of your VRChat world. To avoid this
 
 ---
 
-## ドキュメント: vrc_objectsync.md
+## Document: vrc_objectsync.md
 
-```metadata
-階層: /worlds/components/vrc_objectsync.md
-ディレクトリ: worlds\components
-ファイル名: vrc_objectsync.md
-拡張子: .md
-サイズ: 1.50 KB
-最終更新: 2025-06-05T03:07:52.780Z
-```
-
+Path: /worlds/components/vrc_objectsync.md
 ---
 title: "VRC Object Sync"
 slug: "vrc_objectsync"
@@ -178,17 +138,9 @@ The VRC Object Sync component synchronizes the transform of a GameObject with al
 
 ---
 
-## ドキュメント: vrc_pickup.md
+## Document: vrc_pickup.md
 
-```metadata
-階層: /worlds/components/vrc_pickup.md
-ディレクトリ: worlds\components
-ファイル名: vrc_pickup.md
-拡張子: .md
-サイズ: 4.73 KB
-最終更新: 2025-06-05T03:07:52.780Z
-```
-
+Path: /worlds/components/vrc_pickup.md
 ---
 title: "VRC Pickup"
 slug: "vrc_pickup"
@@ -239,17 +191,9 @@ There are 2 mechanisms of grabbing where the Proximity value will be in play:
 
 ---
 
-## ドキュメント: vrc_portalmarker.md
+## Document: vrc_portalmarker.md
 
-```metadata
-階層: /worlds/components/vrc_portalmarker.md
-ディレクトリ: worlds\components
-ファイル名: vrc_portalmarker.md
-拡張子: .md
-サイズ: 1.06 KB
-最終更新: 2025-06-05T03:07:52.780Z
-```
-
+Path: /worlds/components/vrc_portalmarker.md
 # VRC Portal Marker
 
 Creates a portal to another VRChat world. Users can walk into the portal to travel to other worlds. While the user's VRChat menu is open, they can also select the portal to learn more about the portal's world. 
@@ -273,17 +217,9 @@ VRC Portal Marker offers the following properties:
 
 ---
 
-## ドキュメント: vrc_scenedescriptor.md
+## Document: vrc_scenedescriptor.md
 
-```metadata
-階層: /worlds/components/vrc_scenedescriptor.md
-ディレクトリ: worlds\components
-ファイル名: vrc_scenedescriptor.md
-拡張子: .md
-サイズ: 3.96 KB
-最終更新: 2025-06-05T03:07:52.781Z
-```
-
+Path: /worlds/components/vrc_scenedescriptor.md
 ---
 title: "VRC Scene Descriptor"
 slug: "vrc_scenedescriptor"
@@ -323,17 +259,9 @@ Describes your VRChat world. Required for every Unity scene you'd like to use as
 
 ---
 
-## ドキュメント: vrc_spatialaudiosource.md
+## Document: vrc_spatialaudiosource.md
 
-```metadata
-階層: /worlds/components/vrc_spatialaudiosource.md
-ディレクトリ: worlds\components
-ファイル名: vrc_spatialaudiosource.md
-拡張子: .md
-サイズ: 7.58 KB
-最終更新: 2025-06-05T03:07:52.781Z
-```
-
+Path: /worlds/components/vrc_spatialaudiosource.md
 import UnityVersionedLink from '@site/src/components/UnityVersionedLink.js';
 
 # VRC Spatial Audio Source
@@ -344,7 +272,7 @@ When added, `VRC_SpatialAudioSource` will automatically add a Unity `Audio Sourc
 
 This component can be used on both avatars and worlds.
 
-![image](/img/worlds/vrc_spatialaudiosource-1.png)
+[IMAGE: image]
 ## Unity Editor Interface
 
 The component generates two <UnityVersionedLink versionKey="minor" url="https://docs.unity3d.com/<VERSION>/Documentation/ScriptReference/Gizmos.html">Unity Gizmos</UnityVersionedLink> that show:
@@ -355,13 +283,13 @@ The component generates two <UnityVersionedLink versionKey="minor" url="https://
 In addition, the `Audio Source` component generates a "Volumetric Radius" gizmo.
 
 Here's what the gizmos look like:
-![Component in this image is a bit out of date, but the gizmos are the same.](/img/worlds/vrc_spatialaudiosource-e975780-Unity_2019-07-09_11-51-13.png)
+[IMAGE: Component in this image is a bit out of date, but the gizmos are the same.]
 The component contains tooltips for all properties. Hover over the name of the property to see a short description.
 
 ## Falloff Mechanics
 
 All units are in *meters*. Falloff of audio intensity is roughly inverse-square by default, as illustrated below:
-![](/img/worlds/vrc_spatialaudiosource-c969d41-crowhurst_basic_audio_vol1-39.gif)
+[IMAGE: Image]
 
 You can override the curve using the graph on the `Audio Source`. This curve determines the intensity of the audio at a given distance.
 
@@ -448,17 +376,9 @@ Using the "Enable 3D Spatialization on all AudioSources" button in the Build Con
 
 ---
 
-## ドキュメント: vrc_station.md
+## Document: vrc_station.md
 
-```metadata
-階層: /worlds/components/vrc_station.md
-ディレクトリ: worlds\components
-ファイル名: vrc_station.md
-拡張子: .md
-サイズ: 8.92 KB
-最終更新: 2025-06-05T03:07:52.782Z
-```
-
+Path: /worlds/components/vrc_station.md
 # VRC Station
 
 import Tabs from '@theme/Tabs';
@@ -498,7 +418,7 @@ The VRChat SDK comes with a program that handles step 3, which is called **Stati
 <Tabs groupId="udon-compiler-language">
 <TabItem value="graph" label="Udon Graph">
 
-![The station graph, part of the VRCChair3 prefab.](/img/worlds/station-graph.png)
+[IMAGE: The station graph, part of the VRCChair3 prefab.]
 
 </TabItem>
 <TabItem value="cs" label="UdonSharp">
@@ -572,7 +492,7 @@ The default `VRCChair` prefab included in the SDK can be used on avatars to let 
 
 When using stations on an avatar that you want to animate on or off, you need to toggle specific objects and components.
 
-![image](/img/worlds/vrc_station-0adc923-av-station-fix.png)
+[IMAGE: image]
 
 **The red box (in the screenshot above) needs to be enabled upon upload. If it is disabled upon upload, the station will not work!**
 
@@ -608,17 +528,9 @@ Avatars must meet the following requirements to sit in stations:
 
 ---
 
-## ドキュメント: vrc_uishape.md
+## Document: vrc_uishape.md
 
-```metadata
-階層: /worlds/components/vrc_uishape.md
-ディレクトリ: worlds\components
-ファイル名: vrc_uishape.md
-拡張子: .md
-サイズ: 6.92 KB
-最終更新: 2025-06-05T03:07:52.782Z
-```
-
+Path: /worlds/components/vrc_uishape.md
 # VRC Ui Shape
 
 The VRC Ui Shape component allows you to create [Canvas](https://docs.unity3d.com/Manual/UICanvas.html) components that players can interact with.
@@ -626,7 +538,7 @@ The VRC Ui Shape component allows you to create [Canvas](https://docs.unity3d.co
 - Players can point, click, or scroll your UIs to interact with them, similar to the VRChat menu.
 - Players can interface from a distance. This often makes them easier to use than [Interact](/worlds/examples/udon/#interact) events.
 
-![Two examples UIs: A "Toggle Mirror" setting with a checkbox, and a page indicator with a "Previous" and "Next" button.](/img/worlds/components/VRC_UiShape.png)
+[IMAGE: Two examples UIs: A "Toggle Mirror" setting with a checkbox, and a page indicator with a "Previous" and "Next" button.]
 
 VRC Ui Shape only has one configurable parameter:
 
@@ -638,7 +550,7 @@ VRC Ui Shape only has one configurable parameter:
 
 When you right-click your hierarchy window and click "UI" -> "TextMeshPro (VRC)", the SDK automatically sets up your Canvas. The SDK automatically configures your Canvas and adds other required components.
 
-![Two examples UIs: A "Toggle Mirror" setting with a checkbox, and a page indicator with a "Previous" and "Next" button.](/img/worlds/components/vrc-ui-components.png)
+[IMAGE: Two examples UIs: A "Toggle Mirror" setting with a checkbox, and a page indicator with a "Previous" and "Next" button.]
 
 If you want to configure a Canvas manually, follow the steps below. Otherwise, your Canvas may not work in VRChat.
 
@@ -721,4 +633,4 @@ While a user is in focus view:
 
 ---
 
-# ドキュメント終了
+# End of Documentation

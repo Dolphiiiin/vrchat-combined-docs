@@ -1,22 +1,14 @@
-# upgrade 統合ドキュメント
+# upgrade Documentation
 
-以下は自動収集された全ドキュメントのコンテンツです。各セクションの始めにメタデータが記載されています。
+This document contains automatically collected documentation with metadata headers for each section.
 
 
 
 ---
 
-## ドキュメント: current-unity-version.md
+## Document: current-unity-version.md
 
-```metadata
-階層: /sdk/upgrade/current-unity-version.md
-ディレクトリ: sdk\upgrade
-ファイル名: current-unity-version.md
-拡張子: .md
-サイズ: 2.31 KB
-最終更新: 2025-06-05T03:07:52.759Z
-```
-
+Path: /sdk/upgrade/current-unity-version.md
 ---
 sidebar_position: 1
 ---
@@ -50,17 +42,9 @@ Unity 2022 includes many improvements such as faster iteration times, improved a
 
 ---
 
-## ドキュメント: index.md
+## Document: index.md
 
-```metadata
-階層: /sdk/upgrade/index.md
-ディレクトリ: sdk\upgrade
-ファイル名: index.md
-拡張子: .md
-サイズ: 846 B
-最終更新: 2025-06-05T03:07:52.760Z
-```
-
+Path: /sdk/upgrade/index.md
 ---
 excerpt: Learn how to update to a newer version of Unity
 sidebar_position: -1
@@ -81,17 +65,9 @@ Read [Setting up the SDK](/sdk/index.md) to learn how to create new projects wit
 
 ---
 
-## ドキュメント: migrating-to-a-newer-minor-unity-version.md
+## Document: migrating-to-a-newer-minor-unity-version.md
 
-```metadata
-階層: /sdk/upgrade/migrating-to-a-newer-minor-unity-version.md
-ディレクトリ: sdk\upgrade
-ファイル名: migrating-to-a-newer-minor-unity-version.md
-拡張子: .md
-サイズ: 3.00 KB
-最終更新: 2025-06-05T03:07:52.762Z
-```
-
+Path: /sdk/upgrade/migrating-to-a-newer-minor-unity-version.md
 ---
 title: "Minor Unity Upgrades"
 ---
@@ -137,9 +113,9 @@ SDK updates aren't always needed in minor version upgrades. If they are, this is
 
 There are a few Unity warnings that may pop up during migration that you can safely click past. Here are a few you may see:
 
-![migrating-to-a-newer-minor-unity-version-f3995eb-image_10.png](/img/sdk/migrating-to-a-newer-minor-unity-version-f3995eb-image_10.png)
+[IMAGE: migrating-to-a-newer-minor-unity-version-f3995eb-image_10.png]
 
-![migrating-to-a-newer-minor-unity-version-b20553b-image_11.png](/img/sdk/migrating-to-a-newer-minor-unity-version-b20553b-image_11.png)
+[IMAGE: migrating-to-a-newer-minor-unity-version-b20553b-image_11.png]
 
 #### Clean up the copy
 
@@ -158,23 +134,15 @@ If your project is large, migration might take a long time. There are a few fold
 
 The SDK may warn you that you're on the wrong version, even though you _know_ you're on the correct one.
 
-![migrating-to-a-newer-minor-unity-version-1b8194d-2022-11-30_10-35-54_chrome.png](/img/sdk/migrating-to-a-newer-minor-unity-version-1b8194d-2022-11-30_10-35-54_chrome.png)
+[IMAGE: migrating-to-a-newer-minor-unity-version-1b8194d-2022-11-30_10-35-54_chrome.png]
 
 This is fine! If you know for a fact you're on the correct version, you can ignore this message.
 
 ---
 
-## ドキュメント: unity-2022.md
+## Document: unity-2022.md
 
-```metadata
-階層: /sdk/upgrade/unity-2022.md
-ディレクトリ: sdk\upgrade
-ファイル名: unity-2022.md
-拡張子: .md
-サイズ: 6.97 KB
-最終更新: 2025-06-05T03:07:52.762Z
-```
-
+Path: /sdk/upgrade/unity-2022.md
 ---
 title: Upgrading Projects to 2022
 sidebar_position: 2
@@ -195,7 +163,7 @@ If you're using the [VRChat Creator Companion](https://creators.vrchat.com/), it
 	- You can also back up the project by duplicating the whole project folder with a new name, such as `MyProject-Backup`.  
 	- You *can* export your entire project as a Unity Package, but this takes a long time and may cause errors. We don't recommend it.
 
-![Creating a backup.](/img/sdk/migrate-2019-2022/creating_backup.png)
+[IMAGE: Creating a backup.]
 
 :::danger Don't skip this step!
 Keeping a backup when making major changes to your precious project is always a good idea.
@@ -223,15 +191,15 @@ There are two ways you can upgrade your project from the VCC: Directly from your
 
 1. Go to Settings, then click Updates to see if your Creator Companion needs to be updated. Without updating, prompts to upgrade to Unity 2022 will not show.
 
-![Check VCC updates.](/img/sdk/migrate-2019-2022/updating_vcc.png)
+[IMAGE: Check VCC updates.]
 
 2. On the Projects page, you'll see a new **Unity** column with a version switcher for each of your projects. Click this, then click Migrate to Unity 2022.
 
-![Click the correct project.](/img/sdk/migrate-2019-2022/updating_vcc_via_projects.png)
+[IMAGE: Click the correct project.]
 
 Otherwise, click **Manage Project** on any project and you'll see an Upgrade to 2022 banner.
 
-![Upgrade via Manage Project.](/img/sdk/migrate-2019-2022/manage_project_upgrade.png)
+[IMAGE: Upgrade via Manage Project.]
 
 ## Using the Unity Hub
 
@@ -246,13 +214,13 @@ Unity Hub is a separate application that allows you to seamlessly install and wo
 	- Do not choose the first Unity version in the list!
 	- You can also go to the [Current Unity Version page](/sdk/upgrade/current-unity-version) to find a link to download the correct version of Unity.
 
-![Select the right version to install in the Unity Archive.](/img/sdk/migrate-2019-2022/unity_webpage_search.png)
+[IMAGE: Select the right version to install in the Unity Archive.]
 
-![Accept the browser prompt to open Unity Hub.](/img/sdk/migrate-2019-2022/browser-prompt-unity-hub.png)
+[IMAGE: Accept the browser prompt to open Unity Hub.]
 
 5. Click **Open Unity Hub** in your web browser.
 
-![Enable Android Build support if you'd like to be able to develop content for Android devices.](/img/sdk/migrate-2019-2022/unity_version_hub_upgrade_android.png)
+[IMAGE: Enable Android Build support if you'd like to be able to develop content for Android devices.]
 
 6. Enable **Android Build Support** in the Unity installation screen.
 	- You can skip this if you're not planning on uploading content to Android or Quest yet.
@@ -287,17 +255,9 @@ If you are trying to add packages to your 2022 project, please keep in mind:
 
 ---
 
-## ドキュメント: worlds-and-avatars-in-2022.md
+## Document: worlds-and-avatars-in-2022.md
 
-```metadata
-階層: /sdk/upgrade/worlds-and-avatars-in-2022.md
-ディレクトリ: sdk\upgrade
-ファイル名: worlds-and-avatars-in-2022.md
-拡張子: .md
-サイズ: 953 B
-最終更新: 2025-06-05T03:07:52.762Z
-```
-
+Path: /sdk/upgrade/worlds-and-avatars-in-2022.md
 ---
 title: New Worlds and Avatars in 2022
 sidebar_position: 2
@@ -318,4 +278,4 @@ This is the easiest way to create a new project with the correct Unity version. 
 
 ---
 
-# ドキュメント終了
+# End of Documentation

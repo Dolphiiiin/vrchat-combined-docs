@@ -1,22 +1,14 @@
-# economy 統合ドキュメント
+# economy Documentation
 
-以下は自動収集された全ドキュメントのコンテンツです。各セクションの始めにメタデータが記載されています。
+This document contains automatically collected documentation with metadata headers for each section.
 
 
 
 ---
 
-## ドキュメント: faq.md
+## Document: faq.md
 
-```metadata
-階層: /economy/faq.md
-ディレクトリ: economy
-ファイル名: faq.md
-拡張子: .md
-サイズ: 8.28 KB
-最終更新: 2025-06-05T03:07:52.739Z
-```
-
+Path: /economy/faq.md
 ---
 description: "Read frequently asked questions about the Creator Economy."
 sidebar_position: 7
@@ -169,17 +161,9 @@ Do you have another question? Ask us by pressing the <FeedbackButton /> button!
 
 ---
 
-## ドキュメント: getting-started.md
+## Document: getting-started.md
 
-```metadata
-階層: /economy/getting-started.md
-ディレクトリ: economy
-ファイル名: getting-started.md
-拡張子: .md
-サイズ: 3.40 KB
-最終更新: 2025-06-05T03:07:52.740Z
-```
-
+Path: /economy/getting-started.md
 ---
 description: "Set up Tilia and create your first store."
 sidebar_position: 1
@@ -220,19 +204,19 @@ The video below explains how to use the Creator Economy and group stores. To lea
 
 Open [VRChat.com](https://vrchat.com/home), go to the [Marketplace](https://vrchat.com/home/marketplace/) tab in the left-hand sidebar, and open your [Storefront](https://vrchat.com/home/marketplace/storefront).
 
-![Marketplace](/img/economy/GettingStarted-Marketplace.png "Navigate to the Storefront Tab")
+[IMAGE: Marketplace]
 
 ## Step 2 - Get Started
 
 Click **Get Started with Tilia**.
 
-![Review Tilia TOS](/img/economy/GettingStarted-Storefront-ReviewTiliaTOS.png "Click here to Review Tilia's terms")
+[IMAGE: Review Tilia TOS]
 
 ## Step 3 - Verify Identity
 
 Make sure to check **"I agree"** after reading Tilia's **Terms of Service** and **Privacy Policy**. Then, go ahead and verify your information by filling out the following section and submitting it.
 
-![Tilia Page](/img/economy/GettingStarted-Tilia.png "Reviewing Tilia's terms and verifying information.")
+[IMAGE: Tilia Page]
 
 Ensure that your personal information is correct! Otherwise, you may not be able to use the Creator Economy.
 
@@ -256,23 +240,15 @@ If it takes Tilia longer to accept you than expected, please try the following t
 
 Once you've been accepted, the **Storefront** page will now show that you are **Authorized** to sell in VRChat! Any credits earned from now on will be eligible for [payout](/economy/payout). 
 
-![Now Authorized](/img/economy/GettingStarted-Storefront-Authorized.png "Authorized to sell in VRChat")
+[IMAGE: Now Authorized]
 
 You're now ready to create [products](./products), [subscriptions](./subscriptions), [listings](./listings), and [stores](./store)!
 
 ---
 
-## ドキュメント: guidelines-avm.md
+## Document: guidelines-avm.md
 
-```metadata
-階層: /economy/guidelines-avm.md
-ディレクトリ: economy
-ファイル名: guidelines-avm.md
-拡張子: .md
-サイズ: 15.84 KB
-最終更新: 2025-06-05T03:07:52.740Z
-```
-
+Path: /economy/guidelines-avm.md
 ---
 description: "Follow these rules when selling in VRChat."
 sidebar_position: 99
@@ -433,17 +409,9 @@ Breaches of the guidelines above may result in the following actions being taken
 
 ---
 
-## ドキュメント: guidelines.md
+## Document: guidelines.md
 
-```metadata
-階層: /economy/guidelines.md
-ディレクトリ: economy
-ファイル名: guidelines.md
-拡張子: .md
-サイズ: 7.58 KB
-最終更新: 2025-06-05T03:07:52.740Z
-```
-
+Path: /economy/guidelines.md
 ---
 description: "Follow these rules when selling in VRChat."
 sidebar_position: 99
@@ -525,17 +493,9 @@ Breaches of the guidelines above may result in the following actions being taken
 
 ---
 
-## ドキュメント: index.md
+## Document: index.md
 
-```metadata
-階層: /economy/index.md
-ディレクトリ: economy
-ファイル名: index.md
-拡張子: .md
-サイズ: 556 B
-最終更新: 2025-06-05T03:07:52.740Z
-```
-
+Path: /economy/index.md
 ---
 sidebar_position: 3
 ---
@@ -559,17 +519,9 @@ import DocCardList from '@theme/DocCardList';
 
 ---
 
-## ドキュメント: listings.md
+## Document: listings.md
 
-```metadata
-階層: /economy/listings.md
-ディレクトリ: economy
-ファイル名: listings.md
-拡張子: .md
-サイズ: 12.20 KB
-最終更新: 2025-06-05T03:07:52.741Z
-```
-
+Path: /economy/listings.md
 ---
 sidebar_position: 2
 sidebar_custom_props:
@@ -619,7 +571,7 @@ After creating your first listing, return to this screen to edit, publish, unpub
 </Column>
 <Column className='text--left'>
 
-![Create listing screen on VRChat.com](/img/economy/listings/listing-create.png)
+[IMAGE: Create listing screen on VRChat.com]
 
 </Column>
 </Columns>
@@ -644,7 +596,7 @@ The differences between duration types are explained below.
 </Column>
 <Column className='text--left'>
 
-![Choose listing duration on VRChat.com](/img/economy/listings/listing-choose-duration.png)
+[IMAGE: Choose listing duration on VRChat.com]
 
 </Column>
 </Columns>
@@ -718,7 +670,7 @@ You should create an eyecatching thumbnail and an accurate description - but you
 </Column>
 <Column className='text--right'>
 
-![Create listing screen on VRChat.com](/img/economy/listings/listing-edit-details.png)
+[IMAGE: Create listing screen on VRChat.com]
 
 </Column>
 
@@ -761,7 +713,7 @@ Choose where users can see your listing.
 </Column>
 <Column className='text--right'>
 	
-![Create listing screen on VRChat.com](/img/economy/listings/listing-edit-visibility.png)
+[IMAGE: Create listing screen on VRChat.com]
 
 </Column>
 </Columns>
@@ -855,17 +807,9 @@ Refunds are processed on a case-by-case basis by VRChat. You cannot directly iss
 
 ---
 
-## ドキュメント: payout.md
+## Document: payout.md
 
-```metadata
-階層: /economy/payout.md
-ディレクトリ: economy
-ファイル名: payout.md
-拡張子: .md
-サイズ: 3.57 KB
-最終更新: 2025-06-05T03:07:52.741Z
-```
-
+Path: /economy/payout.md
 ---
 description: "Pay out your earnings with PayPal."
 sidebar_position: 5
@@ -895,7 +839,7 @@ You can pay out your VRChat Credit earnings in USD through Paypal by visiting th
 2. Open the **Marketplace** in the left-hand sidebar and click **Storefront**.
 3. Expand the **Sell in VRChat** section and find the **Pay Out Now** button.
 
-![Click Pay Out Now](/img/economy/TiliaPayout-ClickPayOutNow.png "See if paying out is available")
+[IMAGE: Click Pay Out Now]
 
 4. Proceed to Tilia’s website and connect your PayPal account. If you have already connected your account, simply select the one you wish to use.
 
@@ -906,14 +850,14 @@ Ensure that your name on PayPal is correct! It must match [the name you gave Til
 :::
 
 
-![PayPal](/img/economy/TiliaPayout-Paypal.png "The Tilia page for connecting your PayPal.")
+[IMAGE: PayPal]
 
 
 5. Enter the requested amount of VRChat Credits to pay out.
     - Tilia automatically converts the amount from VRChat Credits into USD.
     - A 1.5% transaction fee is deducted from the payout.
 
-![Review Payout](/img/economy/TiliaPayout-ReviewPayout.png "Review and select your payout amount.")
+[IMAGE: Review Payout]
 
 6. Click **Review Payout** and finalize the payout process.
 7. Confirm everything is correct, then click **Pay Out Now.**
@@ -924,7 +868,7 @@ After the payout has been approved, you'll receive a confirmation email from Til
 
 VRChat shares the Creator Economy's revenue with sellers.
 
-![Approximate revenue split](/img/economy/revenue-split-approximate.jpg "Approximate revenue split")
+[IMAGE: Approximate revenue split]
 
 After VRChat Credits have been purchased, spent, and successfully paid out to creators, the revenue split approximates the following values:
 - 30%:[^1] to the platform (Steam/Meta),
@@ -947,17 +891,9 @@ Fees are collected in the following three steps:
 
 ---
 
-## ドキュメント: subscriptions.md
+## Document: subscriptions.md
 
-```metadata
-階層: /economy/subscriptions.md
-ディレクトリ: economy
-ファイル名: subscriptions.md
-拡張子: .md
-サイズ: 9.87 KB
-最終更新: 2025-06-05T03:07:52.747Z
-```
-
+Path: /economy/subscriptions.md
 ---
 sidebar_position: 3
 description: Create subscriptions in your Group.
@@ -1047,7 +983,7 @@ After creating your first subscription, you can also edit your subscriptions by 
 </Column>
 <Column className='text--right'>
 
-![Create listing screen on VRChat.com](/img/economy/listings/subscription-create.png)
+[IMAGE: Create listing screen on VRChat.com]
 
 </Column>
 </Columns>
@@ -1068,7 +1004,7 @@ If you already chose a group in step 1, this step is skipped.
 </Column>
 <Column className='text--left'>
 
-![Create listing screen on VRChat.com](/img/economy/listings/subscription-select-group.png)
+[IMAGE: Create listing screen on VRChat.com]
 
 </Column>
 </Columns>
@@ -1093,7 +1029,7 @@ Click "Next" to save the subscription role details.
 </Column>
 <Column className='text--left'>
 
-![Create listing screen on VRChat.com](/img/economy/listings/subscription-create-role.png)
+[IMAGE: Create listing screen on VRChat.com]
 
 </Column>
 </Columns>
@@ -1120,7 +1056,7 @@ Click "Next" to create the subscription, product, and role.
 </Column>
 <Column className='text--left'>
 
-![Create listing screen on VRChat.com](/img/economy/listings/subscription-choose-permissions.png)
+[IMAGE: Create listing screen on VRChat.com]
 
 
 </Column>
@@ -1154,7 +1090,7 @@ You can change the subscription details later. Take your time to create an appea
 </Column>
 <Column className='text--left'>
 
-![Create listing screen on VRChat.com](/img/economy/listings/subscription-create-details.png)
+[IMAGE: Create listing screen on VRChat.com]
 
 </Column>
 </Columns>
@@ -1175,7 +1111,7 @@ Click "Next" to save your subscription as a draft.
 </Column>
 <Column className='text--left'>
 
-![Create listing screen on VRChat.com](/img/economy/listings/subscription-create-choose-products.png)
+[IMAGE: Create listing screen on VRChat.com]
 
 </Column>
 </Columns>
@@ -1197,7 +1133,7 @@ Open the [Store Manager](https://vrchat.com/home/marketplace/storefront/stores/)
 </Column>
 <Column className='text--left'>
 
-![Create listing screen on VRChat.com](/img/economy/listings/subscription-publish.png)
+[IMAGE: Create listing screen on VRChat.com]
 
 </Column>
 </Columns>
@@ -1236,17 +1172,9 @@ When you use subscriptions to monetize your VRChat group, remember the following
 
 ---
 
-## ドキュメント: welcome-to-the-ce.md
+## Document: welcome-to-the-ce.md
 
-```metadata
-階層: /economy/welcome-to-the-ce.md
-ディレクトリ: economy
-ファイル名: welcome-to-the-ce.md
-拡張子: .md
-サイズ: 5.64 KB
-最終更新: 2025-06-05T03:07:52.747Z
-```
-
+Path: /economy/welcome-to-the-ce.md
 ---
 description: "Learn how VRChat's Creator Economy works."
 sidebar_position: -1
@@ -1334,7 +1262,7 @@ To maximize reach, you can add the same listing in multiple stores. In addition,
 
 The chart below shows you how different types of stores, listings, and products are connected:
 
-![This chart shows which types of listings can be added to listings and subscriptions, and which store types support listings and subscriptions.](/img/economy/overview.png)
+[IMAGE: This chart shows which types of listings can be added to listings and subscriptions, and which store types support listings and subscriptions.]
 
 ## Earning Money
 
@@ -1376,17 +1304,9 @@ We look forward to seeing what you'll create!
 
 ---
 
-## ドキュメント: _ce-how-to-import.mdx
+## Document: _ce-how-to-import.mdx
 
-```metadata
-階層: /economy/_ce-how-to-import.mdx
-ディレクトリ: economy
-ファイル名: _ce-how-to-import.mdx
-拡張子: .mdx
-サイズ: 491 B
-最終更新: 2025-06-05T03:07:52.738Z
-```
-
+Path: /economy/_ce-how-to-import.mdx
 ### How to Import
 1. Open [the Example Central Window](/sdk/example-central) from the window from the Unity Editor Menu under "VRChat SDK > 🏠 Example Central"
 2. If you haven't enabled Creator Economy examples yet:
@@ -1397,17 +1317,9 @@ We look forward to seeing what you'll create!
 
 ---
 
-## ドキュメント: _credit-icon.mdx
+## Document: _credit-icon.mdx
 
-```metadata
-階層: /economy/_credit-icon.mdx
-ディレクトリ: economy
-ファイル名: _credit-icon.mdx
-拡張子: .mdx
-サイズ: 274 B
-最終更新: 2025-06-05T03:07:52.739Z
-```
-
+Path: /economy/_credit-icon.mdx
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import ThemedImage from '@theme/ThemedImage';
 
@@ -1421,17 +1333,9 @@ import ThemedImage from '@theme/ThemedImage';
 
 ---
 
-## ドキュメント: _sellers-notification-avm.mdx
+## Document: _sellers-notification-avm.mdx
 
-```metadata
-階層: /economy/_sellers-notification-avm.mdx
-ディレクトリ: economy
-ファイル名: _sellers-notification-avm.mdx
-拡張子: .mdx
-サイズ: 97 B
-最終更新: 2025-06-05T03:07:52.739Z
-```
-
+Path: /economy/_sellers-notification-avm.mdx
 :::tip
 
 Only approved avatar sellers can create avatar products for the marketplace.
@@ -1442,17 +1346,9 @@ Only approved avatar sellers can create avatar products for the marketplace.
 
 ---
 
-## ドキュメント: _sellers-notification.mdx
+## Document: _sellers-notification.mdx
 
-```metadata
-階層: /economy/_sellers-notification.mdx
-ディレクトリ: economy
-ファイル名: _sellers-notification.mdx
-拡張子: .mdx
-サイズ: 215 B
-最終更新: 2025-06-05T03:07:52.739Z
-```
-
+Path: /economy/_sellers-notification.mdx
 :::tip
 
 [Submit an application](https://www.surveymonkey.com/r/ce-creator) if you want to join the Creator Economy!
@@ -1465,4 +1361,4 @@ The page below is only relevant to sellers with access to VRChat's Creator Econo
 
 ---
 
-# ドキュメント終了
+# End of Documentation

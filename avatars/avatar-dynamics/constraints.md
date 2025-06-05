@@ -1,22 +1,14 @@
-# constraints 統合ドキュメント
+# constraints Documentation
 
-以下は自動収集された全ドキュメントのコンテンツです。各セクションの始めにメタデータが記載されています。
+This document contains automatically collected documentation with metadata headers for each section.
 
 
 
 ---
 
-## ドキュメント: index.md
+## Document: index.md
 
-```metadata
-階層: /avatars/avatar-dynamics/constraints/index.md
-ディレクトリ: avatars\avatar-dynamics\constraints
-ファイル名: index.md
-拡張子: .md
-サイズ: 13.68 KB
-最終更新: 2025-06-05T03:07:52.730Z
-```
-
+Path: /avatars/avatar-dynamics/constraints/index.md
 # Constraints
 
 VRChat provides its own custom constraints system, which allows bones on your avatar to move, rotate, and scale relative to other bones.
@@ -154,17 +146,9 @@ To complement the above methods, the class `AvatarDynamicsSetup` also provides d
 
 ---
 
-## ドキュメント: vrc-aim-constraint.mdx
+## Document: vrc-aim-constraint.mdx
 
-```metadata
-階層: /avatars/avatar-dynamics/constraints/vrc-aim-constraint.mdx
-ディレクトリ: avatars\avatar-dynamics\constraints
-ファイル名: vrc-aim-constraint.mdx
-拡張子: .mdx
-サイズ: 1.64 KB
-最終更新: 2025-06-05T03:07:52.730Z
-```
-
+Path: /avatars/avatar-dynamics/constraints/vrc-aim-constraint.mdx
 import ConstraintMainSettings from './_partial-constraint-mainsettings.mdx'
 import ConstraintActivation from './_partial-constraint-activation.mdx'
 import ConstraintSubSettings from './_partial-constraint-subsettings.mdx'
@@ -175,7 +159,7 @@ import ConstraintAdvanced from './_partial-constraint-advanced.mdx'
 
 The `VRCAimConstraint` component rotates the target transform so it aims towards the sources. You can customize which direction is treated as forwards.
 
-![](/img/avatars/constraints/aim.png)
+[IMAGE: Image]
 
 <ConstraintMainSettings />
 - **Aim Vector** - Controls the axes that should face towards the sources.
@@ -203,17 +187,9 @@ The `VRCAimConstraint` component rotates the target transform so it aims towards
 
 ---
 
-## ドキュメント: vrc-look-at-constraint.mdx
+## Document: vrc-look-at-constraint.mdx
 
-```metadata
-階層: /avatars/avatar-dynamics/constraints/vrc-look-at-constraint.mdx
-ディレクトリ: avatars\avatar-dynamics\constraints
-ファイル名: vrc-look-at-constraint.mdx
-拡張子: .mdx
-サイズ: 1.78 KB
-最終更新: 2025-06-05T03:07:52.731Z
-```
-
+Path: /avatars/avatar-dynamics/constraints/vrc-look-at-constraint.mdx
 import ConstraintMainSettings from './_partial-constraint-mainsettings.mdx'
 import ConstraintActivation from './_partial-constraint-activation.mdx'
 import ConstraintSources from './_partial-constraint-sources.mdx'
@@ -223,7 +199,7 @@ import ConstraintAdvanced from './_partial-constraint-advanced.mdx'
 
 The `VRCLookAtConstraint` component is a simplified [Aim Constraint](/avatars/avatar-dynamics/constraints/vrc-aim-constraint). It rotates the target transform so its positive Z axis faces towards the sources.
 
-![](/img/avatars/constraints/look-at.png)
+[IMAGE: Image]
 
 <ConstraintMainSettings />
 - **Use Up Object** - Controls whether or not to use a separate transform to determine roll.
@@ -250,17 +226,9 @@ The `VRCLookAtConstraint` component is a simplified [Aim Constraint](/avatars/av
 
 ---
 
-## ドキュメント: vrc-parent-constraint.mdx
+## Document: vrc-parent-constraint.mdx
 
-```metadata
-階層: /avatars/avatar-dynamics/constraints/vrc-parent-constraint.mdx
-ディレクトリ: avatars\avatar-dynamics\constraints
-ファイル名: vrc-parent-constraint.mdx
-拡張子: .mdx
-サイズ: 894 B
-最終更新: 2025-06-05T03:07:52.731Z
-```
-
+Path: /avatars/avatar-dynamics/constraints/vrc-parent-constraint.mdx
 import ConstraintMainSettings from './_partial-constraint-mainsettings.mdx'
 import ConstraintActivation from './_partial-constraint-activation.mdx'
 import ConstraintSubSettings from './_partial-constraint-subsettings.mdx'
@@ -271,7 +239,7 @@ import ConstraintAdvanced from './_partial-constraint-advanced.mdx'
 
 The `VRCParentConstraint` component moves and rotates the target transform as if it were a child of its sources.
 
-![](/img/avatars/constraints/parent.png)
+[IMAGE: Image]
 
 <ConstraintMainSettings />
 
@@ -296,17 +264,9 @@ Offsets are set individually for each source when using Parent Constraints.
 
 ---
 
-## ドキュメント: vrc-position-constraint.mdx
+## Document: vrc-position-constraint.mdx
 
-```metadata
-階層: /avatars/avatar-dynamics/constraints/vrc-position-constraint.mdx
-ディレクトリ: avatars\avatar-dynamics\constraints
-ファイル名: vrc-position-constraint.mdx
-拡張子: .mdx
-サイズ: 794 B
-最終更新: 2025-06-05T03:07:52.731Z
-```
-
+Path: /avatars/avatar-dynamics/constraints/vrc-position-constraint.mdx
 import ConstraintMainSettings from './_partial-constraint-mainsettings.mdx'
 import ConstraintActivation from './_partial-constraint-activation.mdx'
 import ConstraintSubSettings from './_partial-constraint-subsettings.mdx'
@@ -317,7 +277,7 @@ import ConstraintAdvanced from './_partial-constraint-advanced.mdx'
 
 The `VRCPositionConstraint` component changes the position of the target transform to match the positions of its sources.
 
-![](/img/avatars/constraints/position.png)
+[IMAGE: Image]
 
 <ConstraintMainSettings />
 
@@ -337,17 +297,9 @@ The `VRCPositionConstraint` component changes the position of the target transfo
 
 ---
 
-## ドキュメント: vrc-rotation-constraint.mdx
+## Document: vrc-rotation-constraint.mdx
 
-```metadata
-階層: /avatars/avatar-dynamics/constraints/vrc-rotation-constraint.mdx
-ディレクトリ: avatars\avatar-dynamics\constraints
-ファイル名: vrc-rotation-constraint.mdx
-拡張子: .mdx
-サイズ: 794 B
-最終更新: 2025-06-05T03:07:52.731Z
-```
-
+Path: /avatars/avatar-dynamics/constraints/vrc-rotation-constraint.mdx
 import ConstraintMainSettings from './_partial-constraint-mainsettings.mdx'
 import ConstraintActivation from './_partial-constraint-activation.mdx'
 import ConstraintSubSettings from './_partial-constraint-subsettings.mdx'
@@ -358,7 +310,7 @@ import ConstraintAdvanced from './_partial-constraint-advanced.mdx'
 
 The `VRCRotationConstraint` component changes the rotation of the target transform to match the rotations of its sources.
 
-![](/img/avatars/constraints/rotation.png)
+[IMAGE: Image]
 
 <ConstraintMainSettings />
 
@@ -378,17 +330,9 @@ The `VRCRotationConstraint` component changes the rotation of the target transfo
 
 ---
 
-## ドキュメント: vrc-scale-constraint.mdx
+## Document: vrc-scale-constraint.mdx
 
-```metadata
-階層: /avatars/avatar-dynamics/constraints/vrc-scale-constraint.mdx
-ディレクトリ: avatars\avatar-dynamics\constraints
-ファイル名: vrc-scale-constraint.mdx
-拡張子: .mdx
-サイズ: 773 B
-最終更新: 2025-06-05T03:07:52.731Z
-```
-
+Path: /avatars/avatar-dynamics/constraints/vrc-scale-constraint.mdx
 import ConstraintMainSettings from './_partial-constraint-mainsettings.mdx'
 import ConstraintActivation from './_partial-constraint-activation.mdx'
 import ConstraintSubSettings from './_partial-constraint-subsettings.mdx'
@@ -399,7 +343,7 @@ import ConstraintAdvanced from './_partial-constraint-advanced.mdx'
 
 The `VRCScaleConstraint` component changes the scale of the target transform to match the scales of its sources.
 
-![](/img/avatars/constraints/scale.png)
+[IMAGE: Image]
 
 <ConstraintMainSettings />
 
@@ -419,34 +363,18 @@ The `VRCScaleConstraint` component changes the scale of the target transform to 
 
 ---
 
-## ドキュメント: _partial-constraint-activation.mdx
+## Document: _partial-constraint-activation.mdx
 
-```metadata
-階層: /avatars/avatar-dynamics/constraints/_partial-constraint-activation.mdx
-ディレクトリ: avatars\avatar-dynamics\constraints
-ファイル名: _partial-constraint-activation.mdx
-拡張子: .mdx
-サイズ: 305 B
-最終更新: 2025-06-05T03:07:52.728Z
-```
-
+Path: /avatars/avatar-dynamics/constraints/_partial-constraint-activation.mdx
 The two buttons at the top the inspector are utilities to let you:
 - **Activate** the constraint. This saves the current offset from the sources, then activates and locks the constraint.
 - **Zero out** the constraint. This resets the offset to its default value, then activates and locks the constraint.
 
 ---
 
-## ドキュメント: _partial-constraint-advanced.mdx
+## Document: _partial-constraint-advanced.mdx
 
-```metadata
-階層: /avatars/avatar-dynamics/constraints/_partial-constraint-advanced.mdx
-ディレクトリ: avatars\avatar-dynamics\constraints
-ファイル名: _partial-constraint-advanced.mdx
-拡張子: .mdx
-サイズ: 792 B
-最終更新: 2025-06-05T03:07:52.729Z
-```
-
+Path: /avatars/avatar-dynamics/constraints/_partial-constraint-advanced.mdx
 - **Target Transform** - Defines the transform affected by this constraint component. If left empty, the transform this constraint is attached to will be affected instead.
 - **Solve In Local Space** - If ticked, this constraint will be solved as if the sources are in local space rather than world space.
 - **Freeze To World** - If ticked, this constraint will ignore its sources and keep a fixed {props.affectedTrs.toLowerCase()} instead.
@@ -456,34 +384,18 @@ See the parent section covering [Advanced Constraint Settings](/avatars/avatar-d
 
 ---
 
-## ドキュメント: _partial-constraint-mainsettings.mdx
+## Document: _partial-constraint-mainsettings.mdx
 
-```metadata
-階層: /avatars/avatar-dynamics/constraints/_partial-constraint-mainsettings.mdx
-ディレクトリ: avatars\avatar-dynamics\constraints
-ファイル名: _partial-constraint-mainsettings.mdx
-拡張子: .mdx
-サイズ: 416 B
-最終更新: 2025-06-05T03:07:52.729Z
-```
-
+Path: /avatars/avatar-dynamics/constraints/_partial-constraint-mainsettings.mdx
 - **Is Active** - Controls whether the constraint will be evaluated or not. Disabling the entire component and deactivating the game object with the component on it will also stop the constraint from running.
 - **Weight** - Controls the overall weight applied to this constraint.
   - This should normally be in the range 0 to 1, but you can tick the `Free edit` box if you want to set values outside of that range.
 
 ---
 
-## ドキュメント: _partial-constraint-sources.mdx
+## Document: _partial-constraint-sources.mdx
 
-```metadata
-階層: /avatars/avatar-dynamics/constraints/_partial-constraint-sources.mdx
-ディレクトリ: avatars\avatar-dynamics\constraints
-ファイル名: _partial-constraint-sources.mdx
-拡張子: .mdx
-サイズ: 505 B
-最終更新: 2025-06-05T03:07:52.729Z
-```
-
+Path: /avatars/avatar-dynamics/constraints/_partial-constraint-sources.mdx
 The "Sources" list determines which transforms affect this constraint. Click the `+` button in the bottom right to add a new source. Click the `-` button to remove the currently selected source. Each source has the following options:
 - **Source Transform** - The transform to use as a source.
 - **Weight** - Controls how much this source should affect the constraint.
@@ -491,17 +403,9 @@ The "Sources" list determines which transforms affect this constraint. Click the
 
 ---
 
-## ドキュメント: _partial-constraint-subsettings.mdx
+## Document: _partial-constraint-subsettings.mdx
 
-```metadata
-階層: /avatars/avatar-dynamics/constraints/_partial-constraint-subsettings.mdx
-ディレクトリ: avatars\avatar-dynamics\constraints
-ファイル名: _partial-constraint-subsettings.mdx
-拡張子: .mdx
-サイズ: 804 B
-最終更新: 2025-06-05T03:07:52.730Z
-```
-
+Path: /avatars/avatar-dynamics/constraints/_partial-constraint-subsettings.mdx
 - **{props.affectedTrs} At Rest** - Defines the transform's {props.affectedTrs.toLowerCase()} when the constraint's overall weight is 0.
 - **{props.affectedTrs} Offset** - Defines the offset applied to the result of this constraint.
 - **Lock** - When enabled, locks the `At Rest` and `Offset` values in place, preventing them from being edited.
@@ -511,4 +415,4 @@ The "Sources" list determines which transforms affect this constraint. Click the
 
 ---
 
-# ドキュメント終了
+# End of Documentation

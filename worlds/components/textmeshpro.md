@@ -1,22 +1,14 @@
-# textmeshpro 統合ドキュメント
+# textmeshpro Documentation
 
-以下は自動収集された全ドキュメントのコンテンツです。各セクションの始めにメタデータが記載されています。
+This document contains automatically collected documentation with metadata headers for each section.
 
 
 
 ---
 
-## ドキュメント: index.md
+## Document: index.md
 
-```metadata
-階層: /worlds/components/textmeshpro/index.md
-ディレクトリ: worlds\components\textmeshpro
-ファイル名: index.md
-拡張子: .md
-サイズ: 3.46 KB
-最終更新: 2025-06-05T03:07:52.777Z
-```
-
+Path: /worlds/components/textmeshpro/index.md
 # TextMesh Pro
 
 [TextMesh Pro](https://docs.unity3d.com/Packages/com.unity.textmeshpro@4.0/manual/index.html) is a tool for displaying high-quality 2D and 3D text in Unity and VRChat worlds. Currently, the following components are exposed to Udon:
@@ -41,7 +33,7 @@ Avoid using Unity's built-in [text components](https://docs.unity3d.com/2018.1/D
 The TextMesh Pro package is included in the Unity editor. When you use it for the first time in a project, Unity will prompt you to add essential files to your "Assets" folder. 
 For example, creating any TMP component will show the following prompt:
 
-![TextMesh Pro prompt for importing essential assets.](/img/worlds/components/textmeshpro-essentials.png)
+[IMAGE: TextMesh Pro prompt for importing essential assets.]
 
 TextMesh Pro's assets can also be imported by selecting "Window" > "TextMeshPro" > "Import TMP Essential Resources".
 
@@ -69,7 +61,7 @@ To use VRChat's TextMeshPro Fallback fonts, go to "Project Settings" > "TextMesh
 
 This allows your TextMeshPro components to use VRChat's fallback fonts. When you visit your world in VRChat, almost all Unicode characters are rendered correctly.
 
-![When configured correctly, missing Unicode characters will appear as boxes in the Unity editor, but appear correctly after uploading your world to VRChat.](/img/worlds/components/textmeshpro-editor-vs-fallback-vrchat.png)
+[IMAGE: When configured correctly, missing Unicode characters will appear as boxes in the Unity editor, but appear correctly after uploading your world to VRChat.]
 
 ## See also
 
@@ -78,17 +70,9 @@ This allows your TextMeshPro components to use VRChat's fallback fonts. When you
 
 ---
 
-## ドキュメント: tmp_dropdown.md
+## Document: tmp_dropdown.md
 
-```metadata
-階層: /worlds/components/textmeshpro/tmp_dropdown.md
-ディレクトリ: worlds\components\textmeshpro
-ファイル名: tmp_dropdown.md
-拡張子: .md
-サイズ: 5.43 KB
-最終更新: 2025-06-05T03:07:52.777Z
-```
-
+Path: /worlds/components/textmeshpro/tmp_dropdown.md
 # TMP Dropdown
 
 [`TMP_Dropdown`](https://docs.unity3d.com/Packages/com.unity.textmeshpro@4.0/api/TMPro.TMP_Dropdown.html) is a standard dropdown that presents a list of options when clicked, of which one can be chosen. It should always be used instead of Unity's legacy `UI.Dropdown` component.
@@ -144,34 +128,26 @@ Dropdowns can display a different sprite for each option. You need to set up you
 
 1. Add an image to the dropdown.
 
-![Add an image to the dropdown hierarchy, moving the label out of the way - part 1](/img/worlds/components/VRC_DropdownAddLabelScene.png)
-![part 2](/img/worlds/components/VRC_DropdownAddLabelHierarchie.png)
+[IMAGE: Add an image to the dropdown hierarchy, moving the label out of the way - part 1]
+[IMAGE: part 2]
 
 2. Add an image to the template.
 
-![Add an image to the template hierarchy, moving the label out of the way - part 1](/img/worlds/components/VRC_DropdownAddLabelTemplateScene.png)
-![part 2](/img/worlds/components/VRC_DropdownAddLabelTemplateHierarchie.png)
+[IMAGE: Add an image to the template hierarchy, moving the label out of the way - part 1]
+[IMAGE: part 2]
 
 3. Add the correct references to `Caption Image` and `Item Image` fields in the dropdown.
 
-![part 2](/img/worlds/components/VRC_DropdownAddLabelInspector.png)
+[IMAGE: part 2]
 
 4. Success! The dropdown can now display sprites.
 
 
 ---
 
-## ドキュメント: tmp_inputfield.md
+## Document: tmp_inputfield.md
 
-```metadata
-階層: /worlds/components/textmeshpro/tmp_inputfield.md
-ディレクトリ: worlds\components\textmeshpro
-ファイル名: tmp_inputfield.md
-拡張子: .md
-サイズ: 1019 B
-最終更新: 2025-06-05T03:07:52.777Z
-```
-
+Path: /worlds/components/textmeshpro/tmp_inputfield.md
 # TMP InputField
 [`TMP_InputField`](https://docs.unity3d.com/Packages/com.unity.textmeshpro@4.0/api/TMPro.TMP_InputField.html) is an editable text input field. It should always be used instead of Unity's legacy `UI.InputField` component.
 ## Properties
@@ -193,17 +169,9 @@ Dropdowns can display a different sprite for each option. You need to set up you
 
 ---
 
-## ドキュメント: tmp_text.md
+## Document: tmp_text.md
 
-```metadata
-階層: /worlds/components/textmeshpro/tmp_text.md
-ディレクトリ: worlds\components\textmeshpro
-ファイル名: tmp_text.md
-拡張子: .md
-サイズ: 3.71 KB
-最終更新: 2025-06-05T03:07:52.778Z
-```
-
+Path: /worlds/components/textmeshpro/tmp_text.md
 # TMP Text
 `TMP_Text` is the base class of two TextMesh Pro components:
 
@@ -252,4 +220,4 @@ Use the `TMP_Text` base class to access these properties. Both `TextMeshProUGUI`
 
 ---
 
-# ドキュメント終了
+# End of Documentation

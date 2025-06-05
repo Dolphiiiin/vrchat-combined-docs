@@ -1,22 +1,14 @@
-# animator-parameters 統合ドキュメント
+# animator-parameters Documentation
 
-以下は自動収集された全ドキュメントのコンテンツです。各セクションの始めにメタデータが記載されています。
+This document contains automatically collected documentation with metadata headers for each section.
 
 
 
 ---
 
-## ドキュメント: index.md
+## Document: index.md
 
-```metadata
-階層: /avatars/animator-parameters/index.md
-ディレクトリ: avatars\animator-parameters
-ファイル名: index.md
-拡張子: .md
-サイズ: 24.78 KB
-最終更新: 2025-06-05T03:07:52.728Z
-```
-
+Path: /avatars/animator-parameters/index.md
 import UnityVersionedLink from '@site/src/components/UnityVersionedLink.js';
 
 # Animator Parameters
@@ -185,7 +177,7 @@ You must [create a Expression Parameters asset](#expression-parameters-asset), w
 
 An Expression Parameters asset contains the list of custom parameters that your Playable Layers can use. Each parameter has a name, type, and default value. You can also choose whether the parameter should be synchronized for other players, which allows other players to see changes caused by the animator and custom parameters.
 
-![What expression parameters look like by default.](/img/avatars/expression-menu/default-parameters.png)
+[IMAGE: What expression parameters look like by default.]
 
 :::tip
 
@@ -267,17 +259,9 @@ If you enable synchronization for your [custom](#custom-parameters) parameters, 
 
 ---
 
-## ドキュメント: preview-mode.md
+## Document: preview-mode.md
 
-```metadata
-階層: /avatars/animator-parameters/preview-mode.md
-ディレクトリ: avatars\animator-parameters
-ファイル名: preview-mode.md
-拡張子: .md
-サイズ: 2.76 KB
-最終更新: 2025-06-05T03:07:52.728Z
-```
-
+Path: /avatars/animator-parameters/preview-mode.md
 # Preview Mode
 
 Preview Mode is an [animator parameter](/avatars/animator-parameters/) that indicates whether the user is currently previewing your avatar in the VRChat menu. Your Animator Controller can use this parameter to play a specific animation to make your avatar preview look more appealing.
@@ -289,28 +273,28 @@ To set up a preview mode animation for your avatar, follow the steps below:
 1. Open your existing Base (Locomotion) Animator Controller.
    - If you do not have a Base layer set up in your Avatar descriptor, you can copy the existing Animator Controller provided by VRChat. It is located under `Packages/VRChat SDK Avatars/Samples/AV3 Demo Assets/Animation/Controllers/vrc_AvatarV3LocomotionLayer`. Copy this animator controller into your assets and assign it to the `Base` slot of your Avatar Descriptor.
 
-![Base Layer Sample](/img/avatars/preview-mode/preview-mode-sample-layer.png)
+[IMAGE: Base Layer Sample]
 
 2. Create a new Animator parameter of type `Int` and name it `PreviewMode`.
 
-![PreviewMode Parameter](/img/avatars/preview-mode/preview-mode-param.png)
+[IMAGE: PreviewMode Parameter]
 
 3. Create an Animation Clip to house your preview animation, choose a name (e.g., `PreviewOn`), and drag it into the Animator Controller.
 4. Set up a transition between the `Standing` locomotion blend tree (usually the Default state, marked in orange) to the `PreviewOn` state, and set the condition to "`PreviewMode` Equals 1". Uncheck the "Has Exit Time" checkbox.
 
-![PreviewOn Transition](/img/avatars/preview-mode/preview-mode-transition-in.png)
+[IMAGE: PreviewOn Transition]
 
 5. Create another Transition in reverse from `PreviewOn` to `Standing` and set the condition to "`PreviewMode` equals 0". Uncheck the "Has Exit Time" checkbox.
 
-![PreviewOff Transition](/img/avatars/preview-mode/preview-mode-transition-out.png)
+[IMAGE: PreviewOff Transition]
 
 6. The final setup should look something like this:
 
-![PreviewMode Setup](/img/avatars/preview-mode/preview-mode-final-setup.png)
+[IMAGE: PreviewMode Setup]
 
 7. Now assign your Base Animator Controller to the `Controller` slot of your Avatar's Animator component, and set up the animation to your preference.
 
-![Plug In Animator](/img/avatars/preview-mode/preview-mode-plug-in-animator.png)
+[IMAGE: Plug In Animator]
 
 :::caution
 Please note that Material swapping animations do not work correctly when previewed in the menu. However, you can still do most other things like toggling objects, or adjusting BlendShapes.
@@ -318,15 +302,15 @@ Please note that Material swapping animations do not work correctly when preview
 
 8. When you're done - you can Build & Test your avatar.
 
-![Pose Sample](/img/avatars/preview-mode/preview-mode-final-pose.png)
+[IMAGE: Pose Sample]
 
 9. When you preview your avatar in the "Other" section of the Avatars list - you should see it animate into the pose you set up in the `PreviewOn` Animation Clip.
 
-![In Game View](/img/avatars/preview-mode/preview-mode-in-game-view.png)
+[IMAGE: In Game View]
 
 You can use different kinds of animations for the preview mode, so feel free to experiment.
 
 
 ---
 
-# ドキュメント終了
+# End of Documentation

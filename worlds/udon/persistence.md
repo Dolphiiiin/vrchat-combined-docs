@@ -1,22 +1,14 @@
-# persistence 統合ドキュメント
+# persistence Documentation
 
-以下は自動収集された全ドキュメントのコンテンツです。各セクションの始めにメタデータが記載されています。
+This document contains automatically collected documentation with metadata headers for each section.
 
 
 
 ---
 
-## ドキュメント: index.md
+## Document: index.md
 
-```metadata
-階層: /worlds/udon/persistence/index.md
-ディレクトリ: worlds\udon\persistence
-ファイル名: index.md
-拡張子: .md
-サイズ: 7.71 KB
-最終更新: 2025-06-05T03:07:52.819Z
-```
-
+Path: /worlds/udon/persistence/index.md
 # Persistence
 
 ## What is Persistence?
@@ -145,17 +137,9 @@ You can reset your own User Data for all worlds you visited by going to the VRCh
 
 ---
 
-## ドキュメント: player-data.md
+## Document: player-data.md
 
-```metadata
-階層: /worlds/udon/persistence/player-data.md
-ディレクトリ: worlds\udon\persistence
-ファイル名: player-data.md
-拡張子: .md
-サイズ: 14.23 KB
-最終更新: 2025-06-05T03:07:52.820Z
-```
-
+Path: /worlds/udon/persistence/player-data.md
 # PlayerData
 
 
@@ -327,7 +311,7 @@ If default values are undesirable, use `TryGet` or Queries to distinguish defaul
 <TabItem value="graph" label="Udon Graph">
 
 
-![The persistent jump counter example script in the Udon Graph.](/img/worlds/udon/persistence/graph-jump-counter.png)
+[IMAGE: The persistent jump counter example script in the Udon Graph.]
 
 
 </TabItem>
@@ -379,17 +363,9 @@ public class JumpCounter : UdonSharpBehaviour
 
 ---
 
-## ドキュメント: player-object.md
+## Document: player-object.md
 
-```metadata
-階層: /worlds/udon/persistence/player-object.md
-ディレクトリ: worlds\udon\persistence
-ファイル名: player-object.md
-拡張子: .md
-サイズ: 6.11 KB
-最終更新: 2025-06-05T03:07:52.820Z
-```
-
+Path: /worlds/udon/persistence/player-object.md
 # PlayerObject
 
 PlayerObjects allow you to automatically give each player who joins your world a copy of a GameObject, such as a flashlight, a health bar, or a sword.
@@ -506,4 +482,4 @@ public void Find(VRCPlayerApi targetPlayer)
 
 ---
 
-# ドキュメント終了
+# End of Documentation

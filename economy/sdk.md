@@ -1,22 +1,14 @@
-# sdk 統合ドキュメント
+# sdk Documentation
 
-以下は自動収集された全ドキュメントのコンテンツです。各セクションの始めにメタデータが記載されています。
+This document contains automatically collected documentation with metadata headers for each section.
 
 
 
 ---
 
-## ドキュメント: getting-started.md
+## Document: getting-started.md
 
-```metadata
-階層: /economy/sdk/getting-started.md
-ディレクトリ: economy\sdk
-ファイル名: getting-started.md
-拡張子: .md
-サイズ: 3.33 KB
-最終更新: 2025-06-05T03:07:52.745Z
-```
-
+Path: /economy/sdk/getting-started.md
 ---
 description: "Add your first Udon product to your world."
 title: Getting Started
@@ -41,7 +33,7 @@ The **UdonProducts Manager** is an editor window that shows you all Udon Product
 
 You can add Udon products to your project automatically with the UdonProducts Manager.
 
-![A screenshot of the UdonProducts manager.](/img/economy/sdk/udonproducts-manager.png)
+[IMAGE: A screenshot of the UdonProducts manager.]
 
 To open the UdonProducts Manager window, open the **VRChat SDK** tab at the top of the Unity Window, then click **UdonProducts Manager**.
 
@@ -67,7 +59,7 @@ You can also create and manage your Udon Products manually.
 3. (Optional) Choose a file name.
 4. Select the UdonProduct asset and view it in Unity's inspector.
 
-![A blank UdonProduct after creation](/img/economy/sdk/udonproduct-blank.png)
+[IMAGE: A blank UdonProduct after creation]
 
 5. Copy the ID of your Udon Product from VRChat.com, and paste it in the "ID" field of your UdonProduct asset.
 6. (Optional) Click "Fetch product details" to see the name and description of your product in Unity.
@@ -86,17 +78,9 @@ To learn how, read our full documentation on the [Creator Economy's SDK features
 
 ---
 
-## ドキュメント: index.md
+## Document: index.md
 
-```metadata
-階層: /economy/sdk/index.md
-ディレクトリ: economy\sdk
-ファイル名: index.md
-拡張子: .md
-サイズ: 837 B
-最終更新: 2025-06-05T03:07:52.745Z
-```
-
+Path: /economy/sdk/index.md
 ---
 title: Creator Economy Worlds SDK
 sidebar_position: 5
@@ -122,17 +106,9 @@ import DocCardList from '@theme/DocCardList';
 
 ---
 
-## ドキュメント: testing.md
+## Document: testing.md
 
-```metadata
-階層: /economy/sdk/testing.md
-ディレクトリ: economy\sdk
-ファイル名: testing.md
-拡張子: .md
-サイズ: 1.33 KB
-最終更新: 2025-06-05T03:07:52.745Z
-```
-
+Path: /economy/sdk/testing.md
 ---
 description: "Test your Udon products before publishing your world."
 sidebar_position: 3
@@ -168,17 +144,9 @@ Some features of the Creator Economy cannot be tested locally and require a priv
 
 ---
 
-## ドキュメント: udon-documentation.md
+## Document: udon-documentation.md
 
-```metadata
-階層: /economy/sdk/udon-documentation.md
-ディレクトリ: economy\sdk
-ファイル名: udon-documentation.md
-拡張子: .md
-サイズ: 12.21 KB
-最終更新: 2025-06-05T03:07:52.746Z
-```
-
+Path: /economy/sdk/udon-documentation.md
 ---
 description: "All Udon types, methods, and events related to the Creator Economy."
 sidebar_position: 4
@@ -210,7 +178,7 @@ UdonProducts can be created with the UdonProductManager ("VRChat SDK" → "UdonP
 
 Read [Getting Started](/economy/sdk/getting-started) to learn more about creating an UdonProduct asset in your project.
 
-![A blank UdonProduct after creation](/img/economy/sdk/udonproduct-blank.png)
+[IMAGE: A blank UdonProduct after creation]
 
 #### Fields
 
@@ -436,4 +404,4 @@ To check if a player in the instance owns an Udon product, [Store.DoesPlayerOwnP
 
 ---
 
-# ドキュメント終了
+# End of Documentation

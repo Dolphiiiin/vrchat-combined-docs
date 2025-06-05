@@ -1,22 +1,14 @@
-# store 統合ドキュメント
+# store Documentation
 
-以下は自動収集された全ドキュメントのコンテンツです。各セクションの始めにメタデータが記載されています。
+This document contains automatically collected documentation with metadata headers for each section.
 
 
 
 ---
 
-## ドキュメント: avatar-marketplace.md
+## Document: avatar-marketplace.md
 
-```metadata
-階層: /economy/store/avatar-marketplace.md
-ディレクトリ: economy\store
-ファイル名: avatar-marketplace.md
-拡張子: .md
-サイズ: 1.68 KB
-最終更新: 2025-06-05T03:07:52.746Z
-```
-
+Path: /economy/store/avatar-marketplace.md
 ---
 description: "Contains all avatar product users can buy in VRChat."
 sidebar_custom_props:
@@ -57,17 +49,9 @@ Only authorized avatar sellers create and publish avatar products on the marketp
 
 ---
 
-## ドキュメント: group-store.md
+## Document: group-store.md
 
-```metadata
-階層: /economy/store/group-store.md
-ディレクトリ: economy\store
-ファイル名: group-store.md
-拡張子: .md
-サイズ: 3.09 KB
-最終更新: 2025-06-05T03:07:52.746Z
-```
-
+Path: /economy/store/group-store.md
 ---
 description: "Contains subscriptions for your group."
 sidebar_custom_props:
@@ -101,7 +85,7 @@ Alternatively, you can create a group store from the [Store Manager](https://vrc
 7. Publish the subscriptions.
 8. Publish your group store in the [store manager](https://vrchat.com/home/marketplace/storefront/stores).
 
-![Publish store](/img/economy/stores/world-store/publish.png "Publish your store on the website")
+[IMAGE: Publish store]
 
 :::info
 
@@ -116,13 +100,13 @@ If you don't want to publish a world store at all, you can use Udon to sell subs
 After you publish your group store, users can find it by opening the group in VRChat (or the VRChat website) and pressing the "Store" button. They can browse your published subscriptions and buy them.
 
 
-![Store page](/img/economy/Store-PreviewStoreWeb.png "Opening your Store page")
+[IMAGE: Store page]
 
-![Store page in-game](/img/economy/Store-PreviewStoreClient.png "Opening your group's Store page in VRChat")
+[IMAGE: Store page in-game]
 
 You can share your group by copying its URL from the VRChat website or by sharing its group ID (e.g., `GROUP.1234`). Users can enter the ID in the Groups tab in VRChat, allowing them to view or join your group.
 
-![Copy group URL](/img/economy/Store-CopyShortCode.png "Copying your group's VRChat.com URL")
+[IMAGE: Copy group URL]
 
 
 ## Limitations
@@ -133,17 +117,9 @@ You can share your group by copying its URL from the VRChat website or by sharin
 
 ---
 
-## ドキュメント: index.md
+## Document: index.md
 
-```metadata
-階層: /economy/store/index.md
-ディレクトリ: economy\store
-ファイル名: index.md
-拡張子: .md
-サイズ: 686 B
-最終更新: 2025-06-05T03:07:52.747Z
-```
-
+Path: /economy/store/index.md
 ---
 sidebar_position: 4
 sidebar_custom_props:
@@ -171,17 +147,9 @@ You can use [Udon](/economy/sdk/udon-documentation) to sell your published listi
 
 ---
 
-## ドキュメント: world-store.md
+## Document: world-store.md
 
-```metadata
-階層: /economy/store/world-store.md
-ディレクトリ: economy\store
-ファイル名: world-store.md
-拡張子: .md
-サイズ: 2.83 KB
-最終更新: 2025-06-05T03:07:52.747Z
-```
-
+Path: /economy/store/world-store.md
 ---
 description: "Contains listings for your world."
 sidebar_custom_props:
@@ -196,7 +164,7 @@ import SellerNotification from '/docs/economy/_sellers-notification.mdx';
 
 World stores allow you to showcase [listings](/economy/listings) for your world. After creating a world store, users will see it when viewing your world in the VRChat menu or website. 
 
-![World store](/img/economy/stores/world-store/world-store.png "A world store in VRChat.")
+[IMAGE: World store]
 
 You can also use Udon to open your world store. For example, you can add an "Open Store" button that uses the `Store.OpenWorldStorePage()` method to open your store.
 ## Create and publish a world store
@@ -206,11 +174,11 @@ You can create a world store for any of your worlds by following the steps below
 1. Open the [Store Manager](https://vrchat.com/home/marketplace/storefront/stores) on the VRChat website (Marketplace >My Store > Store Manager).
 2. Select "Set Up New Store".
 
-![Setup new store](/img/economy/stores/world-store/setup-new-store.png "Open the marketplace tab and set up a new store.")
+[IMAGE: Setup new store]
 
 3. Select "World Store", choose one of your worlds from the dropdown, then press "Create".
 
-![Choose world](/img/economy/stores/world-store/choose-world.png "Choose a world for your world store")
+[IMAGE: Choose world]
 
 4. Add published [listings](/economy/listings) to your world store.
 	- You can use the [store manager](https://vrchat.com/home/marketplace/storefront/stores) to rearrange the order in which users see subscriptions in your store. 
@@ -218,11 +186,11 @@ You can create a world store for any of your worlds by following the steps below
 
 5. Open your store in the store manager and publish it.
 
-![Publish store](/img/economy/stores/world-store/publish.png "Publish your store on the website")
+[IMAGE: Publish store]
 
 6. Open your world in VRChat. You can now see the world store in the VRChat menu.
 
-![World store in VRChat](/img/economy/stores/world-store/world-store-in-vrchat.png "View your store in VRChat")
+[IMAGE: World store in VRChat]
 
 ## Limitations
 
@@ -240,4 +208,4 @@ Keep the following restrictions in mind when using world stores:
 
 ---
 
-# ドキュメント終了
+# End of Documentation

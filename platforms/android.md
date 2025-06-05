@@ -1,22 +1,14 @@
-# android 統合ドキュメント
+# android Documentation
 
-以下は自動収集された全ドキュメントのコンテンツです。各セクションの始めにメタデータが記載されています。
+This document contains automatically collected documentation with metadata headers for each section.
 
 
 
 ---
 
-## ドキュメント: android-best-practices.md
+## Document: android-best-practices.md
 
-```metadata
-階層: /platforms/android/android-best-practices.md
-ディレクトリ: platforms\android
-ファイル名: android-best-practices.md
-拡張子: .md
-サイズ: 6.34 KB
-最終更新: 2025-06-05T03:07:52.748Z
-```
-
+Path: /platforms/android/android-best-practices.md
 ---
 sidebar_position: 1
 ---
@@ -58,7 +50,7 @@ Use [OnInputMethodChanged](/worlds/udon/input-events/#oninputmethodchanged) to d
 <Tabs groupId="udon-compiler-language">
 <TabItem value="graph" label="Udon Graph">
 
-![A screenshot of an Udon Graph. The OnInputMethodChanged event is used to branch the execution based on whether the inputMethod parameter is Touch.](/img/worlds/OnInputMethodChanged.png)
+[IMAGE: A screenshot of an Udon Graph. The OnInputMethodChanged event is used to branch the execution based on whether the inputMethod parameter is Touch.]
 
 </TabItem>
 <TabItem value="cs" label="UdonSharp">
@@ -85,7 +77,7 @@ You can also use GetLastUsedInputMethod to detect the input method at any time. 
 <Tabs groupId="udon-compiler-language">
 <TabItem value="graph" label="Udon Graph">
 
-![A screenshot of an Udon Graph. GetLastUsedInputMethod is used to branch the execution based on whether the inputMethod parameter is Touch.](/img/worlds/GetLastUsedInputMethod.png)
+[IMAGE: A screenshot of an Udon Graph. GetLastUsedInputMethod is used to branch the execution based on whether the inputMethod parameter is Touch.]
 
 </TabItem>
 <TabItem value="cs" label="UdonSharp">
@@ -156,17 +148,9 @@ Do you have any tips or tricks you’d like us to include in this article? Submi
 
 ---
 
-## ドキュメント: build-test-mobile.md
+## Document: build-test-mobile.md
 
-```metadata
-階層: /platforms/android/build-test-mobile.md
-ディレクトリ: platforms\android
-ファイル名: build-test-mobile.md
-拡張子: .md
-サイズ: 10.33 KB
-最終更新: 2025-06-05T03:07:52.749Z
-```
-
+Path: /platforms/android/build-test-mobile.md
 ---
 sidebar_position: 0
 ---
@@ -188,7 +172,7 @@ You need the Android Build Support module installed for your VRChat-compatible U
 1. Open Unity Hub and navigate to "Installs" on the left.
 2. Find the install for the Unity version that your project uses (the current recommended version is [<CurrentUnityVersion/>](/sdk/upgrade/current-unity-version/)). If your install lists "Android" below the Editor path, then you already have the module installed, and you can move on to Setting up your Project. Otherwise, continue to step 3.
 
-![Unity Install with Android Module](/img/platforms/unity-hub-modules.png)
+[IMAGE: Unity Install with Android Module]
 
 3. Click on the gear icon next to that install and click "Add modules".
 4. Find "Android Build Support". If the box and check the box next to it if 
@@ -322,17 +306,9 @@ You can now go back to the SDK and click "Build & Test New Build" to test a worl
 
 ---
 
-## ドキュメント: cross-platform-setup.md
+## Document: cross-platform-setup.md
 
-```metadata
-階層: /platforms/android/cross-platform-setup.md
-ディレクトリ: platforms\android
-ファイル名: cross-platform-setup.md
-拡張子: .md
-サイズ: 6.78 KB
-最終更新: 2025-06-05T03:07:52.750Z
-```
-
+Path: /platforms/android/cross-platform-setup.md
 ---
 sidebar_position: 0
 ---
@@ -426,17 +402,9 @@ Most importantly, the "root bone" (as in, Hips) should be the first bone in the 
 
 ---
 
-## ドキュメント: index.md
+## Document: index.md
 
-```metadata
-階層: /platforms/android/index.md
-ディレクトリ: platforms\android
-ファイル名: index.md
-拡張子: .md
-サイズ: 860 B
-最終更新: 2025-06-05T03:07:52.750Z
-```
-
+Path: /platforms/android/index.md
 # Android
 
 This page contains helpful pages on creating VRChat worlds and avatars for Quest or Android mobile devices.
@@ -450,17 +418,9 @@ This page contains helpful pages on creating VRChat worlds and avatars for Quest
 
 ---
 
-## ドキュメント: quest-content-limitations.md
+## Document: quest-content-limitations.md
 
-```metadata
-階層: /platforms/android/quest-content-limitations.md
-ディレクトリ: platforms\android
-ファイル名: quest-content-limitations.md
-拡張子: .md
-サイズ: 7.88 KB
-最終更新: 2025-06-05T03:07:52.750Z
-```
-
+Path: /platforms/android/quest-content-limitations.md
 ---
 title: "Quest Content Limitations"
 slug: "quest-content-limitations"
@@ -518,17 +478,9 @@ The following components are not supported on Android or Quest and will not work
 
 ---
 
-## ドキュメント: quest-content-optimization.md
+## Document: quest-content-optimization.md
 
-```metadata
-階層: /platforms/android/quest-content-optimization.md
-ディレクトリ: platforms\android
-ファイル名: quest-content-optimization.md
-拡張子: .md
-サイズ: 11.76 KB
-最終更新: 2025-06-05T03:07:52.752Z
-```
-
+Path: /platforms/android/quest-content-optimization.md
 ---
 title: "Quest Content Optimization"
 slug: "quest-content-optimization"
@@ -698,17 +650,9 @@ Numbers for limits pending.
 
 ---
 
-## ドキュメント: setting-up-unity-for-creating-quest-content.md
+## Document: setting-up-unity-for-creating-quest-content.md
 
-```metadata
-階層: /platforms/android/setting-up-unity-for-creating-quest-content.md
-ディレクトリ: platforms\android
-ファイル名: setting-up-unity-for-creating-quest-content.md
-拡張子: .md
-サイズ: 1.64 KB
-最終更新: 2025-06-05T03:07:52.752Z
-```
-
+Path: /platforms/android/setting-up-unity-for-creating-quest-content.md
 ---
 title: "Setting up Unity for Creating Quest Content"
 slug: "setting-up-unity-for-creating-quest-content"
@@ -717,7 +661,7 @@ createdAt: "2019-04-10T00:53:35.417Z"
 updatedAt: "2019-10-28T19:23:09.636Z"
 sidebar_position: -1
 ---
-![Building for Mobile instructions](/img/setting-up-unity-for-creating-quest-content-1ac8b19-VRChat_QuestContent_QuickStart.png)
+[IMAGE: Building for Mobile instructions]
 
 If you're starting a brand new project, this won't take long at all. However, if you're converting a Windows platform project to an Android platform project, you will have to convert your assets appropriately. This can take quite a while for larger projects.
 
@@ -745,4 +689,4 @@ That's it! Your content is now available on Quest! Note that you must **upload**
 
 ---
 
-# ドキュメント終了
+# End of Documentation

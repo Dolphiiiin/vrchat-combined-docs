@@ -1,22 +1,14 @@
-# obstacle-course 統合ドキュメント
+# obstacle-course Documentation
 
-以下は自動収集された全ドキュメントのコンテンツです。各セクションの始めにメタデータが記載されています。
+This document contains automatically collected documentation with metadata headers for each section.
 
 
 
 ---
 
-## ドキュメント: build-from-custom-parts.md
+## Document: build-from-custom-parts.md
 
-```metadata
-階層: /worlds/examples/obstacle-course/build-from-custom-parts.md
-ディレクトリ: worlds\examples\obstacle-course
-ファイル名: build-from-custom-parts.md
-拡張子: .md
-サイズ: 11.07 KB
-最終更新: 2025-06-05T03:07:52.789Z
-```
-
+Path: /worlds/examples/obstacle-course/build-from-custom-parts.md
 ---
 title: "Obstacle Course: Build From Custom Parts"
 slug: "build-from-custom-parts"
@@ -35,10 +27,10 @@ Ok, you've made a simple remix of our demo parts, and you're now ready to add yo
 
 Here is the hierarchy of the Checkpoint prefab we include:
 
-![build-from-custom-parts-692d375-checkpoint-hierarchy.png](/img/worlds/build-from-custom-parts-692d375-checkpoint-hierarchy.png)
+[IMAGE: build-from-custom-parts-692d375-checkpoint-hierarchy.png]
 
 ## Trigger Requirements
-![build-from-custom-parts-f72c567-checkpoint-inspector.png](/img/worlds/build-from-custom-parts-f72c567-checkpoint-inspector.png)
+[IMAGE: build-from-custom-parts-f72c567-checkpoint-inspector.png]
 
 :::note It's a Pattern!
 
@@ -46,7 +38,7 @@ The "Trigger" object on this prefab uses a pattern that you'll see repeated on n
 :::
 Your checkpoint needs a **Collider** on the **CourseTrigger** layer with _isTrigger_ turned on and an UdonBehaviour with the **OnPlayerDataEnter** program.
 
-![build-from-custom-parts-f896bef-checkpoint-inspector.png](/img/worlds/build-from-custom-parts-f896bef-checkpoint-inspector.png)
+[IMAGE: build-from-custom-parts-f896bef-checkpoint-inspector.png]
 
 This UdonBehaviour needs the following variables set:
 1. _fxPrefab_ should reference a Prefab which has some fun effects on it, and either the Udon Program **DestroyAfterXSeconds** or some other way that it destroys itself after some time.
@@ -87,7 +79,7 @@ The Utility Window lists your "Checkpoint Prefabs" for easily adding them to you
 Read through "Making Custom Checkpoints" above first to understand how the Trigger Collider system works, since it's the same for PowerUps. Once you've got a your Trigger Collider set up, you can work on the **PowerUp** program.
 
 ## PowerUp Program Requirements
-![build-from-custom-parts-c3ecfa0-speed-up-program.png](/img/worlds/build-from-custom-parts-c3ecfa0-speed-up-program.png)
+[IMAGE: build-from-custom-parts-c3ecfa0-speed-up-program.png]
 
 * First, make sure you have a Trigger Collider set up which calls "Trigger" on this UdonBehaviour.
 * _playerModsManager_ can be left alone, this will be injected when you create the PowerUp through the Utility window, or when you press "Refresh".
@@ -106,7 +98,7 @@ We've created two types of Hazard that you can work from - **Respawn** hazards a
 
 ## Respawn Hazards
 This is the most common Hazard in our demo course. It uses a Trigger Collider to Respawn the player to the last Checkpoint. You need a trigger collider set up to run the "Trigger" event on another object which has the **RespawnOnCourse** program on it.
-![build-from-custom-parts-752dc13-moving-wall-hazard.png](/img/worlds/build-from-custom-parts-752dc13-moving-wall-hazard.png)
+[IMAGE: build-from-custom-parts-752dc13-moving-wall-hazard.png]
 
 The RespawnOnCourse program will automatically have the _course_ variable set when you Refresh your UtilityWindow.
 
@@ -114,13 +106,13 @@ The RespawnOnCourse program will automatically have the _course_ variable set wh
 This hazard is made up of two parts, it's the most customized single-purpose Hazard we provide, as an example of extending our basic system to add functionality.
 
 ### HazardSpawner Program
-![build-from-custom-parts-3ab9259-hazardspawner.png](/img/worlds/build-from-custom-parts-3ab9259-hazardspawner.png)
+[IMAGE: build-from-custom-parts-3ab9259-hazardspawner.png]
 
 This program will spawn its _prefab_ every _delay_ seconds. It has a reference to _playerModsManager_ which will be injected when the Utility Window is Refreshed.
 When it spawns a Hazard, it will look for an UdonBehaviour on the new object, and set its _playerModsManager_ variable to the reference it has. This is needed so the spawned Hazard can reduce the player's speed.
 
 ### SpawnedHazard Program
-![build-from-custom-parts-a85b1af-barrel-hazard.png](/img/worlds/build-from-custom-parts-a85b1af-barrel-hazard.png)
+[IMAGE: build-from-custom-parts-a85b1af-barrel-hazard.png]
 
 This prefab has a TriggerCollider on the "Trigger" child object which runs the event "HitPlayer" on the SpawnedHazard program. 
 
@@ -136,7 +128,7 @@ Since these prefabs are not created and managed through the Utility Window, it's
 Here are some other things you can play with:
 
 ## Score Fields
-![build-from-custom-parts-60cfc05-ScoreManager.png](/img/worlds/build-from-custom-parts-60cfc05-ScoreManager.png)
+[IMAGE: build-from-custom-parts-60cfc05-ScoreManager.png]
 
 If you want to change the look of the Score Fields or the number of scores that are shown, you can duplicated the "ScoreField" prefab, drop your new version into the "Score Object Prefab" slot in the "Score Manager" section of the Utility Window, and set the "Number of Scores to Show" to regenerate the UI that displays the scores.
 
@@ -149,7 +141,7 @@ If you want to change the camera angle, smoothing amount, etc of the Minimap, yo
 ## Advanced Stuff
 You can click on the new Course Asset you made in your Project pane to see its raw data, and access all kinds of stuff that you can change **_at your own risk_**, like the default Udon Programs. You can also modify the "Variable to Scene Object Lookup" section:
 
-![build-from-custom-parts-489afea-lookup.png](/img/worlds/build-from-custom-parts-489afea-lookup.png)
+[IMAGE: build-from-custom-parts-489afea-lookup.png]
 
 This is where the UtilityWindow looks when it runs Refresh() to inject the right objects into UdonBehaviours. On the left are variable names, and on the right are the names of objects in the scene on which the correct Component can be found. Right now, the system supports finding and injecting these Component Types:
 * GameObject
@@ -160,17 +152,9 @@ So you can make a new Udon Program with a public variable called "course", and i
 
 ---
 
-## ドキュメント: build-from-demo-parts.md
+## Document: build-from-demo-parts.md
 
-```metadata
-階層: /worlds/examples/obstacle-course/build-from-demo-parts.md
-ディレクトリ: worlds\examples\obstacle-course
-ファイル名: build-from-demo-parts.md
-拡張子: .md
-サイズ: 9.66 KB
-最終更新: 2025-06-05T03:07:52.789Z
-```
-
+Path: /worlds/examples/obstacle-course/build-from-demo-parts.md
 import UnityVersionedLink from '@site/src/components/UnityVersionedLink.js';
 
 # Obstacle Course: Build From Demo Parts
@@ -189,14 +173,14 @@ The **ObstacleCourseAsset** holds all the special information about your Checkpo
 3. In your hierarchy, select the **CourseManager** under "Udon/CourseManager".
 4. Drag and drop the new Course Asset your just created to the "Asset" field on the **Obstacle Course Data** script on the CourseManager object.
 
-![build-from-demo-parts-8a69d28-drop-course-asset.png](/img/worlds/build-from-demo-parts-8a69d28-drop-course-asset.png)
+[IMAGE: build-from-demo-parts-8a69d28-drop-course-asset.png]
 
 Now all your changes will be saved to your custom course instead of the Starter course.
 
 
 ## Add Course Pieces
 You can find all the available Course Pieces in the project under "Assets/_WorldJam2/Prefabs/Course Pieces".
-![build-from-demo-parts-ebf489c-all-course-pieces.png](/img/worlds/build-from-demo-parts-ebf489c-all-course-pieces.png)
+[IMAGE: build-from-demo-parts-ebf489c-all-course-pieces.png]
 
 1. To add new pieces to your course, just drag and drop them into the scene view. You can hold CTRL while dragging to snap the items to a grid.
 2. If you're using Udon on any of your pieces, make sure to Unpack them from being prefabs to just regular GameObjects. It's also a good idea in case you want to load in an updated package for this project with overwriting your existing pieces.
@@ -210,25 +194,25 @@ Unity has many settings for aligning items to a grid - check out <UnityVersioned
 Your Start Gate, Checkpoints and Finish Gate are best added through the special Utilities window we made for this jam.
 
 1. Open the **Obstacle Jam Utilities Window** from your menu bar under "⏵Obstacle Jam Utilities / Open Window"
-![build-from-demo-parts-df0b76f-open-utilities-window.png](/img/worlds/build-from-demo-parts-df0b76f-open-utilities-window.png)
+[IMAGE: build-from-demo-parts-df0b76f-open-utilities-window.png]
 
 2. Check out the prefabs:
 
-![build-from-demo-parts-22a6f4e-checkpoint-prefabs.png](/img/worlds/build-from-demo-parts-22a6f4e-checkpoint-prefabs.png)
+[IMAGE: build-from-demo-parts-22a6f4e-checkpoint-prefabs.png]
 
 These are the only three prefabs we need to make a working course - a start Gate, a Checkpoint and a FinishGate.
 
 3. The utilities window makes it very easy to add new Checkpoints.Select a prefab from the "Checkpoint Prefabs" list and move your cursor over to your Scene View. You'll see a preview of the selected prefab, it will try to place itself intelligently on the surface you're pointing at - notice how the gate snaps to the side of the block in the GIF below until I point at the top. 
 4. Once you're happy with the placement, press the Spacebar to actually add the prefab and wire it up to your scene. 
-![build-from-demo-parts-4200ff4-place-gates.gif](/img/worlds/build-from-demo-parts-4200ff4-place-gates.gif)
+[IMAGE: build-from-demo-parts-4200ff4-place-gates.gif]
 
 5. When you add a Checkpoint prefab this way, it is automatically added to your "Checkpoints In Scene" list. Open that list to see the new checkpoint included:
 
-![build-from-demo-parts-84c73fe-checkpoints-in-scene.png](/img/worlds/build-from-demo-parts-84c73fe-checkpoints-in-scene.png)
+[IMAGE: build-from-demo-parts-84c73fe-checkpoints-in-scene.png]
 
 Select one of these checkpoints and the Scene View will move to focus on it. You can also see it selected in the hierarchy. If you press the triangle next to this new "Checkpoint 1" object in your hierarchy, you can see an UdonProgram on it. Select that UdonProgram and you can see that its 'index' has been automatically set to 1.
 
-![build-from-demo-parts-feaf465-checkpoint-program.png](/img/worlds/build-from-demo-parts-feaf465-checkpoint-program.png)
+[IMAGE: build-from-demo-parts-feaf465-checkpoint-program.png]
 
 6. Continue to add checkpoints around your course until you've got enough to get started. If you need to rearrange the order, you can use the up and down arrows in the "Checkpoints in Scene" list to change the order in which players should go through your gates. When you change the order this way, the Checkpoint's index is changed to match its actual order, and its name is changed to match its index.
 
@@ -243,7 +227,7 @@ Let's add some PowerUps to make things more interesting.
 
 1. In the Utility Window, open the "Power Ups" section. It's very similar to the Checkpoints section, with different parameters for the ones you've already placed.
 
-![build-from-demo-parts-9c8911e-power-ups-section.png](/img/worlds/build-from-demo-parts-9c8911e-power-ups-section.png)
+[IMAGE: build-from-demo-parts-9c8911e-power-ups-section.png]
 
 2. Select one of the PowerUp Prefabs, then place it in your scene by pointing your mouse at a surface and pressing the spacebar, just like you did for Checkpoints.
 3. After placing a PowerUp, the **Transform** tool is selected so you can fine-tune the placement of your item.
@@ -261,12 +245,12 @@ Move Speed sets **Walk**, **Run** and **Strafe** speeds to be all the same.
 ## Add Hazards
 
 1. Find the Hazard prefabs in "Assets/_WorldJam2/Prefabs/Hazards"
-![build-from-demo-parts-5c1a72c-hazards.png](/img/worlds/build-from-demo-parts-5c1a72c-hazards.png)
+[IMAGE: build-from-demo-parts-5c1a72c-hazards.png]
 
 2. These don't use our special tools since they don't need any fancy setup. Just drag and drop them into your scene and fine-tune their placement.
 
 3. After you've placed a hazard, right-click the GameObject in your hierarchy and choose "Unpack Prefab Completely". This will ensure that any updates to your project won't overwrite Hazards you've already created, and avoid some known issues with Udon and Prefabs.
-![build-from-demo-parts-9d80caf-unpack-prefab.png](/img/worlds/build-from-demo-parts-9d80caf-unpack-prefab.png)
+[IMAGE: build-from-demo-parts-9d80caf-unpack-prefab.png]
 
 4. Once you've placed your Hazards, press the "Refresh" button at bottom of the Utility window. This will inject some references into your Hazards so they can properly Respawn your users when they touch the Hazard.
 
@@ -276,10 +260,10 @@ Move Speed sets **Walk**, **Run** and **Strafe** speeds to be all the same.
 :::
 ### Modular Hazards
 The hazards we've included are modular so you can easily modify their look and difficulty. Each moving hazard consists of a collider set to "Trigger" attached to an animated game object. You can add different meshes and trigger placement for a whole new hazard concept using different course pieces we've included or kit-bashing other asset packs.
-![build-from-demo-parts-26e93e5-uoc_hazard_pic1.png](/img/worlds/build-from-demo-parts-26e93e5-uoc_hazard_pic1.png)
+[IMAGE: build-from-demo-parts-26e93e5-uoc_hazard_pic1.png]
 
 The four types of moving hazards included give you a starting point for horizontal, vertical, spinning and swinging hazards. You can change the speed of each type by using the Animator window.
-![build-from-demo-parts-9b460a2-uoc_hazard_pic2.png](/img/worlds/build-from-demo-parts-9b460a2-uoc_hazard_pic2.png)
+[IMAGE: build-from-demo-parts-9b460a2-uoc_hazard_pic2.png]
 
 ## Check Hazards
 
@@ -287,7 +271,7 @@ Time for another **Build & Test!**
 
 ## Set Number of Players
 It's a good idea to set the **Number of Players** in your Obstacle Course world to twice as high as the **Player Capacity** in your world. Just change the number in this field in your Utility Window, and the **Object Pool** which manages **Player Objects** will automatically fill with that number of players, and it will set all those players up with the variables they need.
-![build-from-demo-parts-574bf2e-number-of-players.png](/img/worlds/build-from-demo-parts-574bf2e-number-of-players.png)
+[IMAGE: build-from-demo-parts-574bf2e-number-of-players.png]
 
 ## Build & Publish
 
@@ -300,17 +284,9 @@ If you want to explore more options for Customizing your Obstacle Course, you ca
 
 ---
 
-## ドキュメント: index.md
+## Document: index.md
 
-```metadata
-階層: /worlds/examples/obstacle-course/index.md
-ディレクトリ: worlds\examples\obstacle-course
-ファイル名: index.md
-拡張子: .md
-サイズ: 2.77 KB
-最終更新: 2025-06-05T03:07:52.789Z
-```
-
+Path: /worlds/examples/obstacle-course/index.md
 ---
 title: "Obstacle Course"
 hidden: false
@@ -337,30 +313,22 @@ Here are some easy things you can modify to get started:
 
 ## Move & Jump
 Open the Toolkit window from your menu bar by finding the "▶ Obstacle Course Toolkit" item and selecting "Open Window" from its dropdown. Open the "Power Ups" section and you can change the default Move and Jump powers for the world.
-![index-40a0a08-utility-change-defaults.png](/img/worlds/index-40a0a08-utility-change-defaults.png)
+[IMAGE: index-40a0a08-utility-change-defaults.png]
 
 ## Number of Players
 If you want to increase the number of players that can run through the course, just open the "Player Manager" section of the Utility Window and increase the number here. Make sure you change the number of players your world can handle when you publish your world to be half of this number!
-![index-985e270-number-of-players.png](/img/worlds/index-985e270-number-of-players.png)
+[IMAGE: index-985e270-number-of-players.png]
 
 ## PowerUp Properties
 Back in the "Power Ups" section of the Utility Window, open the "PowerUps in Scene" section. Click on the name of a PowerUp and the Scene View will focus on it so you can see which one it is. Then you can change the _speed_, _jump_ and/or _duration_ fields to update the variables on that PowerUp.
-![index-f5481d9-powerups-in-scene.png](/img/worlds/index-f5481d9-powerups-in-scene.png)
+[IMAGE: index-f5481d9-powerups-in-scene.png]
 
 
 ---
 
-## ドキュメント: uoc-flythrough.md
+## Document: uoc-flythrough.md
 
-```metadata
-階層: /worlds/examples/obstacle-course/uoc-flythrough.md
-ディレクトリ: worlds\examples\obstacle-course
-ファイル名: uoc-flythrough.md
-拡張子: .md
-サイズ: 2.93 KB
-最終更新: 2025-06-05T03:07:52.790Z
-```
-
+Path: /worlds/examples/obstacle-course/uoc-flythrough.md
 ---
 title: "Obstacle Course: Flythrough"
 slug: "uoc-flythrough"
@@ -374,7 +342,7 @@ We included a Cinemachine system to easily generate a fly-through video of your 
 * Drag and Drop the **Flythrough** prefab from **Assets/_WorldJam2/_SubSystems/Flythrough** into your scene.
 * Press "Refresh" in the Obstacle Utility Window. This will generate a path based on all the Checkpoints in your scene!
 * Select the **FlythroughPrefab/RecordCamPath** object in your hierarchy to see the path that was created.
-![uoc-flythrough-2114971-flythrough-path.png](/img/worlds/uoc-flythrough-2114971-flythrough-path.png)
+[IMAGE: uoc-flythrough-2114971-flythrough-path.png]
 
 * Press 'Play' in the Game View to see your flythrough! Exit Play Mode once you have an idea of how it looks.
 
@@ -385,7 +353,7 @@ By default, the path will be generated 0.5 units above each checkpoint's origin.
 If you want to add / remove / reposition the waypoints in the path, turn off 'Auto Update Checkpoints' in the Recording section, then select the **RecordCamPath** in the hierarchy. Here, you can change the numbers directly, or press the number of the waypoint on the left side of the inspector to select the waypoint in the scene view and move it using the standard transform tool.
 
 You can change the speed of the flythrough by selecting the *RecordCamTarget* object in the hierarchy and changing the _Speed_ parameter on the **Cinemachine Dolly Cart* component. The default setting uses Normalized Position Units with a Speed of .03 to make it through the course in about 30 seconds.
-![uoc-flythrough-5f34a79-waypoints.png](/img/worlds/uoc-flythrough-5f34a79-waypoints.png)
+[IMAGE: uoc-flythrough-5f34a79-waypoints.png]
 
 # Recording the Output
 You can use a screen recorder to directly record your Game View in the Editor, or use the Unity Recorder Package to generate a higher-quality output. You can add this from the Package Manager. It has been tested and works with this setup. If you want full instructions on using the Recorder, you can find the official Unity Manual here: [Unity Recorder 1.0 User Manual.](https://unitytech.github.io/unity-recorder/manual/index.html) and a tutorial here: [Working with Unity Recorder](https://learn.unity.com/tutorial/working-with-unity-recorder).
@@ -398,17 +366,9 @@ You could integrate this flythrough camera with the existing Cinemachine system 
 
 ---
 
-## ドキュメント: uoc-how-stuff-works.md
+## Document: uoc-how-stuff-works.md
 
-```metadata
-階層: /worlds/examples/obstacle-course/uoc-how-stuff-works.md
-ディレクトリ: worlds\examples\obstacle-course
-ファイル名: uoc-how-stuff-works.md
-拡張子: .md
-サイズ: 17.66 KB
-最終更新: 2025-06-05T03:07:52.790Z
-```
-
+Path: /worlds/examples/obstacle-course/uoc-how-stuff-works.md
 ---
 title: "Obstacle Course: How Stuff Works"
 slug: "uoc-how-stuff-works"
@@ -600,17 +560,9 @@ This project has a system to inject references to certain components. It is desc
 
 ---
 
-## ドキュメント: uoc-window.md
+## Document: uoc-window.md
 
-```metadata
-階層: /worlds/examples/obstacle-course/uoc-window.md
-ディレクトリ: worlds\examples\obstacle-course
-ファイル名: uoc-window.md
-拡張子: .md
-サイズ: 3.06 KB
-最終更新: 2025-06-05T03:07:52.791Z
-```
-
+Path: /worlds/examples/obstacle-course/uoc-window.md
 ---
 title: "Obstacle Course Toolkit"
 slug: "uoc-window"
@@ -618,62 +570,62 @@ hidden: false
 createdAt: "2021-08-10T19:19:18.669Z"
 updatedAt: "2021-08-18T20:56:44.155Z"
 ---
-![Obstacle Course Toolkit](/img/worlds/uoc-window-0a203a2-obstacle-course-toolkit.png)
+[IMAGE: Obstacle Course Toolkit]
 
 We created a special window to help manage all the special prefabs and programs in the project. Here's what you can do in each section:
 
 ## Checkpoints
 
 ### Checkpoint Prefabs
-![image](/img/worlds/uoc-window-a05aa7a-checkpoint-prefabs.png)
+[IMAGE: image]
 You can set all the prefabs you would like to use for your start gate, checkpoints and finish gate here. They can then be easily placed into your scene: [Add Checkpoints](/worlds/examples/obstacle-course/build-from-demo-parts#add-checkpoints).
 
 ### Checkpoints In Scene
-![uoc-window-f588547-checkpoints-in-scene.png](/img/worlds/uoc-window-f588547-checkpoints-in-scene.png)
+[IMAGE: uoc-window-f588547-checkpoints-in-scene.png]
 
 Select one of these to zoom to the selected checkpoint in Scene View. You can re-order the checkpoints (which will rename them as well) and delete them. Changes made here will properly update the variables on the CourseManager.
 
 ## Player Manager
 
 ### Player Object Prefab
-![uoc-window-b781ee6-playerobjectprefab.png](/img/worlds/uoc-window-b781ee6-playerobjectprefab.png)
+[IMAGE: uoc-window-b781ee6-playerobjectprefab.png]
 
 Change this object if you make your own Player Object, which holds the PlayerData program and follows each local player around. Most creators won't need to do this.
 
 ### Number of Players
-![uoc-window-0aa8cd9-number-of-players.png](/img/worlds/uoc-window-0aa8cd9-number-of-players.png)
+[IMAGE: uoc-window-0aa8cd9-number-of-players.png]
 
 Change this number to generate the right number of Player Objects and automatically populate the ObjectPool.
 
 ## Score Manager
 
 ### Score Object Prefab
-![uoc-window-c808c71-score-object-prefab.png](/img/worlds/uoc-window-c808c71-score-object-prefab.png)
+[IMAGE: uoc-window-c808c71-score-object-prefab.png]
 
 Change this object if you make your own ScoreField, which will display the player scores as they finish a run.
 
 ### Number of Scores to Show
-![uoc-window-778d7ed-number-of-scores.png](/img/worlds/uoc-window-778d7ed-number-of-scores.png)
+[IMAGE: uoc-window-778d7ed-number-of-scores.png]
 
 Change this number to generate the right number of Score Fields and populate the ScoreManager references to them.
 
 ## Power Ups
 
 ### Power Up Prefabs
-![uoc-window-d656caf-power-up-prefabs.png](/img/worlds/uoc-window-d656caf-power-up-prefabs.png)
+[IMAGE: uoc-window-d656caf-power-up-prefabs.png]
 
 You can set all the prefabs you would like to use for your Power Ups here. They can then be easily placed into your scene (link to powerUp placement) and automatically wired up.
 
 ## Power Ups In Scene
-![uoc-window-4bf4a4c-power-ups-in-scene.png](/img/worlds/uoc-window-4bf4a4c-power-ups-in-scene.png)
+[IMAGE: uoc-window-4bf4a4c-power-ups-in-scene.png]
 
 Select one of these to zoom to the selected Power Up in Scene View. You can change the effects they will have on Speed and Jump for the player, as well as how long those effects will last after they touch the pickup.
 
 ## Defaults
-![uoc-window-f1374e0-defaults.png](/img/worlds/uoc-window-f1374e0-defaults.png)
+[IMAGE: uoc-window-f1374e0-defaults.png]
 
 Here is where you set the Move and Jump speeds instead of on the VRCWorld object. Walk, Run and Strafe are all set to the same speed by default, and they're modified together when the player touches  Power Ups.
 
 ---
 
-# ドキュメント終了
+# End of Documentation

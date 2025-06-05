@@ -1,22 +1,14 @@
-# data-containers 統合ドキュメント
+# data-containers Documentation
 
-以下は自動収集された全ドキュメントのコンテンツです。各セクションの始めにメタデータが記載されています。
+This document contains automatically collected documentation with metadata headers for each section.
 
 
 
 ---
 
-## ドキュメント: byte-and-bit-operations.md
+## Document: byte-and-bit-operations.md
 
-```metadata
-階層: /worlds/udon/data-containers/byte-and-bit-operations.md
-ディレクトリ: worlds\udon\data-containers
-ファイル名: byte-and-bit-operations.md
-拡張子: .md
-サイズ: 7.56 KB
-最終更新: 2025-06-05T03:07:52.806Z
-```
-
+Path: /worlds/udon/data-containers/byte-and-bit-operations.md
 ---
 title: "Byte and Bit Operations"
 slug: "byte-and-bit-operations"
@@ -172,17 +164,9 @@ public class BitConverterExample : UdonSharpBehaviour
 
 ---
 
-## ドキュメント: data-dictionaries.md
+## Document: data-dictionaries.md
 
-```metadata
-階層: /worlds/udon/data-containers/data-dictionaries.md
-ディレクトリ: worlds\udon\data-containers
-ファイル名: data-dictionaries.md
-拡張子: .md
-サイズ: 18.48 KB
-最終更新: 2025-06-05T03:07:52.807Z
-```
-
+Path: /worlds/udon/data-containers/data-dictionaries.md
 ---
 title: "Data Dictionaries"
 slug: "data-dictionaries"
@@ -406,17 +390,9 @@ public override void OnDeserialization()
 
 ---
 
-## ドキュメント: data-lists.md
+## Document: data-lists.md
 
-```metadata
-階層: /worlds/udon/data-containers/data-lists.md
-ディレクトリ: worlds\udon\data-containers
-ファイル名: data-lists.md
-拡張子: .md
-サイズ: 27.62 KB
-最終更新: 2025-06-05T03:07:52.808Z
-```
-
+Path: /worlds/udon/data-containers/data-lists.md
 ---
 title: "Data Lists"
 slug: "data-lists"
@@ -627,17 +603,9 @@ Picking a DataList over an array should be done when there is a particular featu
 
 ---
 
-## ドキュメント: data-tokens.md
+## Document: data-tokens.md
 
-```metadata
-階層: /worlds/udon/data-containers/data-tokens.md
-ディレクトリ: worlds\udon\data-containers
-ファイル名: data-tokens.md
-拡張子: .md
-サイズ: 18.95 KB
-最終更新: 2025-06-05T03:07:52.808Z
-```
-
+Path: /worlds/udon/data-containers/data-tokens.md
 ---
 title: "Data Tokens"
 slug: "data-tokens"
@@ -732,7 +700,7 @@ Don't use `nameof()` to implicitly create DataTokens in UdonSharp, or you may ru
 ### Udon Graph
 
 In Udon Graph, you'll need to use the `DataToken Implicit` or `DataToken Constructor` nodes to create a DataToken with the value inside.  
-![data-tokens-7GAcVrY.png](/img/worlds/data-tokens-7GAcVrY.png)
+[IMAGE: data-tokens-7GAcVrY.png]
 
 ## Getting values out of a Data Token
 
@@ -763,7 +731,7 @@ if (dictionary.TryGetValue("key", TokenType.String, out DataToken value))
 }
 ```
 
-![data-tokens-SqQqE5w.png](/img/worlds/data-tokens-SqQqE5w.png)
+[IMAGE: data-tokens-SqQqE5w.png]
 
 Once you are sure that you have the right type, you can get the value out of the DataToken by accessing value properties such as `DataToken.Float` and `DataToken.Boolean`. Each type has it's own property which can be used to pull that specific type out.
 
@@ -806,7 +774,7 @@ if (dictionary.TryGetValue("key", TokenType.Float out DataToken value)) {
 }
 ```
 
-![data-tokens-zcqKePv.png](/img/worlds/data-tokens-zcqKePv.png)
+[IMAGE: data-tokens-zcqKePv.png]
 
 ## FAQ
 
@@ -828,17 +796,9 @@ Another approach that was contemplated involved creating a generic version of Tr
 
 ---
 
-## ドキュメント: index.md
+## Document: index.md
 
-```metadata
-階層: /worlds/udon/data-containers/index.md
-ディレクトリ: worlds\udon\data-containers
-ファイル名: index.md
-拡張子: .md
-サイズ: 897 B
-最終更新: 2025-06-05T03:07:52.809Z
-```
-
+Path: /worlds/udon/data-containers/index.md
 # Data Containers
 
 Data Containers store [Data Tokens](/worlds/udon/data-containers/data-tokens) in various different formats, either as a sequential [Data List](/worlds/udon/data-containers/data-lists) or as a key-value pair [Data Dictionary](/worlds/udon/data-containers/data-dictionaries). They are functionally similar to C# Lists and Dictionaries.
@@ -853,17 +813,9 @@ import DocCardList from '@theme/DocCardList';
 
 ---
 
-## ドキュメント: vrcjson.md
+## Document: vrcjson.md
 
-```metadata
-階層: /worlds/udon/data-containers/vrcjson.md
-ディレクトリ: worlds\udon\data-containers
-ファイル名: vrcjson.md
-拡張子: .md
-サイズ: 7.32 KB
-最終更新: 2025-06-05T03:07:52.809Z
-```
-
+Path: /worlds/udon/data-containers/vrcjson.md
 ---
 title: "VRCJSON"
 slug: "vrcjson"
@@ -962,4 +914,4 @@ When serializing to Json, you can choose the JsonExportType you would like. If y
 
 ---
 
-# ドキュメント終了
+# End of Documentation

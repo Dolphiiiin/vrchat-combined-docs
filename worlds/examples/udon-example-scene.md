@@ -1,22 +1,14 @@
-# udon-example-scene 統合ドキュメント
+# udon-example-scene Documentation
 
-以下は自動収集された全ドキュメントのコンテンツです。各セクションの始めにメタデータが記載されています。
+This document contains automatically collected documentation with metadata headers for each section.
 
 
 
 ---
 
-## ドキュメント: avatar-scaling-settings.md
+## Document: avatar-scaling-settings.md
 
-```metadata
-階層: /worlds/examples/udon-example-scene/avatar-scaling-settings.md
-ディレクトリ: worlds\examples\udon-example-scene
-ファイル名: avatar-scaling-settings.md
-拡張子: .md
-サイズ: 1.72 KB
-最終更新: 2025-06-05T03:07:52.798Z
-```
-
+Path: /worlds/examples/udon-example-scene/avatar-scaling-settings.md
 ---
 title: "Avatar Scaling Settings"
 slug: "avatar-scaling-settings"
@@ -30,7 +22,7 @@ This UdonBehaviour example script allows you easily to override your world's ava
 
 To learn how to write your own Udon script for avatar scaling, read our [avatar scaling documentation](/worlds/udon/players/player-avatar-scaling).
 
-![avatar-scaling-example-component.png](/img/worlds/udon/avatar-scaling-example-component.png)
+[IMAGE: avatar-scaling-example-component.png]
 
 ## Variables
 
@@ -53,22 +45,14 @@ To learn how to write your own Udon script for avatar scaling, read our [avatar 
 
 Here's what the Udon Graph for the example script looks like:
 
-![avatar-scaling-example-component.png](/img/worlds/udon/avatar-scaling-example-graph.png)
+[IMAGE: avatar-scaling-example-component.png]
 
 
 ---
 
-## ドキュメント: index.md
+## Document: index.md
 
-```metadata
-階層: /worlds/examples/udon-example-scene/index.md
-ディレクトリ: worlds\examples\udon-example-scene
-ファイル名: index.md
-拡張子: .md
-サイズ: 16.32 KB
-最終更新: 2025-06-05T03:07:52.799Z
-```
-
+Path: /worlds/examples/udon-example-scene/index.md
 ---
 sidebar_custom_props:
     customIcon: 🛝
@@ -83,7 +67,7 @@ The Prefabs in this scene demonstrate common interactions with the VRChat compon
 
 All of the following Prefabs are included in the VRChat Worlds SDK. You can add them to any of your own worlds. For example, the [VRCWorld](#vrcworld) is included in most VRChat scenes by default.
 
- ![UdonExampleScene](/img/worlds/udon/examples/UdonExampleScene/prefab-scene.png)
+ [IMAGE: UdonExampleScene]
 
 ### VRCWorld
 This prefab makes it easy to upload your Unity scene to VRChat. It has four components:
@@ -108,7 +92,7 @@ This object has a **ToggleGameObject** program on it which uses the Interact eve
 ### Cubes
 These objects demonstrate some simple things you can do with Cubes, mostly reusing a **ChangeMaterialOnEvent** program to show how you can trigger custom events from other objects.
 
-![Cube Examples](/img/worlds/udon/examples/UdonExampleScene/cubes-scene.png)
+[IMAGE: Cube Examples]
 
 ### InteractCube
 This object has a **SendEventOnInteract** program on it - which listens for the Interact event, triggered when a player points at an object and presses their 'use' button. In this case, it sends a custom event called "changeMaterial" to a **ChangeMaterialOnEvent** program on a child object, which changes out materials from an array whenever it receives this event. Both of these programs are reusable - you can change the eventName sent from the **SendEventOnInteract** program in the inspector on the UdonBehaviour component.
@@ -121,40 +105,40 @@ The `Model` child of this object has a **SendEventOnUse** program on it - which 
 
 ## Udon Variable Sync
 These objects demonstrate different ways to sync variable values from the owner of an object to everyone else in the instance. 
-![Udon Variable Sync Examples](/img/worlds/udon/examples/UdonExampleScene/variable-sync-scene.png)
+[IMAGE: Udon Variable Sync Examples]
 
 The "Canvas" item has many UI items with synced variables:
 
 ### ButtonSyncOwner
 This is the first program described here which uses the [Manual Sync](/worlds/udon/networking#2-manual-variable) method. In the image below, you can see it has an OnClick() handler which calls UdonBehaviour.SendCustomEvent with a value of "OnClick". It's targeting the UdonBehaviour just below it, where it will run the custom event "OnClick". This is how UI Elements can run events on UdonBehaviours.
 
-![Triggering Custom Events from Unity UI controls](/img/worlds/udon/examples/UdonExampleScene/buttonsyncowner-inspector.png)
+[IMAGE: Triggering Custom Events from Unity UI controls]
 
 In the Graph Program, the OnClick event checks whether the player who clicked is the Owner of the object. If they are, it increases the "clickCount" variable by 1 and then calls **RequestSerialization**, which signals Udon to update the data on this Manual-synced UdonBehaviour.
 
-![OnClick ▸ If Owner ▸ Set clickCount to clickCount + 1 ▸ Serialize.](/img/worlds/index-f0a3ff2-bso-gaph.png)
+[IMAGE: OnClick ▸ If Owner ▸ Set clickCount to clickCount + 1 ▸ Serialize.]
 
 Notice that the 'Set clickCount' node has the 'sendChange' toggle turned on. this will trigger an event for everyone when they receive the new clickCount value.
 
-![Variable Change events are very powerful! You can use them to run the same logic on the owner and others whenever a synced variable is changed.](/img/worlds/index-4590d3e-clickCount-change.png)
+[IMAGE: Variable Change events are very powerful! You can use them to run the same logic on the owner and others whenever a synced variable is changed.]
 
 When clickCount is updated, this Change event triggers, which will then set the text of the button to the new value no matter who is the 'owner' of this program.
 
 ### ButtonSyncAnyone
 This object uses a program very similar to **ButtonSyncOwner** above, but adds logic for users who click the button and are *not* the Owner of the object. In that case, they send the Custom Event "OnClick" to the Owner of the object. That's it! The owner will receive this event and process it as if they'd just clicked the button themselves.
 
-![Non-Owners will send an event to the Owner to easily update the number.](/img/worlds/index-2b1a9c3-ButtonSyncAnyone.png)
+[IMAGE: Non-Owners will send an event to the Owner to easily update the number.]
 
 ### ButtonSyncBecomeOwner
 This object builds on the now-familiar ButtonSync program to demonstrate how to easily change ownership of an Object. When a non-owner clicks on the button, it will assign them ownership, and then update the variable. This is useful when you want to change multiple variables, or do logic more complicated than simply incrementing a value.
-![ButtonSyncBecomeOwner](/img/worlds/udon-example-scene-1372141-button-sync-become-owner.png)
+[IMAGE: ButtonSyncBecomeOwner]
 
 When changing ownership of an object, some logic is run to decide whether or not the transfer is allowed. You can learn more about that here: [Networking](/worlds/udon/networking#object-ownership). If you don't add any custom logic, all Requests for Ownership will be approved. The nodes below show a simple setup checks a boolean variable called 'someSpecialLogic' to decide whether the Transfer will be approved. You could build your own logic based on the 'requester', the 'newOwner', or both.
 
-![Does someone want to be the new owner? Check 'someSpecialLogic' that you've updated elsewhere.](/img/worlds/index-91b3564-onOwnershipRequest.png)
+[IMAGE: Does someone want to be the new owner? Check 'someSpecialLogic' that you've updated elsewhere.]
 
 ### SliderSync
-![SliderSync](/img/worlds/udon-example-scene-080c991-syncSlider.png)
+[IMAGE: SliderSync]
 
 This object has a program called **SliderSync** that works similar to **ButtonSyncBecomeOwner**. When someone moves the slider, they become the owner, and send the new value to everyone else. One difference is that when the "OnValueChanged" event is triggered from the UI, it will check whether this new value is different from the current value of the slider. This is because updating the value of the slider from Udon will also trigger this event, which would cause an infinite loop. So instead, we have some logic that makes sure the 'sliderValue' variable is different than the Slider's value before we run the rest of our logic. 
 
@@ -163,48 +147,48 @@ It also uses the Variable Change event to update a text field with the value of 
 ### Toggle
 
 This object has a program called **ToggleSync** which works the same as the Slider above. When someone changes the value to something Inequal to the current value, they become the owner, and send the new value to everyone else, 
-![Toggle](/img/worlds/udon-example-scene-f8def0e-syncToggle.png)
+[IMAGE: Toggle]
 
 ### Dropdown
  
-![Dropdown](/img/worlds/udon/examples/UdonExampleScene/dropdown-target-inspector.png)
+[IMAGE: Dropdown]
 
 This object has a program called **DropdownSync** which works the same as the Toggle and Slider above. When someone changes the value, they make sure it's different than the current value, then become the owner and send the new value to everyone else.
 
 ### InputField
  
-![InputField](/img/worlds/udon-example-scene-5d240b9-inputfield-object.png)
+[IMAGE: InputField]
 
 This object has a program called **InputFieldSync** which works similar to the Dropdown above. When someone changes the value, they check that it's different, become the owner, and send the new value to everyone else.
 
 ### PickupCube
  
-![PickupCube](/img/worlds/udon/examples/UdonExampleScene/pickup-cube.png)
+[IMAGE: PickupCube]
 
 This object has VRC Pickup and VRC Object Sync components which enable it to be picked up and moved around, automatically syncing it to other users. The UdonBehaviour is set to "Continuous" instead of "Manual" like the sync programs above, since it needs to update more often to keep its Transform up-to-date. This UdonBehaviour has a **SyncPickupColor** program on it which smoothly changes the color while it's being held. It does this by checking during the Update event to see if the local player is the Owner of the object AND VRCPickup.get isHeld is true. Notice that it doesn't use RequestSerialization since it's set to Continuous - it will simply update the values as often as it can.
 
-![This is run every frame, and when it's true the program will use some fun math to slowly change between two colors specified in the inspector.](/img/worlds/index-03b983d-pickup-isheld.png)
+[IMAGE: This is run every frame, and when it's true the program will use some fun math to slowly change between two colors specified in the inspector.]
 
 ### PickupSphere
 This object doesn't actually have any Udon on it! It simply uses VRC Pickup and VRC Object Sync components to let users pick it up and move it around in a synced manner.
 
-![PickupSphere](/img/worlds/udon-example-scene-ea9afda-pickup-sphere.png)
+[IMAGE: PickupSphere]
 
 ## PlayerDetection
 It can be very useful to respond to a player moving into a certain area, or colliding with a physics object. These example programs illustrate a few ways that can be done.
 
 ### PlayerTrigger
 
-![PlayerTrigger](/img/worlds/udon/examples/UdonExampleScene/onplayertrigger-scene.png)
+[IMAGE: PlayerTrigger]
 
 This is the most commonly used way to detect a player entering or leaving an area. The "TriggerArea" object has a see-through blue material on it, a Box Collider with *IsTrigger* checked, and an UdonBehaviour with a **PlayerTrigger** program source. 
 
 In this program, the **OnPlayerTriggerEnter** and **OnPlayerTriggerExit** events are triggered whenever any player enters or exists the collider. The program then gets the **displayName** of that player and updates the text on the target canvas.
-![PlayerTrigger Program](/img/worlds/udon-example-scene-b7cd2a0-onplayertriggerenter-program.png)
+[IMAGE: PlayerTrigger Program]
 
 ### PlayerCollision
 This setup demonstrates how to trigger and respond to the **OnPlayerCollisionEnter/Exit** events, which are triggered when a Physics object moves into a player's collider.
-![PlayerCollision](/img/worlds/udon/examples/UdonExampleScene/onplayercollision-scene.png)
+[IMAGE: PlayerCollision]
 
 The *TriggerArea* object has a **FireOnTrigger** Udon Program which detects a player entering its trigger area, just like in the **PlayerTrigger** program above. In this case, this event is used to send the custom event "Fire" to the *Projectile* object. This will cause the Projecticle cube to add a force to itself which will move it towards the player. When it collides with the player, it will write that player's displayName into a target Text field.
 
@@ -212,33 +196,33 @@ Note that the PlayerCollision events here will only fire locally for the player 
 
 ### PlayerParticleCollision
 
-![PlayerParticleCollision Scene](/img/worlds/udon/examples/UdonExampleScene/particlecollision-scene.png)
+[IMAGE: PlayerParticleCollision Scene]
 
  This demo has a setup similar to PlayerCollision above, where it uses a Trigger Area to start other events. In this case, when a player enters the Trigger Area, the **SetActiveFromPlayerTrigger** program will turn on the *CollisionParticles* object. This object has a ParticleSystem which fires at the player with World Collision and Send Collision Messages turned on. The Udon Program **PlayerCollisionParticles** attached to this object will fire the **OnPlayerParticleCollision* events in the graph, which write the displayName of the affected player into the target text field.
 
-![PlayerParticleCollision Program](/img/worlds/udon-example-scene-3266c29-onplayerparticlecollision.png)
+[IMAGE: PlayerParticleCollision Program]
 
 ## [Udon Sync Player](/worlds/examples/udon-example-scene/udon-video-sync-player)
 
-![Udon Sync Player](/img/worlds/udon-example-scene-344ca0e-udonsyncplayer-scene.png)
+[IMAGE: Udon Sync Player]
 
 This setup demonstrates one way to use the Unity / AVPro video players to load and sync video playback. It's a big program, so we've separated it out to its own page.
 
 ## CubeArraySync
 
-![CubeArraySync](/img/worlds/udon/examples/UdonExampleScene/cube-array-sync.png)
+[IMAGE: CubeArraySync]
 
 This simple program makes a grid of cubes that randomly flip on and off when anyone clicks on them while using very little data, demonstrating the power of syncing arrays. The **CubeArraySync** program has a variable called *data* which is a Boolean Array with 25 values. This means it has 25 simple yes/no values which are synced to every user. It also has a GameObject array called *cubes* with 25 cubes.
 
 When anyone clicks on the object containing all the cubes, a Custom Network Event called "Randomize" is sent to the owner of the CubeArraySync object. The owner then uses a **For** loop to randomly set each value to on or off, by generating a number between 0 and 1 and checking if that value is greater than 0.5. Once it updates the array variable, it calls **RequestSerialization** and then calls the custom event **UpdateCubes**. 
 
-![Each user will turn on/off each cube based on the random value from Boolean array.](/img/worlds/index-735f048-update-cubes-from-data.png)
+[IMAGE: Each user will turn on/off each cube based on the random value from Boolean array.]
 
 The **UpdateCubes** event uses another **For** loop to step through each yes/no variable in the array and set its corresponding Cube to on or off. This event is triggered by the owner after updating the array, or by **OnDeserialization** after VRChat has updated the array variable for all the other users. We use OnDeserialization here instead of OnVariableChange because Array Variables don't currently fire Variable Change events, so we wait until we have new data in OnDeserialization and update our scene then.
 
 ## ObjectPool
 
-![These cubes will never be this neat again once they start dropping and bouncing around.](/img/worlds/udon/examples/UdonExampleScene/objectpool-scene.png)
+[IMAGE: These cubes will never be this neat again once they start dropping and bouncing around.]
 
 The [Object Pool](/worlds/udon/networking/network-components#vrc-object-pool) is a component that helps you manage a collection of objects. It will automatically sync its objects' Active state. This example program will drop boxes from the sky one at a time into a stacked grid, and when you click on a box, it is removed and respawned from the sky.
 
@@ -249,17 +233,9 @@ Even a basic pen takes quite a bit of work, so this example gets its own page.
 
 ---
 
-## ドキュメント: player-mod-setter.md
+## Document: player-mod-setter.md
 
-```metadata
-階層: /worlds/examples/udon-example-scene/player-mod-setter.md
-ディレクトリ: worlds\examples\udon-example-scene
-ファイル名: player-mod-setter.md
-拡張子: .md
-サイズ: 3.57 KB
-最終更新: 2025-06-05T03:07:52.799Z
-```
-
+Path: /worlds/examples/udon-example-scene/player-mod-setter.md
 ---
 excerpt: Sets the player's default movement speed.
 ---
@@ -290,7 +266,7 @@ The UdonSharp program is called `PlayerModSetter.cs` and the Udon Graph program 
 
 This Graph program can be found in `Packages/com.vrchat.worlds/Samples/UdonExampleScene/UdonProgramSources/VRCWorldSettings.asset/`.
 
-![An Udon Graph program that sets various attributes for the player when they join the world. It contains several text comments explaining basic Graph syntax.](/img/worlds/udon/examples/vrcworldsettings.png)
+[IMAGE: An Udon Graph program that sets various attributes for the player when they join the world. It contains several text comments explaining basic Graph syntax.]
 
 </TabItem>
 <TabItem value="cs" label="UdonSharp">
@@ -327,17 +303,9 @@ public class PlayerModSettings : UdonSharpBehaviour
 
 ---
 
-## ドキュメント: simple-pen-system.md
+## Document: simple-pen-system.md
 
-```metadata
-階層: /worlds/examples/udon-example-scene/simple-pen-system.md
-ディレクトリ: worlds\examples\udon-example-scene
-ファイル名: simple-pen-system.md
-拡張子: .md
-サイズ: 2.64 KB
-最終更新: 2025-06-05T03:07:52.800Z
-```
-
+Path: /worlds/examples/udon-example-scene/simple-pen-system.md
 ---
 title: "Simple Pen System"
 slug: "simple-pen-system"
@@ -379,17 +347,9 @@ When the user lets go of the Use button, the **OnPickupUseUp** event is called o
 
 ---
 
-## ドキュメント: udon-video-sync-player.md
+## Document: udon-video-sync-player.md
 
-```metadata
-階層: /worlds/examples/udon-example-scene/udon-video-sync-player.md
-ディレクトリ: worlds\examples\udon-example-scene
-ファイル名: udon-video-sync-player.md
-拡張子: .md
-サイズ: 5.39 KB
-最終更新: 2025-06-05T03:07:52.800Z
-```
-
+Path: /worlds/examples/udon-example-scene/udon-video-sync-player.md
 ---
 title: "Udon Video Sync Player"
 slug: "udon-video-sync-player"
@@ -398,7 +358,7 @@ hidden: false
 createdAt: "2021-05-14T00:58:34.059Z"
 updatedAt: "2021-08-05T19:51:13.507Z"
 ---
-![](/img/worlds/udon-video-sync-player-9000c94-udonsyncplayer-scene.png)
+[IMAGE: Image]
 
 ## Overview
 There's two main things we need to sync for people to watch videos together - the URL of the video to watch, and the playback time so people are watching things simultaneously. In order to understand how we sync these two items for everyone, including late joiners - let's walk through a scenario that uses this program.
@@ -411,24 +371,24 @@ Receive new **_url_** value ▸Try to Load & Play Url ▸Receive Sync Info▸Jum
 
 ## Someone Loads a URL
 When our hypothetical scene loads, let's say there is no video playing yet, and there are two people in the room. Someone pastes a new URL into the Input Field, which triggers the **OnURLChanged** event which is wired up in the UI.
-![When someone enters a new URL, this logic runs to send the new URL to everyone else.](/img/worlds/udon-video-sync-player-c08ee3f-url-change.png)
+[IMAGE: When someone enters a new URL, this logic runs to send the new URL to everyone else.]
 There's a few 'IsValid' calls in here that we use just to make sure we're not trying to call methods on objects that have been destroyed or improperly set up. We'll skip describing these for the rest of this example these to keep the explanations simpler.
 
 The Local Player has just put in a new URL, so we make them the Owner of the program so they can control its variables. We get the URL from the InputField, then call **SetProgramVariable** on the **_url_** symbol with this new value. This works the same as calling **set url** with "sendChange" enabled, it's just another way to do it, handy to know about if you want to change the variable on another UdonBehaviour. Once we've updated this variable, we call **RequestSerialization** to ask Udon to update the value of **_url_** for everyone else in the world.
 
 
 ## Users Get New URL
-![Whenever the synced **_url_** variable changes, try to Play it!](/img/worlds/udon-video-sync-player-572ee25-playurl.png)
+[IMAGE: Whenever the synced **_url_** variable changes, try to Play it!]
 Since we have a **Variable Change** event for **_url_** in our graph, this event will be triggered whenever the URL is updated, and it will simply try to play the URL.
 
 
 ## The Video Starts
-![](/img/worlds/udon-video-sync-player-8eb0c7f-onvideostart.png)
+[IMAGE: Image]
 
 This event is triggered locally when the video actually beings playing. We call the same event for the Owner and everyone else - the different logic is handled in **UpdateTimeAndOffset**.
 
 ## Update Time and Offset
-![](/img/worlds/udon-video-sync-player-3735c0c-update-time-and-offset.png)
+[IMAGE: Image]
 
 First, this logic checks whether it's running on the Owner of the object. If it's not, it runs the **Resync** event instead. If it is on the owner, the we want to sync both _where_ in the video we are, and _when_ we were there. We should be at the very beginning of the video since this is the first time the logic is running, but by saving both of these values, we can use this for future sync updates as well. 
 
@@ -437,7 +397,7 @@ We want to sync two numbers to everyone else, and these two numbers are closely 
 After **Requesting Serialization** of this synced variable, the owner calls **SendCustomEventDelayedSeconds** to update this value again. They use the variable **_syncFrequency_** to determine how long until they update the value. For a _very_ simple approach, this variable can be left at 0 if the owner never pauses, rewinds or fast-forwards the video, and everyone can sync from the start time of the video instead of updating **_timeAndOffset_** every so often.
 
 ## Resync
-![](/img/worlds/udon-video-sync-player-b63cdfd-resync.png)
+[IMAGE: Image]
 
 When non-owners start playing the video or receive an update to the **_timeAndOffset_** variable, they can use the data to figure out where to jump to in the video.
 
@@ -446,7 +406,7 @@ For a simple example, let's say the owner was at video-time **0** at server-time
   * You join 45 seconds later and get this value. Your own server-time is **1045**, so you jump to **00:45** in the video by finding the difference in the server time (45 seconds) and adding the video-time (0 seconds).
 
 ## Improvements and Augmentations
-![](/img/worlds/udon-video-sync-player-f43a120-udonsyncplayer-full-graph.png)
+[IMAGE: Image]
 
 We kept this example pretty simple so it would be understandable and upgradeable. There's lots you could do to improve it and share your changes! Here are some ideas:
 
@@ -459,17 +419,9 @@ We kept this example pretty simple so it would be understandable and upgradeable
 
 ---
 
-## ドキュメント: world-audio-settings.md
+## Document: world-audio-settings.md
 
-```metadata
-階層: /worlds/examples/udon-example-scene/world-audio-settings.md
-ディレクトリ: worlds\examples\udon-example-scene
-ファイル名: world-audio-settings.md
-拡張子: .md
-サイズ: 571 B
-最終更新: 2025-06-05T03:07:52.800Z
-```
-
+Path: /worlds/examples/udon-example-scene/world-audio-settings.md
 ---
 title: World Audio Settings
 createdAt: 2023-01-02
@@ -490,4 +442,4 @@ For more information, please read the [Player Audio](/worlds/udon/players/player
 
 ---
 
-# ドキュメント終了
+# End of Documentation

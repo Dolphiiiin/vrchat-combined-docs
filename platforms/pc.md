@@ -1,22 +1,14 @@
-# pc 統合ドキュメント
+# pc Documentation
 
-以下は自動収集された全ドキュメントのコンテンツです。各セクションの始めにメタデータが記載されています。
+This document contains automatically collected documentation with metadata headers for each section.
 
 
 
 ---
 
-## ドキュメント: index.md
+## Document: index.md
 
-```metadata
-階層: /platforms/pc/index.md
-ディレクトリ: platforms\pc
-ファイル名: index.md
-拡張子: .md
-サイズ: 341 B
-最終更新: 2025-06-05T03:07:52.755Z
-```
-
+Path: /platforms/pc/index.md
 # PC
 
 This page contains information specific to developing VRChat content on PC. Most of VRChat's documentation refers to PC development, so read our [Getting Started](/sdk/) page to learn how to develop PC content.
@@ -28,17 +20,9 @@ This category currently only contains one page:
 
 ---
 
-## ドキュメント: steamvr-drivers.md
+## Document: steamvr-drivers.md
 
-```metadata
-階層: /platforms/pc/steamvr-drivers.md
-ディレクトリ: platforms\pc
-ファイル名: steamvr-drivers.md
-拡張子: .md
-サイズ: 15.56 KB
-最終更新: 2025-06-05T03:07:52.755Z
-```
-
+Path: /platforms/pc/steamvr-drivers.md
 ---
 sidebar_label: SteamVR Drivers
 ---
@@ -91,7 +75,7 @@ This also means that *calculating your joint poses correctly is of utmost import
 
 You can visualize your skeleton data for debugging purposes.
 
-![Accurate Hands Image](/img/input/ghost-hands.png)
+[IMAGE: Accurate Hands Image]
 
 These are called the *accurate hands* in our menu. They always appear in menus and loading scenes, or when the avatar is a generic (non humanoid) avatar. They can optionally be enabled to *replace* the avatar’s hands locally (not visible over the network) in the controls menu
 
@@ -100,7 +84,7 @@ As indicated in the caption above, VRChat has a hand visualization that we are c
 To activate this mode, you’ll want to open the **Main Menu**, then go to the **Settings** page, then the **Controls** category.
 
 
-![Controls Page](/img/input/controls-page.png)
+[IMAGE: Controls Page]
 
 
 Click the ‘Accurate’ button to the right. The hands should switch.
@@ -204,4 +188,4 @@ When users enable Finger Tracking Exclusive mode, VRChat disregards any SteamVR 
 
 ---
 
-# ドキュメント終了
+# End of Documentation

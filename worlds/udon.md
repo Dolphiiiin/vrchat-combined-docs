@@ -1,22 +1,14 @@
-# udon 統合ドキュメント
+# udon Documentation
 
-以下は自動収集された全ドキュメントのコンテンツです。各セクションの始めにメタデータが記載されています。
+This document contains automatically collected documentation with metadata headers for each section.
 
 
 
 ---
 
-## ドキュメント: ai-navigation.md
+## Document: ai-navigation.md
 
-```metadata
-階層: /worlds/udon/ai-navigation.md
-ディレクトリ: worlds\udon
-ファイル名: ai-navigation.md
-拡張子: .md
-サイズ: 2.91 KB
-最終更新: 2025-06-05T03:07:52.803Z
-```
-
+Path: /worlds/udon/ai-navigation.md
 # AI Navigation
 
 AI Navigation allows you to create non-player characters (NPCs) that can intelligently move around the game world, using navigation meshes that are created automatically from your Scene geometry. Dynamic obstacles allow you to alter the navigation of the characters at runtime, while offmesh links let you build specific actions like opening doors or jumping over gaps or down from a ledge.
@@ -58,24 +50,16 @@ Some of the features of AI Navigation cannot be used in the VRChat client or are
 
 ---
 
-## ドキュメント: animation-events.md
+## Document: animation-events.md
 
-```metadata
-階層: /worlds/udon/animation-events.md
-ディレクトリ: worlds\udon
-ファイル名: animation-events.md
-拡張子: .md
-サイズ: 783 B
-最終更新: 2025-06-05T03:07:52.804Z
-```
-
+Path: /worlds/udon/animation-events.md
 import UnityVersionedLink from '@site/src/components/UnityVersionedLink.js';
 
 # Animation Events
 
 You can <UnityVersionedLink versionKey="minor" url="https://docs.unity3d.com/<VERSION>/Documentation/Manual/script-AnimationWindowEvent.html">call events from your Animations</UnityVersionedLink>. This page lists the events that are allowlisted for use in this way. If an event is not in this allow list, it will not be called when your world runs in VRChat.
 
-![animation-events-af04d2a-AnimationEventInspector.png](/img/worlds/animation-events-af04d2a-AnimationEventInspector.png)
+[IMAGE: animation-events-af04d2a-AnimationEventInspector.png]
 
 ## Allowed Animation Events
 * RunProgram
@@ -94,17 +78,9 @@ You can <UnityVersionedLink versionKey="minor" url="https://docs.unity3d.com/<VE
 
 ---
 
-## ドキュメント: avatar-events.md
+## Document: avatar-events.md
 
-```metadata
-階層: /worlds/udon/avatar-events.md
-ディレクトリ: worlds\udon
-ファイル名: avatar-events.md
-拡張子: .md
-サイズ: 2.03 KB
-最終更新: 2025-06-05T03:07:52.805Z
-```
-
+Path: /worlds/udon/avatar-events.md
 # Avatar Events
 
 These events allow Udon to react to changes regarding player avatars.
@@ -143,17 +119,9 @@ See [Player Avatar Scaling](/worlds/udon/players/player-avatar-scaling) for more
 
 ---
 
-## ドキュメント: debugging-udon-projects.md
+## Document: debugging-udon-projects.md
 
-```metadata
-階層: /worlds/udon/debugging-udon-projects.md
-ディレクトリ: worlds\udon
-ファイル名: debugging-udon-projects.md
-拡張子: .md
-サイズ: 9.59 KB
-最終更新: 2025-06-05T03:07:52.810Z
-```
-
+Path: /worlds/udon/debugging-udon-projects.md
 import UnityVersionedLink from '@site/src/components/UnityVersionedLink.js';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -231,7 +199,7 @@ If you're ever in a situation where Udon is not doing something that you want it
 <Tabs groupId="udon-compiler-language">
 <TabItem value="graph" label="Udon Graph">
 
-![An Udon Graph showing the "InputJump" event, "Debug Log" node, and a string constant.](/img/worlds/udon/examples/debug-log.png)
+[IMAGE: An Udon Graph showing the "InputJump" event, "Debug Log" node, and a string constant.]
 
 </TabItem>
 <TabItem value="cs" label="UdonSharp">
@@ -289,27 +257,19 @@ Put Debug Logs right before or after your script tries to do something important
 
 UdonSharp includes a runtime exception watcher that looks for Udon exceptions from VRChat's output log. It allows you to see exactly which line in your UdonSharp script that threw an  exception. This feature is enabled by default but can be disabled in your Project Settings:
 
-![Project Settings](/img/worlds/udon/udonsharp/red-1.png)
-![Listen for Client Exceptions](/img/worlds/udon/udonsharp/red-2.png)
+[IMAGE: Project Settings]
+[IMAGE: Listen for Client Exceptions]
 
 In VRChat, any errors that are thrown in your world will be shown to your editor's console. For example, in the following example, the script `FullBodyPlayerTracker.cs` encountered an error in line 92 at the 86th character:
 
-![Error in Console](/img/worlds/udon/udonsharp/red-6.png)
+[IMAGE: Error in Console]
 
 
 ---
 
-## ドキュメント: event-execution-order.md
+## Document: event-execution-order.md
 
-```metadata
-階層: /worlds/udon/event-execution-order.md
-ディレクトリ: worlds\udon
-ファイル名: event-execution-order.md
-拡張子: .md
-サイズ: 1.07 KB
-最終更新: 2025-06-05T03:07:52.810Z
-```
-
+Path: /worlds/udon/event-execution-order.md
 import UnityVersionedLink from '@site/src/components/UnityVersionedLink.js';
 
 # Event Execution Order
@@ -321,7 +281,7 @@ Unity provides an (incomplete) <UnityVersionedLink versionKey="minor" url="https
 :::
 The following diagram shows the execution order of the most important events available in Udon and Unity.
 
-![Example banner](/img/worlds/event-execution-order.svg)
+[IMAGE: Example banner]
 
 :::caution
 
@@ -332,17 +292,9 @@ Not all events are listed, and some events may be executed in a different order 
 
 ---
 
-## ドキュメント: external-urls.md
+## Document: external-urls.md
 
-```metadata
-階層: /worlds/udon/external-urls.md
-ディレクトリ: worlds\udon
-ファイル名: external-urls.md
-拡張子: .md
-サイズ: 1.76 KB
-最終更新: 2025-06-05T03:07:52.810Z
-```
-
+Path: /worlds/udon/external-urls.md
 # External URLs
 Udon can use external URLs to load remote content. URLs must be wrapped in a [VRCUrl](#vrcurl) object. Users can enter URLs into `VRCUrlInputField` components at runtime, and world creators can provide pre-defined VRCUrls with their uploaded worlds.
 
@@ -377,17 +329,9 @@ If a URL is **not** on the required allowlist for its type, it cannot be used un
 
 ---
 
-## ドキュメント: image-loading.md
+## Document: image-loading.md
 
-```metadata
-階層: /worlds/udon/image-loading.md
-ディレクトリ: worlds\udon
-ファイル名: image-loading.md
-拡張子: .md
-サイズ: 8.46 KB
-最終更新: 2025-06-05T03:07:52.812Z
-```
-
+Path: /worlds/udon/image-loading.md
 import UnityVersionedLink from '@site/src/components/UnityVersionedLink.js';
 
 # Image Loading
@@ -540,17 +484,9 @@ When an image download fails, `OnImageLoadError` is called. `IVRCImageDownload`'
 
 ---
 
-## ドキュメント: index.md
+## Document: index.md
 
-```metadata
-階層: /worlds/udon/index.md
-ディレクトリ: worlds\udon
-ファイル名: index.md
-拡張子: .md
-サイズ: 2.41 KB
-最終更新: 2025-06-05T03:07:52.814Z
-```
-
+Path: /worlds/udon/index.md
 ---
 sidebar_position: 1
 ---
@@ -590,17 +526,9 @@ To submit bug reports or feature requests, use VRChat's [Canny feedback board](h
 
 ---
 
-## ドキュメント: input-events.md
+## Document: input-events.md
 
-```metadata
-階層: /worlds/udon/input-events.md
-ディレクトリ: worlds\udon
-ファイル名: input-events.md
-拡張子: .md
-サイズ: 5.51 KB
-最終更新: 2025-06-05T03:07:52.814Z
-```
-
+Path: /worlds/udon/input-events.md
 # Input Events
 
 You can read the input of a player's controller in a unified way across all platforms by using Udon Input Events. These events will work correctly even when the player has remapped their controls. 
@@ -689,17 +617,9 @@ When you close a VRChat menu, Udon presses all held **Unity** inputs. For exampl
 
 ---
 
-## ドキュメント: string-loading.md
+## Document: string-loading.md
 
-```metadata
-階層: /worlds/udon/string-loading.md
-ディレクトリ: worlds\udon
-ファイル名: string-loading.md
-拡張子: .md
-サイズ: 4.13 KB
-最終更新: 2025-06-05T03:07:52.825Z
-```
-
+Path: /worlds/udon/string-loading.md
 # String Loading
 
 String Loading allows you to download text files from the internet and use them in your VRChat world. You can either use the `DownloadString` script included in the SDK, or you can make your own script using the new `VRCStringDownloader.LoadUrl` function.
@@ -810,17 +730,9 @@ public class ResultBytesExample : UdonSharpBehaviour
 
 ---
 
-## ドキュメント: udon-moderation-tool-guidelines.md
+## Document: udon-moderation-tool-guidelines.md
 
-```metadata
-階層: /worlds/udon/udon-moderation-tool-guidelines.md
-ディレクトリ: worlds\udon
-ファイル名: udon-moderation-tool-guidelines.md
-拡張子: .md
-サイズ: 228 B
-最終更新: 2025-06-05T03:07:52.826Z
-```
-
+Path: /worlds/udon/udon-moderation-tool-guidelines.md
 # Udon Moderation Tool Guidelines
 
 For information on Udon-powered moderation tools in worlds, please consult the [VRChat Creator Guidelines](https://hello.vrchat.com/creator-guidelines), which contains a section on Worlds. 
@@ -828,21 +740,13 @@ For information on Udon-powered moderation tools in worlds, please consult the [
 
 ---
 
-## ドキュメント: ui-events.md
+## Document: ui-events.md
 
-```metadata
-階層: /worlds/udon/ui-events.md
-ディレクトリ: worlds\udon
-ファイル名: ui-events.md
-拡張子: .md
-サイズ: 4.91 KB
-最終更新: 2025-06-05T03:07:52.829Z
-```
-
+Path: /worlds/udon/ui-events.md
 # UI Events
 
 You can use Unity UI events to directly call methods for simple interactions, rather than building an UdonBehaviour. 
-![ui-events-3c37d22-UIEventTarget.png](/img/worlds/ui-events-3c37d22-UIEventTarget.png)
+[IMAGE: ui-events-3c37d22-UIEventTarget.png]
 
 However, we've limited what can be called to this list:
 # Allowed UI Event Targets
@@ -1178,17 +1082,9 @@ Please note that input fields are limited to 16.000 characters, which is the max
 
 ---
 
-## ドキュメント: using-build-test.md
+## Document: using-build-test.md
 
-```metadata
-階層: /worlds/udon/using-build-test.md
-ディレクトリ: worlds\udon
-ファイル名: using-build-test.md
-拡張子: .md
-サイズ: 5.49 KB
-最終更新: 2025-06-05T03:07:52.829Z
-```
-
+Path: /worlds/udon/using-build-test.md
 # Using Build & Test
 
 :::note
@@ -1208,13 +1104,13 @@ Open the UdonExampleScene from the VRChat Examples folder - this scene has lots 
 
 1. Start by creating a new project, making sure the Worlds SDK has been imported correctly, and opening up the VRChat Control panel through the Menu Bar under "VRChat SDK > Show Control Panel".
 
-![](/img/worlds/using-build-test-e47cc0f-show-control-panel.png)
+[IMAGE: Image]
 
 2. Enter your Login information on the 'Authentication' tab and press 'Sign In'.
-![](/img/worlds/using-build-test-8c5c7ff-sign-in.png)
+[IMAGE: Image]
 
 3. Click on the Settings tab and look for the 'VRChat Client' entry at the bottom. This is the VRChat Client that Unity will use to test your worlds. If you don't set this, your worlds may not launch correctly. 
-![](/img/worlds/using-build-test-69f8274-installed-client-path.png)
+[IMAGE: Image]
 
 Press 'Edit' to bring up a File Chooser, then navigate to the place you installed VRChat and choose the VRChat.exe program. Here are some default places it might be:
 * Steam: `C:\Program Files (x86)\Steam\steamapps\common\VRChat\VRChat.exe`
@@ -1222,20 +1118,20 @@ Press 'Edit' to bring up a File Chooser, then navigate to the place you installe
 * Viveport: `C:\Viveport\ViveApps\469fbcbb-bfde-40b5-a7d4-381249d387cd\1597468388\VRChat.exe`
 
 4. Switch to the 'Builder' tab. We need to set up our Layers and Collision Matrix to the way that VRChat expects.  Just press the 'Setup Layers for VRChat' button, then 'Do it!' on the popup that appears.
-![](/img/worlds/using-build-test-5f05f9b-setup-layers.png)
+[IMAGE: Image]
 
 Next, do the same thing for the 'Set Collision Matrix' button.
-![](/img/worlds/using-build-test-7ccc247-set-collision-matrix.png)
+[IMAGE: Image]
 
 ## Running Your First Test
 
 With all of our settings correct, we're ready to make a build of the scene. Once you've cleared the issues from the Builder tab by following the instructions above, you have access to the 'Build & Test' button. For this first test, turn on 'Force Non-VR', then press Build & Test.
 
-![](/img/worlds/using-build-test-8712faf-build-and-test.png)
+[IMAGE: Image]
 
 Your VRChat client should launch into a local copy of this world where you can run around and try everything out!
 
-![](/img/worlds/using-build-test-2acac91-UdonExampleScene.jpg)
+[IMAGE: Image]
 
 ## Launching Multiple Clients
 In order to test Synced Variables and Custom Network Events, you need multiple people in the same world. The easiest way to accomplish this is to use the Builder tab to launch multiple clients. Close the VRChat client window you just launched if it's still open, and change the 'Number of Clients' to 2, then press Build and Test again. This time, Unity will open up two VRChat clients, with your same avatar in both of them. You can swap between the windows to control your two avatars, and even see yourself talking in both of them. Try playing with the Synced Variables area. The first avatar that loads in will be the Master of the instance and therefore Owner of those GameObjects, so they will be able to update the UI Elements, whereas the second avatar can only see the updates. The one exception in this scene is the 'SyncButtonAnyone' which transfers ownership to whoever clicks on it.
@@ -1243,7 +1139,7 @@ In order to test Synced Variables and Custom Network Events, you need multiple p
 ## Build & Reload
 When testing many clients, it can be a hassle to arrange your windows and wait for VRChat to login every time you make a change to your world. You can change the 'Number of Clients' to launch to 0 to change "Build & Test" into "Build & Reload"
 
-![Build & Reload!](/img/worlds/using-build-test-07685ac-build-and-reload.png)
+[IMAGE: Build & Reload!]
 
 This will build a new version of your world and move all open clients into that new local instance, skipping the VRChat startup sequence altogether.
 
@@ -1259,17 +1155,9 @@ If you Build & Reload some clients, then choose 'Build & Test' to add more clien
 
 ---
 
-## ドキュメント: world-debug-views.md
+## Document: world-debug-views.md
 
-```metadata
-階層: /worlds/udon/world-debug-views.md
-ディレクトリ: worlds\udon
-ファイル名: world-debug-views.md
-拡張子: .md
-サイズ: 5.37 KB
-最終更新: 2025-06-05T03:07:52.835Z
-```
-
+Path: /worlds/udon/world-debug-views.md
 # World Debug Views
 
 These are the tools you can use to debug your worlds in-game.
@@ -1279,28 +1167,28 @@ In order to access debug views you need two things:
 * Press Rshift + Tilde + 1-9.
 
 If you have a keyboard layout where tilde is not directly to the left of the 1 key, try using whichever key is directly to the left of the 1 key, as it will prioritize the position of the key over the character of the key itself.
-![world-debug-views-2103941-szhLVX11II.png](/img/worlds/world-debug-views-2103941-szhLVX11II.png)
+[IMAGE: world-debug-views-2103941-szhLVX11II.png]
 
 ## Debug Menu 1
 
-![world-debug-views-9bfe518-VRChat_Q9pMRjUJHI.png](/img/worlds/world-debug-views-9bfe518-VRChat_Q9pMRjUJHI.png)
+[IMAGE: world-debug-views-9bfe518-VRChat_Q9pMRjUJHI.png]
 
 Debug menu 1 displays some information about your connection to the VRChat API. It is mostly irrelevant to world development.
 ## Debug Menu 2
 
-![world-debug-views-ae12b10-VRChat_kGTo5o998Y.png](/img/worlds/world-debug-views-ae12b10-VRChat_kGTo5o998Y.png)
+[IMAGE: world-debug-views-ae12b10-VRChat_kGTo5o998Y.png]
 
 Debug menu 2 displays the current build of VRChat that you are using, along with your FPS.
 ## Debug Menu 3
 
-![world-debug-views-e85c111-VRChat_gk2BOiYkIr.png](/img/worlds/world-debug-views-e85c111-VRChat_gk2BOiYkIr.png)
+[IMAGE: world-debug-views-e85c111-VRChat_gk2BOiYkIr.png]
 
 Debug menu 3 displays your output log. The output log is very useful for world creators because it can show you information such as Udon Behaviour crashes, any information logged via the Debug.Log nodes, and any other potential errors in your world generated by Unity or VRChat.
 
 You can hold the Tab key to activate the mouse cursor and use the buttons on the top to toggle different options on and off, as well as scroll the log output.
 ## Debug Menu 4
 
-![world-debug-views-0db830e-VRChat_pZdYm9u4ox.png](/img/worlds/world-debug-views-0db830e-VRChat_pZdYm9u4ox.png)
+[IMAGE: world-debug-views-0db830e-VRChat_pZdYm9u4ox.png]
 
 Debug menu 4 displays various stats about other players.
 * M: Whether or not the player is the [master of the instance](/worlds/udon/networking#the-instance-master)
@@ -1313,7 +1201,7 @@ Debug menu 4 displays various stats about other players.
 * D: The current delay, or how far back in time you are viewing this player.
 ## Debug Menu 5
 
-![world-debug-views-1232152-VRChat_SVxaMmgiLC.png](/img/worlds/world-debug-views-1232152-VRChat_SVxaMmgiLC.png)
+[IMAGE: world-debug-views-1232152-VRChat_SVxaMmgiLC.png]
 
 Debug menu 5 displays some graphs related to networking. They are unlabeled and mostly not useful.
 :::caution World debugging views above 5 are restricted
@@ -1321,11 +1209,11 @@ Debug menu 5 displays some graphs related to networking. They are unlabeled and 
 By default, only the world creator can access debug menus above 5. However, you can allow others to see it as well by enabling World Debugging in your world's settings on the website. Don't forget to click "Save Changes"! Other users will need to rejoin the world to be able to access this debug view after World Debugging gets enabled.
 :::
 
-![world-debug-views-da70084-unknown_7.png](/img/worlds/world-debug-views-da70084-unknown_7.png)
+[IMAGE: world-debug-views-da70084-unknown_7.png]
 
 ## Debug Menu 6
 
-![world-debug-views-b0257d6-VRChat_ZRiWB4bTU7.png](/img/worlds/world-debug-views-b0257d6-VRChat_ZRiWB4bTU7.png)
+[IMAGE: world-debug-views-b0257d6-VRChat_ZRiWB4bTU7.png]
 
 Debug menu 6 displays all the networked objects in your world, along with various stats.
 * Owner: The playerid of the owner of the object.
@@ -1338,12 +1226,12 @@ Debug menu 6 displays all the networked objects in your world, along with variou
 * Interval: A rough approximation of how many times this object tries to sync per second.
 ## Debug Menu 7
 
-![world-debug-views-6ea6192-VRChat_pWGDiXUnlh.png](/img/worlds/world-debug-views-6ea6192-VRChat_pWGDiXUnlh.png)
+[IMAGE: world-debug-views-6ea6192-VRChat_pWGDiXUnlh.png]
 
 Debug menu 7 displays all the same information as 6, but filtered and sorted to bring objects that have the highest networking impact to the top.
 ## Debug Menu 8
 
-![world-debug-views-88ea4e6-VRChat_6e9Vhf8jnq.png](/img/worlds/world-debug-views-88ea4e6-VRChat_6e9Vhf8jnq.png)
+[IMAGE: world-debug-views-88ea4e6-VRChat_6e9Vhf8jnq.png]
 
 Debug menu 8 overlays a panel on top of every synced object in the world. Each panel displays various stats about that specific object
 * P: Ping of the owner
@@ -1356,4 +1244,4 @@ Debug menu 8 overlays a panel on top of every synced object in the world. Each p
 
 ---
 
-# ドキュメント終了
+# End of Documentation

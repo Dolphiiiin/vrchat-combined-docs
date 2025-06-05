@@ -1,22 +1,14 @@
-# avatars 統合ドキュメント
+# avatars Documentation
 
-以下は自動収集された全ドキュメントのコンテンツです。各セクションの始めにメタデータが記載されています。
+This document contains automatically collected documentation with metadata headers for each section.
 
 
 
 ---
 
-## ドキュメント: avatar-impostors.md
+## Document: avatar-impostors.md
 
-```metadata
-階層: /avatars/avatar-impostors.md
-ディレクトリ: avatars
-ファイル名: avatar-impostors.md
-拡張子: .md
-サイズ: 5.71 KB
-最終更新: 2025-06-05T03:07:52.733Z
-```
-
+Path: /avatars/avatar-impostors.md
 ---
 title: "Impostors"
 slug: "avatar-impostors"
@@ -44,7 +36,7 @@ Once you've uploaded an avatar, creating an impostor for it is easy:
 
 - Refresh the page, after some time you should now see that your avatar has impostors for Quest and PC.
 
-![A screnshot of an avatar's page on vrchat.com. It allows avatar creators to (re)generate impostors and see which impostors have already been generated. You can see if impostors have been generated for PC and/or Android. You can also see if the impostor has been customized by the avatar creator.](/img/avatars/impostors/generation.png)
+[IMAGE: A screnshot of an avatar's page on vrchat.com. It allows avatar creators to (re)generate impostors and see which impostors have already been generated. You can see if impostors have been generated for PC and/or Android. You can also see if the impostor has been customized by the avatar creator.]
 
 :::note
 
@@ -59,13 +51,13 @@ Once you've logged into VRChat, open the Avatar menu, and click the avatar that 
 
 You should notice that the "Features" of the avatar now includes "Impostor". 
 
-![A screenshot of the "Features" section of an avatar in VRChat. It shows an "Imposter" icon, among other features.](/img/avatars/impostors/features-row.png)
+[IMAGE: A screenshot of the "Features" section of an avatar in VRChat. It shows an "Imposter" icon, among other features.]
 
 
 You should also see a new button underneath the avatar model preview, which will allow you to switch between viewing the impostor and the normal avatar for a quick preview.
 
-![A screenshot of an avatar being previewed in the VRChat menu.](/img/avatars/impostors/preview-avatar.png)
-![A screenshot of an avatar's imposter being previewed in the VRChat menu. A toggle near the bottom has been enabled.](/img/avatars/impostors/preview-impostor.png)
+[IMAGE: A screenshot of an avatar being previewed in the VRChat menu.]
+[IMAGE: A screenshot of an avatar's imposter being previewed in the VRChat menu. A toggle near the bottom has been enabled.]
 
 :::note
 Impostors that are previewed in the menu may exhibit more artifacts than they would when viewed on another player.
@@ -116,17 +108,9 @@ Currently, there are only three ways to see an impostor.
 
 ---
 
-## ドキュメント: avatar-optimizing-tips.md
+## Document: avatar-optimizing-tips.md
 
-```metadata
-階層: /avatars/avatar-optimizing-tips.md
-ディレクトリ: avatars
-ファイル名: avatar-optimizing-tips.md
-拡張子: .md
-サイズ: 14.50 KB
-最終更新: 2025-06-05T03:07:52.733Z
-```
-
+Path: /avatars/avatar-optimizing-tips.md
 # Avatar Optimization Tips
 
 :::caution
@@ -268,17 +252,9 @@ The following software has not been authored by VRChat. Please read and respect 
 
 ---
 
-## ドキュメント: avatar-performance-ranking-system.md
+## Document: avatar-performance-ranking-system.md
 
-```metadata
-階層: /avatars/avatar-performance-ranking-system.md
-ディレクトリ: avatars
-ファイル名: avatar-performance-ranking-system.md
-拡張子: .md
-サイズ: 33.98 KB
-最終更新: 2025-06-05T03:07:52.733Z
-```
-
+Path: /avatars/avatar-performance-ranking-system.md
 # Performance Ranks
 
 The Avatar Performance Ranking System allows you to see how much a user's avatar is affecting performance via analysis of the components on that user's avatar. You can also use it on yourself to see how performant your avatar is.
@@ -310,27 +286,27 @@ The ranks are as follows:
 
 | Icon                                                  | Performance Rank | Description                                                                                                                                                                       |
 |-------------------------------------------------------|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ![image](/img/avatars/performance-rank/excellent.png) | Excellent        | This is as good as you can get! The "Gold Star on the Fridge" rank.                                                                                                               |
-| ![image](/img/avatars/performance-rank/good.png)      | Good             | Good enough! A great target to aim for.                                                                                                                                           |
-| ![image](/img/avatars/performance-rank/medium.png)    | Medium           | Don't let the name fool you, Medium is plenty good. If you're here and don't want to work any farther up, you're fine.                                                            |
-| ![image](/img/avatars/performance-rank/poor.png)      | Poor             | Could use some work.                                                                                                                                                              |
-| ![image](/img/avatars/performance-rank/very-poor.png) | Very Poor        | This avatar has some serious performance problems. Since this rank is unbounded, it is very possible that your performance is suffering as a result of this avatar being visible. |
+| [IMAGE: image] | Excellent        | This is as good as you can get! The "Gold Star on the Fridge" rank.                                                                                                               |
+| [IMAGE: image]      | Good             | Good enough! A great target to aim for.                                                                                                                                           |
+| [IMAGE: image]    | Medium           | Don't let the name fool you, Medium is plenty good. If you're here and don't want to work any farther up, you're fine.                                                            |
+| [IMAGE: image]      | Poor             | Could use some work.                                                                                                                                                              |
+| [IMAGE: image] | Very Poor        | This avatar has some serious performance problems. Since this rank is unbounded, it is very possible that your performance is suffering as a result of this avatar being visible. |
 
 ## Viewing Detailed Avatar Stats
 If you click on a user with your Quick Menu open, you'll notice a new **"Show Avatar Stats"** button on the left side, displaying the icon of that user's Performance Rank.
 
 
-![avatar-perormance-breakdown.gif](/img/avatars/view-avatar-details-qm.png)
+[IMAGE: avatar-perormance-breakdown.gif]
 
 If you click this icon, you can view the detailed **Avatar Stats** of that avatar. You can get to this for your own avatar by going to your Avatar Menu, clicking one of your avatars, and clicking the **Avatar Stats** button in the bottom left of the screen.
 
 
-![avatar-perormance-breakdown.gif](/img/avatars/view-avatar-details-preview.png)
+[IMAGE: avatar-perormance-breakdown.gif]
 
 
 When you click the **Avatar Stats** button, you'll get a screen pop up with the details of avatar you're looking at, or your own avatar (if you clicked the button in the Avatar tab).
 
-![avatar-perormance-breakdown.gif](/img/avatars/avatar-perormance-breakdown.gif)
+[IMAGE: avatar-perormance-breakdown.gif]
 
 
 The color of the text matches the rank that the particular stat "drags" the rank down to.
@@ -555,17 +531,9 @@ You can choose to override the the entirety of the system (and the Safety system
 
 ---
 
-## ドキュメント: avatar-scaling.md
+## Document: avatar-scaling.md
 
-```metadata
-階層: /avatars/avatar-scaling.md
-ディレクトリ: avatars
-ファイル名: avatar-scaling.md
-拡張子: .md
-サイズ: 3.18 KB
-最終更新: 2025-06-05T03:07:52.734Z
-```
-
+Path: /avatars/avatar-scaling.md
 ---
 title: "Avatar Scaling"
 slug: "avatar-scaling"
@@ -613,17 +581,9 @@ While using the scale dial in your Action Menu, your avatar is only scaled in mi
 
 ---
 
-## ドキュメント: avatar-size-limits.md
+## Document: avatar-size-limits.md
 
-```metadata
-階層: /avatars/avatar-size-limits.md
-ディレクトリ: avatars
-ファイル名: avatar-size-limits.md
-拡張子: .md
-サイズ: 3.34 KB
-最終更新: 2025-06-05T03:07:52.734Z
-```
-
+Path: /avatars/avatar-size-limits.md
 
 # Avatar Size Limits
 
@@ -674,17 +634,9 @@ You can find more optimization tips on the [Avatar Optimizing Tips page](/avatar
 
 ---
 
-## ドキュメント: creating-your-first-avatar.md
+## Document: creating-your-first-avatar.md
 
-```metadata
-階層: /avatars/creating-your-first-avatar.md
-ディレクトリ: avatars
-ファイル名: creating-your-first-avatar.md
-拡張子: .md
-サイズ: 19.59 KB
-最終更新: 2025-06-05T03:07:52.734Z
-```
-
+Path: /avatars/creating-your-first-avatar.md
 ---
 sidebar_position: -1
 ---
@@ -815,7 +767,7 @@ Before you import your own 3D model into Unity, you can try using VRChat's examp
 
 Open your avatar project and go to 'VRChat SDK > Samples > Avatar Dynamics Robot Avatar.'
 
-![The example avatar can help you understand what a complete VRChat avatar project might look like.](/img/avatars/creating-your-first-avatar-3dfc191-Unity_YrUFLEWWDe.png)
+[IMAGE: The example avatar can help you understand what a complete VRChat avatar project might look like.]
 
 If the example avatar loaded successfully, you can skip to [step 6](/avatars/creating-your-first-avatar#step-6---going-to-the-build-tab--checking-if-the-avatar-is-ok). If you'd rather import your own avatar, continue with step 3 below.
 
@@ -824,7 +776,7 @@ Now that you've set up the VRChat SDK, it's time to import your model into your 
 
 If you are importing your model from a 3D editor, please ensure you keep in mind the difference between coordinate systems. For example, [**Blender**](https://blender.org)'s default coordinate and unit system differs from Unity's. You must export FBX files from Blender and define the exporter as such:
 
-![image](/img/avatars/creating-your-first-avatar-b066a1b-2022-05-27_11-13-48_blender.png)
+[IMAGE: image]
 
 After you get the model in your assets, select it, you'll want to ensure it has the correct settings in the rig tab in the inspector. Make sure the Animation Type is set to Humanoid.
 
@@ -841,7 +793,7 @@ The next step is to add a 'VRC Avatar Descriptor' component and prepare its sett
 3. Search for the 'VRC Avatar Descriptor' component and add it.
 4. Customize its settings, as explained below.
 
-![Add a `VRC Avatar Descriptor` to get started with your avatar.](/img/avatars/creating-your-first-avatar-fd027ea-Unity_qH7NJfAzzn.png)
+[IMAGE: Add a `VRC Avatar Descriptor` to get started with your avatar.]
 ### View position
 First, you'll want to set the view position. This will be where your camera will be positioned in VRChat. You can see a visual representation of it as a small white sphere in the scene.
 
@@ -849,12 +801,12 @@ If your avatar has a head, place the view position between the avatar's eyes. If
 
 If your avatar doesn't have a head, place the view position wherever you think it's appropriate.
 
-![Use the Avatar Descriptor to configure your avatar for VRChat. Make sure to adjust the view position!](/img/avatars/creating-your-first-avatar-5afcbf1-Unity_lsTjP8qDqO.png)
+[IMAGE: Use the Avatar Descriptor to configure your avatar for VRChat. Make sure to adjust the view position!]
 ### Lip sync mode
 When you talk, you can make your avatar's mouth (or anything else) react automatically.  Open your `VRC Avatar Descriptor` and expand the `LipSync` dropdown. You can choose one of five lip sync modes:
 
 #### Default
-![Pressing 'Auto Detect!' is usually enough to let your VRChat avatar react to your speech.](/img/avatars/creating-your-first-avatar-d69289f-Unity_FgsAtEU75F.png)
+[IMAGE: Pressing 'Auto Detect!' is usually enough to let your VRChat avatar react to your speech.]
 
 Press 'Auto Detect!' to let the VRChat SDK automatically detect the appropriate lip sync mode. The mode will then switch to one of the modes below.
 
@@ -868,7 +820,7 @@ We use the Oculus Audio library to detect and set visemes. [You can see a refere
 
 VRChat can usually detect your avatar's visemes automatically. If not, you can choose visemes from the dropdown list.
 
-![The 'Viseme Blend Shape' mode is the most common method of making your character's face move when you speak.](/img/avatars/creating-your-first-avatar-6272723-Unity_w5nQONGtcb.png)
+[IMAGE: The 'Viseme Blend Shape' mode is the most common method of making your character's face move when you speak.]
 
 :::caution SIL shape
 
@@ -890,7 +842,7 @@ If you're an advanced creator, you can use this mode to control how your avatar 
 ## Step 6 - Going to the build tab / Checking if the avatar is ok
 Next, we'll want to check that everything is good in the build window. To do that, use the menu item `VRChat SDK > Show Control Panel`, which opens the VRChat SDK Control panel. After signing in, switch to the "Builder" tab to see the avatar's GameObject mentioned with a "Build" section below. You also see settings, content tags, the avatar's performance rank, errors, and warnings.
 
-![The VRChat SDK build panel.](/img/avatars/build-panel-avatars-2025.png)
+[IMAGE: The VRChat SDK build panel.]
 
 Simply follow the steps in VRChat's SDK build panel: 
 1. Give your avatar a name.
@@ -940,17 +892,9 @@ If you'd like to become better at avatar creation, check out these pages:
 
 ---
 
-## ドキュメント: expression-menu-and-controls.md
+## Document: expression-menu-and-controls.md
 
-```metadata
-階層: /avatars/expression-menu-and-controls.md
-ディレクトリ: avatars
-ファイル名: expression-menu-and-controls.md
-拡張子: .md
-サイズ: 7.64 KB
-最終更新: 2025-06-05T03:07:52.734Z
-```
-
+Path: /avatars/expression-menu-and-controls.md
 import UnityVersionedLink from '@site/src/components/UnityVersionedLink.js';
 
 # Expressions Menu and Controls
@@ -972,14 +916,14 @@ After creating and configuring these assets, make sure to add them to your avata
 
 1. Create an **Expressions Menu asset** by selecting `Assets > Create > VRChat > Avatars > Expressions Menu`.
 
-![The default view of the Avatar Expressions Menu.](/img/avatars/expression-menu/default-expressions.png)
+[IMAGE: The default view of the Avatar Expressions Menu.]
 
 2. Create an **Expression Parameters asset** by selecting your Expressions Menu asset and clicking the "Create" button. This allows you to create custom parameters for your Expressions Menu. 
 	- When you click "Create", the Expression Parameters asset is automatically assigned to your Expressions Menu asset.
 	- You can also create an Expression Parameters asset by selecting `Assets > Create > VRChat > Avatars > Expression Parameters`.
     - Expression Parameters have an option to copy parameters from an `Animator` to create your parameters quickly.
 
-![What expression parameters look like by default.](/img/avatars/expression-menu/default-parameters.png)
+[IMAGE: What expression parameters look like by default.]
 
 
 3. Select the Expression Parameters asset to customize it.
@@ -1002,7 +946,7 @@ After creating and configuring these assets, make sure to add them to your avata
 
 Next, you should add both assets to your avatar descriptor.
 
-![What expression parameters look like by default.](/img/avatars/expression-menu/avatar-descriptor-params.png)
+[IMAGE: What expression parameters look like by default.]
 
 9. Select your avatar descriptor and scroll down to the "Expressions" section.
 10. Change the "Menu" property to your expressions menu.
@@ -1010,7 +954,7 @@ Next, you should add both assets to your avatar descriptor.
 
 After adding both assets to your avatar descriptor, all your expression parameters will now be available in the expression menu, allowing you to customize it.
 
-![What expression parameters look like by default.](/img/avatars/expression-menu/populated-menu.png)
+[IMAGE: What expression parameters look like by default.]
 
 12. In the inspector, click "Add Control." Up to 8 controls can be added to a single menu.
 13. Choose a name and [type](/avatars/expression-menu-and-controls#types-of-controls). 
@@ -1047,17 +991,9 @@ Puppet menu sync always updates at the maximum rate available, and it smooths th
 
 ---
 
-## ドキュメント: index.md
+## Document: index.md
 
-```metadata
-階層: /avatars/index.md
-ディレクトリ: avatars
-ファイル名: index.md
-拡張子: .md
-サイズ: 12.14 KB
-最終更新: 2025-06-05T03:07:52.735Z
-```
-
+Path: /avatars/index.md
 ---
 sidebar_position: 0
 ---
@@ -1236,17 +1172,9 @@ If you do not follow these steps, your generic avatar will not have access to ma
 
 ---
 
-## ドキュメント: per-platform-avatar-overrides.md
+## Document: per-platform-avatar-overrides.md
 
-```metadata
-階層: /avatars/per-platform-avatar-overrides.md
-ディレクトリ: avatars
-ファイル名: per-platform-avatar-overrides.md
-拡張子: .md
-サイズ: 3.29 KB
-最終更新: 2025-06-05T03:07:52.735Z
-```
-
+Path: /avatars/per-platform-avatar-overrides.md
 # Per-Platform Avatar Overrides
 
 Per-platform overrides allow you to configure different versions of your [cross-platform](/platforms/android/cross-platform-setup) avatar for multiple platforms. When you build & publish your avatar to more than one platform, the SDK automatically uploads different versions of your avatar to each selected platform under the same avatar ID.
@@ -1268,12 +1196,12 @@ To set up per-platform overrides, follow these steps:
 3. Select the avatar you want to use as a base for the overrides. This will be the avatar you select in the Builder panel of the SDK to click "Multi-Platform Build & Publish"
 4. Click the `⋮` button next to the "Selected Avatar" dropdown.
 
-![Options Menu](/img/avatars/per-platform-avatar-overrides/options-menu.png)
+[IMAGE: Options Menu]
 
 5. In the popup that appears, press "Add per-platform override".
 6. Select the platform for the override, then select the avatar to use for that platform.
 
-![Per-Platform Overrides](/img/avatars/per-platform-avatar-overrides/per-platform-override.png)
+[IMAGE: Per-Platform Overrides]
 
 - Repeat the process for all the platforms for which you want to set up overrides.
 - The changes are saved automatically, so you can proceed with a multi-platform build & publish.
@@ -1318,17 +1246,9 @@ The per-platform overrides are currently only set up on the "main" avatar object
 
 ---
 
-## ドキュメント: playable-layers.md
+## Document: playable-layers.md
 
-```metadata
-階層: /avatars/playable-layers.md
-ディレクトリ: avatars
-ファイル名: playable-layers.md
-拡張子: .md
-サイズ: 11.65 KB
-最終更新: 2025-06-05T03:07:52.735Z
-```
-
+Path: /avatars/playable-layers.md
 import UnityVersionedLink from '@site/src/components/UnityVersionedLink.js';
 
 # Playable Layers
@@ -1446,7 +1366,7 @@ You can now provide your own T-Pose!
 
 The T-Pose is used to determine various measurements of your avatar, especially for placement of your viewpoint (or view-ball). Viewpoint is dependent entirely on where your view-ball is when your avatar is in this T-Pose animation you provide.
 
-![Standard T-Pose - [Mixamo](https://www.mixamo.com)](/img/avatars/playable-layers-1.png)
+[IMAGE: Standard T-Pose - [Mixamo]](/img/avatars/playable-layers-1.png)
 
 Secondly, it is important for the wrist alignment/twist. The way your wrists are lined up in relation to the palm-down position will affect how your controller twisting in space will turn your wrist and arm.
 
@@ -1470,17 +1390,9 @@ If you want to make your own, fair warning: this can take some significant tweak
 
 ---
 
-## ドキュメント: rig-requirements.md
+## Document: rig-requirements.md
 
-```metadata
-階層: /avatars/rig-requirements.md
-ディレクトリ: avatars
-ファイル名: rig-requirements.md
-拡張子: .md
-サイズ: 6.50 KB
-最終更新: 2025-06-05T03:07:52.735Z
-```
-
+Path: /avatars/rig-requirements.md
 # Rig Requirements
 
 :::caution
@@ -1583,17 +1495,9 @@ It is not required to map the Toe bones in a humanoid avatar. However, if you DO
 
 ---
 
-## ドキュメント: shader-fallback-system.md
+## Document: shader-fallback-system.md
 
-```metadata
-階層: /avatars/shader-fallback-system.md
-ディレクトリ: avatars
-ファイル名: shader-fallback-system.md
-拡張子: .md
-サイズ: 7.88 KB
-最終更新: 2025-06-05T03:07:52.736Z
-```
-
+Path: /avatars/shader-fallback-system.md
 ---
 title: "Shader Blocking and Fallback System"
 slug: "shader-fallback-system"
@@ -1808,17 +1712,9 @@ It's possible to force your own avatar to use fallback shaders locally via a tog
 
 ---
 
-## ドキュメント: state-behaviors.md
+## Document: state-behaviors.md
 
-```metadata
-階層: /avatars/state-behaviors.md
-ディレクトリ: avatars
-ファイル名: state-behaviors.md
-拡張子: .md
-サイズ: 16.77 KB
-最終更新: 2025-06-05T03:07:52.736Z
-```
-
+Path: /avatars/state-behaviors.md
 import UnityVersionedLink from '@site/src/components/UnityVersionedLink.js';
 
 # State Behaviors
@@ -1843,7 +1739,7 @@ If you wanted to be **completely** safe, ensure the total time spent in the stat
 
 ## Animator Layer Controller
 
-![VRC Animator Layer Control component](/img/avatars/state-behaviours/animator-layer-control.png)
+[IMAGE: VRC Animator Layer Control component]
 
 The Animator Layer Control allows you to blend the weight of a specific Animator Layer inside any given Playable Layer over any given time.
 
@@ -1862,7 +1758,7 @@ The layer weight will remain until some other state runs this State Behavior aga
 
 ## Animator Locomotion Control
 
-![VRC Animator Locomotion Control component](/img/avatars/state-behaviours/animator-locomotion-control.png)
+[IMAGE: VRC Animator Locomotion Control component]
 
 The Animator Locomotion Control allows you to disable locomotion in a given state of an animator. The Locomotion state will remain until some other state runs this State Behavior again and changes it.
 
@@ -1875,7 +1771,7 @@ In Desktop mode, this disables translational movement, and restricts rotational 
 
 ## Animator Temporary Pose Space
 
-![VRC Animator Temporary Pose Space component](/img/avatars/state-behaviours/animator-temporary-pose-space.png)
+[IMAGE: VRC Animator Temporary Pose Space component]
 
 The Animator Temporary Pose Space control allows you to move the viewpoint of the person wearing the avatar to the head at that given point of the animator state.
 
@@ -1899,7 +1795,7 @@ This state behavior **will not execute** if the state this behavior is on is exi
 
 ## Animator Tracking Control
 
-![VRC Animator Tracking Control component](/img/avatars/state-behaviours/animator-tracking-control.png)
+[IMAGE: VRC Animator Tracking Control component]
 
 The Animator Tracking Control allows you to enable or disable IK or simulated movement on various different parts of the avatar body. Setting the option to "No Change" will not change the body part from its current value. "Tracking" will set it to following IK or simulated movement. "Animation" will force that body part to respect values as given by the avatar's Animator.
 
@@ -1928,7 +1824,7 @@ The Tracking setting will be kept until some other state runs this State Behavio
 
 ## Avatar Parameter Driver
 
-![image](/img/avatars/state-behaviors-fa19a1d-2022-06-02_18-11-06_Unity.png)
+[IMAGE: image]
 
 The Avatar Parameter Driver can manipulate Animator Parameters in a variety of ways. A single Avatar Parameter can perform multiple operations, and they are done in order from top to bottom. These operations are completed *once* upon entry to the State upon which the behavior resides.
 
@@ -1947,21 +1843,21 @@ Set, Add, Random, and Copy work for `float` and `int`. Set, Random, and Copy wor
 ### Set
 Set will simply set the Value to the named Parameter in Destination.
 
-![state-behaviors-121fe2a-2022-06-02_18-11-13_NVIDIA_Share.png](/img/avatars/state-behaviors-121fe2a-2022-06-02_18-11-13_NVIDIA_Share.png)
+[IMAGE: state-behaviors-121fe2a-2022-06-02_18-11-13_NVIDIA_Share.png]
 
 ### Add
 Add will add the Value to the named Parameter in Destination.
 
 As the component points out, using Add may not produce the same result when run on a remote instance of the avatar. When using Add, it is suggested to use a synced Destination Parameter and only run the driver locally.
 
-![state-behaviors-e10bb6a-2022-06-02_18-11-17_Unity.png](/img/avatars/state-behaviors-e10bb6a-2022-06-02_18-11-17_Unity.png)
+[IMAGE: state-behaviors-e10bb6a-2022-06-02_18-11-17_Unity.png]
         
 ### Random
 Random will set the Destination Parameter to a random number between Min Value and Max Value.
 
 As the component points out, using Random may not produce the same result when run on a remote instance of the avatar. When using Random, it is suggested to use a synced Destination Parameter and only run the driver locally.
 
-![state-behaviors-99c6248-2022-06-02_18-11-23_Unity.png](/img/avatars/state-behaviors-99c6248-2022-06-02_18-11-23_Unity.png)
+[IMAGE: state-behaviors-99c6248-2022-06-02_18-11-23_Unity.png]
 
 ### Copy
 Copy will set the value of the Source Parameter to the Destination Parameter. This can be used to set one float to match another float, to remap one float into a different range, or to convert between two different types entirely.
@@ -1970,7 +1866,7 @@ Copy will set the value of the Source Parameter to the Destination Parameter. Th
 VRChat's built-in parameters, such as `GestureLeftWeight`, **can** be specified but do not work as source parameters.
 :::
 
-![state-behaviors-bffdb10-2022-06-02_18-11-30_Unity.png](/img/avatars/state-behaviors-bffdb10-2022-06-02_18-11-30_Unity.png)
+[IMAGE: state-behaviors-bffdb10-2022-06-02_18-11-30_Unity.png]
 
 #### Converting between types
 When converting from a `bool`, False counts as 0 and True counts as 1.
@@ -1982,11 +1878,11 @@ When converting to a `float`, it will directly copy the value, even if it goes o
 #### Custom Ranges
 You can also use the `Convert Range` checkbox to enable some additional UI that allows you to set custom conversion ranges. This can be used to remap values or to have more control over exactly how it converts from one type to another type.
 
-![state-behaviors-cab639b-2022-06-02_18-35-32_Unity.png](/img/avatars/state-behaviors-cab639b-2022-06-02_18-35-32_Unity.png)
+[IMAGE: state-behaviors-cab639b-2022-06-02_18-35-32_Unity.png]
 
 ## Playable Layer Control
 
-![VRC Animator Layer Control component](/img/avatars/state-behaviours/animator-playable-layer-control.png)
+[IMAGE: VRC Animator Layer Control component]
 
 The Playable Layer Control allows you to blend the weight of the entire Playable Layer to a specified value over specified duration. Very similar to Animator Layer Control, but instead controls the entire Playable Layer.
 
@@ -2003,7 +1899,7 @@ If the state is exited mid-blend duration, the playable layer is immediately set
 
 ## Animator Play Audio
 
-![image](/img/avatars/state-behaviors-animatorplayaudio.png)
+[IMAGE: image]
 
 The "Animator Play Audio" behavior modifies an AudioSource when transitioning to the animation state. It can change the audio clip, pitch, or loop value, and it can play the AudioSource.
 
@@ -2037,4 +1933,4 @@ Each audio setting has an additional property. By default, it's set to "Apply If
 
 ---
 
-# ドキュメント終了
+# End of Documentation

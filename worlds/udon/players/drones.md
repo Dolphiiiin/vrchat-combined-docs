@@ -1,22 +1,14 @@
-# drones 統合ドキュメント
+# drones Documentation
 
-以下は自動収集された全ドキュメントのコンテンツです。各セクションの始めにメタデータが記載されています。
+This document contains automatically collected documentation with metadata headers for each section.
 
 
 
 ---
 
-## ドキュメント: accessing-drones.md
+## Document: accessing-drones.md
 
-```metadata
-階層: /worlds/udon/players/drones/accessing-drones.md
-ディレクトリ: worlds\udon\players\drones
-ファイル名: accessing-drones.md
-拡張子: .md
-サイズ: 845 B
-最終更新: 2025-06-05T03:07:52.820Z
-```
-
+Path: /worlds/udon/players/drones/accessing-drones.md
 ---
 title: "Getting Drones"
 slug: "getting-drones"
@@ -67,17 +59,9 @@ This event is invoked when a Drone stays inside of a trigger.
 
 ---
 
-## ドキュメント: drone-information.md
+## Document: drone-information.md
 
-```metadata
-階層: /worlds/udon/players/drones/drone-information.md
-ディレクトリ: worlds\udon\players\drones
-ファイル名: drone-information.md
-拡張子: .md
-サイズ: 1.89 KB
-最終更新: 2025-06-05T03:07:52.820Z
-```
-
+Path: /worlds/udon/players/drones/drone-information.md
 ---
 title: "Drone Information"
 slug: "drone-information"
@@ -170,17 +154,9 @@ Set the speed and direction of the drone's movement.
 
 ---
 
-## ドキュメント: index.md
+## Document: index.md
 
-```metadata
-階層: /worlds/udon/players/drones/index.md
-ディレクトリ: worlds\udon\players\drones
-ファイル名: index.md
-拡張子: .md
-サイズ: 839 B
-最終更新: 2025-06-05T03:07:52.820Z
-```
-
+Path: /worlds/udon/players/drones/index.md
 ---
 sidebar_position: 1
 ---
@@ -202,4 +178,4 @@ See these pages for more details on working with Drones via Udon:
 
 ---
 
-# ドキュメント終了
+# End of Documentation

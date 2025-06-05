@@ -1,22 +1,14 @@
-# platforms 統合ドキュメント
+# platforms Documentation
 
-以下は自動収集された全ドキュメントのコンテンツです。各セクションの始めにメタデータが記載されています。
+This document contains automatically collected documentation with metadata headers for each section.
 
 
 
 ---
 
-## ドキュメント: index.md
+## Document: index.md
 
-```metadata
-階層: /platforms/index.md
-ディレクトリ: platforms
-ファイル名: index.md
-拡張子: .md
-サイズ: 468 B
-最終更新: 2025-06-05T03:07:52.754Z
-```
-
+Path: /platforms/index.md
 ---
 sidebar_position: 2
 ---
@@ -38,4 +30,4 @@ The VRChat SDK allows you to upload Worlds and Avatars for the following platfor
 
 ---
 
-# ドキュメント終了
+# End of Documentation

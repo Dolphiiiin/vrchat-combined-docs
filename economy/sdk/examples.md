@@ -1,22 +1,14 @@
-# examples 統合ドキュメント
+# examples Documentation
 
-以下は自動収集された全ドキュメントのコンテンツです。各セクションの始めにメタデータが記載されています。
+This document contains automatically collected documentation with metadata headers for each section.
 
 
 
 ---
 
-## ドキュメント: debug-logging.md
+## Document: debug-logging.md
 
-```metadata
-階層: /economy/sdk/examples/debug-logging.md
-ディレクトリ: economy\sdk\examples
-ファイル名: debug-logging.md
-拡張子: .md
-サイズ: 2.81 KB
-最終更新: 2025-06-05T03:07:52.742Z
-```
-
+Path: /economy/sdk/examples/debug-logging.md
 ---
 description: "A screen for listing, debugging, and logging products in your world."
 sidebar_custom_props:
@@ -50,7 +42,7 @@ Once you've created a purchasable product:
 
 1. Drag the **StoreDebugLoggingPrefab** into your scene.
 
-![EventPrefabtoScene](/img/economy/examples/DebugLogging_AddToScene.png "Dragging the prefab into scene.")
+[IMAGE: EventPrefabtoScene]
 
 2. In the inspector, locate the **Products** drop down and drag a product over. You can also drag multiple products at once. The order in the inspector is not important, but make sure you only list each product once. 
 
@@ -61,7 +53,7 @@ Once you've created a purchasable product:
 3. Fill the **Group Id** variable with your group ID. 
    -   Find your group ID by opening your group [on the website](https://vrchat.com/home/groups) and copying the ID in the address bar of your browser. For example: `grp_a4f791af-a167-4c91-b849-2e37e37f509a`. Any short code (i.e. `EXAMPL.9920`) will **not** work.
 
-![DebugGroupID](/img/economy/examples/DebugLogging_GroupId.png "Adding your Group ID.")
+[IMAGE: DebugGroupID]
 
 4. The **Debug Text** object, **Scrollbar**, and **Auto Scroll Toggle** are text and UI elements that should be left as is.
 
@@ -78,17 +70,9 @@ Once you've created a purchasable product:
 
 ---
 
-## ドキュメント: floating-overhead.md
+## Document: floating-overhead.md
 
-```metadata
-階層: /economy/sdk/examples/floating-overhead.md
-ディレクトリ: economy\sdk\examples
-ファイル名: floating-overhead.md
-拡張子: .md
-サイズ: 3.93 KB
-最終更新: 2025-06-05T03:07:52.742Z
-```
-
+Path: /economy/sdk/examples/floating-overhead.md
 ---
 description: "A floating indicator above players who own an Udon product."
 sidebar_custom_props:
@@ -110,7 +94,7 @@ import SellerNotification from '/docs/economy/_sellers-notification.mdx';
 
 Floating Overhead Buy Indicator is a prefab that spawns an indicator over a player's head once they have purchased something. Customize it in various ways to highlight your supporters.
 
-![FloatingPrefab](/img/economy/examples/BuyIndicator-FloatingPrefab.png "Shows what a Floating Obj looks like over a players head.")
+[IMAGE: FloatingPrefab]
 
 import HowToImportExample from '/docs/economy/_ce-how-to-import.mdx';
 
@@ -133,19 +117,19 @@ Once you've created a purchasable product:
 
 1. Drag the **FloatingOverheadBuyIndicatorPrefab** into your scene. It's invisible by default as there's no image or model to display yet.
 
-![FloatingPrefabtoScene](/img/economy/examples/BuyIndicator-FloatingPrefabtoScene.png "Dragging the prefab into scene.")
+[IMAGE: FloatingPrefabtoScene]
 
 2. In the Inspector, locate the **Product** variable. Click on the circle button and replace the example file with your own product.
 
-![ProductAdd](/img/economy/examples/BuyIndicator-ProductAdd.png "Dragging the prefab into scene.")
+[IMAGE: ProductAdd]
 
 3. Next, locate **Overhead Indicator Prefab**. This is what will spawn over the players head when they purchase this product. Think of it like the green diamond from the Sims! You can replace this with whatever GameObject you'd like, but just make sure it has no colliders.
 
-![ObjAdd](/img/economy/examples/BuyIndicator-ObjAdd.png "Adding a custom GameObject.")
+[IMAGE: ObjAdd]
 
 4. Use **Height Above Head** to customize how far above the player's head you want the indicator to float.
 
-![HeightChange](/img/economy/examples/BuyIndicator-HeightChange.png "Adjusting height.")
+[IMAGE: HeightChange]
 
 5. If you'd like the player to be able to look up and see their own indicator, leave **Show Indicator Above Local Player** enabled. Disable it if otherwise.
 
@@ -165,17 +149,9 @@ Once you've created a purchasable product:
 
 ---
 
-## ドキュメント: index.md
+## Document: index.md
 
-```metadata
-階層: /economy/sdk/examples/index.md
-ディレクトリ: economy\sdk\examples
-ファイル名: index.md
-拡張子: .md
-サイズ: 1.37 KB
-最終更新: 2025-06-05T03:07:52.743Z
-```
-
+Path: /economy/sdk/examples/index.md
 ---
 sidebar_position: 5
 sidebar_custom_props:
@@ -205,28 +181,20 @@ Each prefab shares the same starting steps:
 
 2. Import the package into your Unity project.
 
-![DragAndDrop](/img/economy/examples/Importing-Package_Drag-and-Drop.png "Drag your prefab into Unity.")
+[IMAGE: DragAndDrop]
 
 3. Drag the prefab into your scene.
 
-![ImportPrefabtoUnity](/img/economy/examples/Importing-Package_Place-In-Scene.png "Drag your prefab into the scene.")
+[IMAGE: ImportPrefabtoUnity]
 
 And you're ready to customize! Browse our different prefabs in the left-hand sidebar to see what they do and how to customize them.
 
 
 ---
 
-## ドキュメント: open-group-page.md
+## Document: open-group-page.md
 
-```metadata
-階層: /economy/sdk/examples/open-group-page.md
-ディレクトリ: economy\sdk\examples
-ファイル名: open-group-page.md
-拡張子: .md
-サイズ: 2.43 KB
-最終更新: 2025-06-05T03:07:52.743Z
-```
-
+Path: /economy/sdk/examples/open-group-page.md
 ---
 description: "Opens your group or group store."
 sidebar_position: 1
@@ -246,7 +214,7 @@ import HowToImportExample from '/docs/economy/_ce-how-to-import.mdx';
 * **OpenGroupPagePrefab**: Includes a button that opens a group page. Also includes a text description.
 * **OpenGroupPageSimplePrefab**: Includes a button that opens a group page. Does not include a text description.
 
-![OpenGroupPrefab](/img/economy/examples/Comparison-OpenGroupPage.png "Compares group prefabs.")
+[IMAGE: OpenGroupPrefab]
 
 ## How to Use
 
@@ -256,17 +224,17 @@ For each prefab, you'll need to replace any ID with the ID of your own group.
 2. Set the ID of the group that owns the product in the `Group ID` field in the inspector window.
     -   Find your group ID by opening your group [on the website](https://vrchat.com/home/groups) and copying the ID in the address bar of your browser. For example: `grp_a4f791af-a167-4c91-b849-2e37e37f509a`. Any short code (i.e. `EXAMPL.9920`) will **not** work.
 
-![DragGroupID](/img/economy/examples/Group-Id-Copying.png "Where to put the group ID.")
+[IMAGE: DragGroupID]
 
 3. Toggle the **OpenToStorePage** toggle on the prefab if you want to open to your store page directly. If unchecked, the button will open to your group page instead of directly to your store.
 4. For **OpenListing/OpenListingSimple:** Set the ID of the listing in the `Listing ID` field in the inspector window.
     - Find your listing ID by [opening the listing section](https://vrchat.com/b/monetization/home/marketplace/storefront/listings) of your store and copying its ID. 
 
-![DragListingID](/img/economy/examples/Listing-Id-Copying.png "Where to put the listing ID.")
+[IMAGE: DragListingID]
 
 5. Toggle the **OpenToStorePage** toggle on the prefab if you want to open to your store page directly. If unchecked, the button will open to your group page instead of directly to your store.
 
-![IDPasting](/img/economy/examples/Group-versus-Store-links.png "Instructions on finding and pasting IDs.")
+[IMAGE: IDPasting]
 
 6. Run Build & Test!
 
@@ -279,17 +247,9 @@ For each prefab, you'll need to replace any ID with the ID of your own group.
 
 ---
 
-## ドキュメント: open-listing.md
+## Document: open-listing.md
 
-```metadata
-階層: /economy/sdk/examples/open-listing.md
-ディレクトリ: economy\sdk\examples
-ファイル名: open-listing.md
-拡張子: .md
-サイズ: 3.36 KB
-最終更新: 2025-06-05T03:07:52.743Z
-```
-
+Path: /economy/sdk/examples/open-listing.md
 ---
 description: "Opens a listing."
 sidebar_position: 0
@@ -311,11 +271,11 @@ import HowToImportExample from '/docs/economy/_ce-how-to-import.mdx';
 * **OpenListingSimplePrefab**: Includes a button to open to a listing page. Does not include a text description.
 * **OpenListingAndReactToPurchasePrefab**: Includes a button to open to a listing page. Plays a sound effect when a given product is purchased.
 
-![OpenListingPrefab](/img/economy/examples/Comparison-OpenListing.png "Compares listing prefabs.")
+[IMAGE: OpenListingPrefab]
 
 * **OpenListingDeluxePrefab**: Includes a thumbnail, and fields for the name, type and price of the listing.
 
-![OpenListingPrefab](/img/economy/examples/OpenListingDeluxe_GameView.png "Shows OpenListing Deluxe as it appears in the Game View")
+[IMAGE: OpenListingPrefab]
 
 ## How to Use
 
@@ -326,7 +286,7 @@ For each prefab, you'll need to replace any ID with the ID of your own group or 
 2. Set the ID of the listing in the `Listing ID` field in the inspector window.
     - Find your listing ID by [opening the listing section](https://vrchat.com/home/marketplace/storefront/listings) of your store and copying its ID. 
 
-![DragListingID](/img/economy/examples/Listing-Id-Copying.png "Where to put the listing ID.")
+[IMAGE: DragListingID]
 
 3. For **OpenListingAndReactToPurchase** only:
     - Use the [UdonProducts Manager](https://creators.vrchat.com/economy/sdk/getting-started#udonproducts-manager) to locate the `UdonProduct` asset of the product that should play a sound effect when purchased.
@@ -336,7 +296,7 @@ For each prefab, you'll need to replace any ID with the ID of your own group or 
     - Set the Thumbnail for the listing using the `Thumbnail` field in the inspector window. It's best if you use the same thumbnail that the user will see when opening your listing, but you have the ability to use any square Sprite in your project.
     - Set the three text lines using the `Display Name`, `Type` and `Price` fields. Just like the thumbnail, it's best if these match what the user will see in your listing, but you can enter any information you like.
 
-![OpenListingDeluxeFields](/img/economy/examples/OpenListingDeluxe_Inspector.png "The Fields for OpenListingDeluxe")
+[IMAGE: OpenListingDeluxeFields]
 
 5. Run Build & Test!
 
@@ -361,17 +321,9 @@ The prefabs have the following parameters:
 
 ---
 
-## ドキュメント: open-world-store.md
+## Document: open-world-store.md
 
-```metadata
-階層: /economy/sdk/examples/open-world-store.md
-ディレクトリ: economy\sdk\examples
-ファイル名: open-world-store.md
-拡張子: .md
-サイズ: 3.18 KB
-最終更新: 2025-06-05T03:07:52.743Z
-```
-
+Path: /economy/sdk/examples/open-world-store.md
 ---
 description: "Opens your world store."
 sidebar_position: 1
@@ -392,18 +344,18 @@ import HowToImportExample from '/docs/economy/_ce-how-to-import.mdx';
 ## Prefabs included
 * **OpenWorldStorePrefab**: A vending machine that opens a world store when the user interacts with it. Includes a customizable graphic and interaction text.
 
-![OpenWorldStorePrefab](/img/economy/examples/OpenWorldStore_Prefab.png "The OpenWorldStorePrefab model in the demo scene")
+[IMAGE: OpenWorldStorePrefab]
 
 ## How to Use
 
 1. Create a [world store](/economy/store/world-store), publish the store, and add at least one published listing.
 2. Set the Interaction Text you want users to see when approaching the prefab.
 
-![OpenWorldStoreInteractionText](/img/economy/examples/OpenWorldStore_InteractionText.png)
+[IMAGE: OpenWorldStoreInteractionText]
 
 3. Set the Door Graphic you want displayed on the front of your vending machine by selecting a texture in the "Door Graphic" picker.
 
-![OpenWorldStoreDoorGraphic](/img/economy/examples/OpenWorldStore_DoorGraphic.png)
+[IMAGE: OpenWorldStoreDoorGraphic]
 
 4. Build & Publish your world.
   - "Build & Test" does _not_ allow you to open world stores. You must "Build & Publish" to test your world store in VRChat.
@@ -417,7 +369,7 @@ You can create a graphic using Photoshop or any other image editor.
 
 The example includes a Photoshop file for easy editing at the path `Assets/Examples/OpenWorldStore/Prop_VendingMachine/Textures/glass_Screen_TEMPLATE.psd`.
 
-![OpenWorldStorePhotoshopTemplate](/img/economy/examples/OpenWorldStore_PhotoshopTemplate.png)
+[IMAGE: OpenWorldStorePhotoshopTemplate]
 
 1. Replace the contents of the "REPLACE ME!" layer with a graphic that represents your listing(s).
 2. Update the text in the "FeaturedText" layer with your own words.
@@ -437,17 +389,9 @@ The example includes a PNG for easy editing at the path `Assets/Examples/OpenWor
 
 ---
 
-## ドキュメント: product-owners-instance.md
+## Document: product-owners-instance.md
 
-```metadata
-階層: /economy/sdk/examples/product-owners-instance.md
-ディレクトリ: economy\sdk\examples
-ファイル名: product-owners-instance.md
-拡張子: .md
-サイズ: 2.25 KB
-最終更新: 2025-06-05T03:07:52.744Z
-```
-
+Path: /economy/sdk/examples/product-owners-instance.md
 ---
 description: "Lists all product owners in the current instance."
 sidebar_custom_props:
@@ -482,15 +426,15 @@ Once you've created a purchasable product:
 
 1. Drag the **ProductOwnersInInstance** prefab into your scene.
 
-![EventPrefabtoScene](/img/economy/examples/SubsInInstance_AddToScene.png "Dragging the prefab into scene.")
+[IMAGE: EventPrefabtoScene]
 
 2. In the inspector, locate the **Udon Product** variable. Click on the circle button and replace the example file with your own product.
 
-![ProductAdd](/img/economy/examples/SubsInInstance_SelectProduct.png "Adding a product via the inspector.")
+[IMAGE: ProductAdd]
 
 3. If you'd like the console to show non-owners instead, you can check **List Non Product Owners Instead,** or use the **NonProductOwnersInInstance** prefab. Otherwise, leave this unchecked.
 
-![NonOwnersvsOwners](/img/economy/examples/SubsInInstance_SubsVersusNonSubs.png "Difference between non product owners and product owners list.")
+[IMAGE: NonOwnersvsOwners]
 
 4. Run Build & Test!
 
@@ -503,17 +447,9 @@ Once you've created a purchasable product:
 
 ---
 
-## ドキュメント: product-owners-only.md
+## Document: product-owners-only.md
 
-```metadata
-階層: /economy/sdk/examples/product-owners-only.md
-ディレクトリ: economy\sdk\examples
-ファイル名: product-owners-only.md
-拡張子: .md
-サイズ: 4.74 KB
-最終更新: 2025-06-05T03:07:52.744Z
-```
-
+Path: /economy/sdk/examples/product-owners-only.md
 ---
 description: "An area that only Udon product owners can enter."
 sidebar_custom_props:
@@ -547,20 +483,20 @@ Once you've created a purchasable product:
 
 1. Open the **ProductOwnersOnlyAreaExampleScene** from your Project window. The scene contains a building asset to help you test and understand how the prefab works.
 
-![PrefabScene](/img/economy/examples/SubsOnlyArea_DragIntoScene.png "Opening the example scene.")
+[IMAGE: PrefabScene]
 
 2. In the Hierarchy, click on the **ProductOwnersOnlyAreaExamplePrefab**. 
 
-![HierarchyClick](/img/economy/examples/SubsOnlyArea_SelectInHierarchy.png "Finding the prefab in the hierarchy.")
+[IMAGE: HierarchyClick]
 
 3. In the Inspector, add which Udon Product you would like to check for when a player enters or is inside of a certain area.
 
-![AddProduct](/img/economy/examples/SubsOnlyArea_SelectProduct.png "Adding a product to check for.")
+[IMAGE: AddProduct]
 
 5. In the Hierarchy, select **OpenListingSimplePrefab**. Paste your listing ID here. This will show a link to purchase the product where necessary.
     -   To get your listing ID, go to [vrchat.com/home](https://vrchat.com/home), then Marketplace -> Storefront -> My Listings.
 
-![AddListingID](/img/economy/examples/SubsOnlyArea_OpenListingPrefab.png "Adding a listing ID.")
+[IMAGE: AddListingID]
 
 6. In the Hierarchy, click on the **ProductOwnersOnlyAreaExamplePrefab** again. You'll see a few different settings:
 
@@ -570,7 +506,7 @@ Once you've created a purchasable product:
 
     - **Area Colliders** are what keep non-owners out of your exclusive area. In this prefab, it is a box collider inside of our example asset. You should adjust this in your scenes to best fit your needs.
 
-![TrespassingText](/img/economy/examples/SubsOnlyArea_TresspassingMessage.png "Trespassing message text.")
+[IMAGE: TrespassingText]
 
 7. If you would like to keep non-owners inside of a specific area instead, enable **Keep People In Area**. If enabled, make sure your spawn and Trespassing Teleport Location are within the collider instead of outside the collider. 
 
@@ -596,17 +532,9 @@ Enable this if you are creating a large, exclusive area, and want to keep all no
 
 ---
 
-## ドキュメント: product-toggle.md
+## Document: product-toggle.md
 
-```metadata
-階層: /economy/sdk/examples/product-toggle.md
-ディレクトリ: economy\sdk\examples
-ファイル名: product-toggle.md
-拡張子: .md
-サイズ: 3.31 KB
-最終更新: 2025-06-05T03:07:52.744Z
-```
-
+Path: /economy/sdk/examples/product-toggle.md
 ---
 description: "Toggle a GameObject for players who own an Udon product."
 sidebar_custom_props:
@@ -646,11 +574,11 @@ Once you've created a purchasable product:
 
 1. Drag the chosen prefab into your scene. Which prefab you use depends on what logic you would like to have in your world. Each prefab has its own behavior, which you can view in the **Prefabs Included** section.
 
-![DraggingPrefab](/img/economy/examples/ProductToggle_DragIntoScene.png "Dragging the chosen prefab.")
+[IMAGE: DraggingPrefab]
 
 2. In the Inspector, add which Udon Product you would like to check for.
 
-![AddProduct](/img/economy/examples/ProductToggle_SelectProduct.png "Adding a product to check for.")
+[IMAGE: AddProduct]
 
 3. In the Inspector, replace the Target object with whatever object you would like to be enabled/disabled when a player owns the Udon Product. Here's an example of **ToggleObjectOff** in action:
 
@@ -670,17 +598,9 @@ Once you've created a purchasable product:
 
 ---
 
-## ドキュメント: supporter-list.md
+## Document: supporter-list.md
 
-```metadata
-階層: /economy/sdk/examples/supporter-list.md
-ディレクトリ: economy\sdk\examples
-ファイル名: supporter-list.md
-拡張子: .md
-サイズ: 5.27 KB
-最終更新: 2025-06-05T03:07:52.744Z
-```
-
+Path: /economy/sdk/examples/supporter-list.md
 ---
 description: "A customizable list of all users who own an Udon product."
 sidebar_custom_props:
@@ -695,7 +615,7 @@ import SellerNotification from '/docs/economy/_sellers-notification.mdx';
 
 The Supporter List prefab displays all the names of users that have purchased an UdonProduct. This can be customized for how many UdonProducts are displayed, their color, text size, and more.
 
-![SupporterListPreview](/img/economy/examples/SupporterList-Preview.png "Preview of the supporter list prefab.")
+[IMAGE: SupporterListPreview]
 
 import HowToImportExample from '/docs/economy/_ce-how-to-import.mdx';
 
@@ -718,7 +638,7 @@ Importantly, this Udon Product **must** have "Owner Names in Udon" enabled on th
 1. Drag either "SupporterListPrefab" or "SupporterListPrefabAutoScrolling" into your scene and unpack it. (This allows you to customize your supporter list.)
 2. Find the "SupportTiers" GameObjects within the prefab.
 
-![SupportTiersHierarchy](/img/economy/examples/SupporterList-SupportTiersHierarchy.png "Location of the SupportTiers object in the hierarchy.")
+[IMAGE: SupportTiersHierarchy]
 
 3. The prefab has three "SupportTier" objects by default. If you need more or fewer than the three tiers, feel free to duplicate, modify, or delete them as needed. (This is why you unpacked the prefab in step 1.)
 4. Customize each [Support Tier](supporter-list#support-tier) with your Udon Product, the title, the color that you want, and any font sizing you'd like to use.
@@ -727,7 +647,7 @@ Importantly, this Udon Product **must** have "Owner Names in Udon" enabled on th
 
 ### Supporter List
 
-![SupporterListInspector](/img/economy/examples/SupporterList-Inspector.png "Preview of the supporter list inspector.")
+[IMAGE: SupporterListInspector]
 
 This prefab controls the scrolling and update behavior of the supporter list.
 
@@ -755,7 +675,7 @@ This prefab controls the scrolling and update behavior of the supporter list.
 
 Each tier of your supporter list is represented by a customizable supporter tier object.
 
-![SupportTierInspector](/img/economy/examples/SupporterList-TierInspector.png "Preview of the support tier inspector.")
+[IMAGE: SupportTierInspector]
 
 | Parameter | Type | Description |
 | --- | --- | --- |
@@ -773,17 +693,9 @@ Each tier of your supporter list is represented by a customizable supporter tier
 
 ---
 
-## ドキュメント: timed-event.md
+## Document: timed-event.md
 
-```metadata
-階層: /economy/sdk/examples/timed-event.md
-ディレクトリ: economy\sdk\examples
-ファイル名: timed-event.md
-拡張子: .md
-サイズ: 3.13 KB
-最終更新: 2025-06-05T03:07:52.745Z
-```
-
+Path: /economy/sdk/examples/timed-event.md
 ---
 description: "An event that only Udon product owners can trigger."
 sidebar_custom_props:
@@ -825,15 +737,15 @@ Once you've created a purchasable product:
 
 1. Drag the **ProductEventTimedSetActivePrefab** into your scene.
 
-![EventPrefabtoScene](/img/economy/examples/ProductEvent_DragIntoScene.png "Dragging the prefab into scene.")
+[IMAGE: EventPrefabtoScene]
 
 2. In the inspector, locate the **Udon Product** variable. Click on the circle button and replace the example file with your own product. This product must be owned by the player trying to send the event.
 
-![EventProductAdd](/img/economy/examples/ProductEvent_SelectUdonProduct.png "Dragging the prefab into scene.")
+[IMAGE: EventProductAdd]
 
 3. Next, locate **Enable On Product Event GameObject**. This is what will be enabled when the player with the correct UdonProduct clicks the button. You can replace this with whatever GameObject you'd like.
 
-![EventObjAdd](/img/economy/examples/ProductEvent_SelectCustomObject.png "Adding a custom GameObject.")
+[IMAGE: EventObjAdd]
 
 4. Use **Enabled Time** to how long you want this GameObject to be enabled. This can range from .5-10 seconds.
 
@@ -848,4 +760,4 @@ Once you've created a purchasable product:
 
 ---
 
-# ドキュメント終了
+# End of Documentation

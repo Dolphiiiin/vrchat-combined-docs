@@ -1,22 +1,14 @@
-# vrc-graphics 統合ドキュメント
+# vrc-graphics Documentation
 
-以下は自動収集された全ドキュメントのコンテンツです。各セクションの始めにメタデータが記載されています。
+This document contains automatically collected documentation with metadata headers for each section.
 
 
 
 ---
 
-## ドキュメント: asyncgpureadback.md
+## Document: asyncgpureadback.md
 
-```metadata
-階層: /worlds/udon/vrc-graphics/asyncgpureadback.md
-ディレクトリ: worlds\udon\vrc-graphics
-ファイル名: asyncgpureadback.md
-拡張子: .md
-サイズ: 3.15 KB
-最終更新: 2025-06-05T03:07:52.833Z
-```
-
+Path: /worlds/udon/vrc-graphics/asyncgpureadback.md
 import UnityVersionedLink from '@site/src/components/UnityVersionedLink.js';
 
 # AsyncGPUReadback
@@ -50,7 +42,7 @@ When using VRCAsyncGpuReadback, there are 4 main steps that you need to follow:
 
 ## Udon Node Graph Example
 
-![asyncgpureadback-mu8QGGS.png](/img/worlds/asyncgpureadback-mu8QGGS.png)
+[IMAGE: asyncgpureadback-mu8QGGS.png]
 
 ## UdonSharp Example
 
@@ -89,17 +81,9 @@ public class AGPURB : UdonSharpBehaviour
 
 ---
 
-## ドキュメント: index.md
+## Document: index.md
 
-```metadata
-階層: /worlds/udon/vrc-graphics/index.md
-ディレクトリ: worlds\udon\vrc-graphics
-ファイル名: index.md
-拡張子: .md
-サイズ: 3.16 KB
-最終更新: 2025-06-05T03:07:52.833Z
-```
-
+Path: /worlds/udon/vrc-graphics/index.md
 import UnityVersionedLink from '@site/src/components/UnityVersionedLink.js';
 
 # VRCGraphics
@@ -130,7 +114,7 @@ See <UnityVersionedLink versionKey="minor" url="https://docs.unity3d.com/<VERSIO
 
 Check out the [Minimap Example](/worlds/examples/minimap) to learn more about how to use VRCGraphics.Blit().
 
-![Minimap Example World](/img/worlds/examples/minimap-example-world.png)
+[IMAGE: Minimap Example World]
 
 #### Meta Quest Exceptions
 
@@ -178,17 +162,9 @@ VRChat exposes a few special global shader variables you can use in any custom a
 
 ---
 
-## ドキュメント: vrc-camera-settings.md
+## Document: vrc-camera-settings.md
 
-```metadata
-階層: /worlds/udon/vrc-graphics/vrc-camera-settings.md
-ディレクトリ: worlds\udon\vrc-graphics
-ファイル名: vrc-camera-settings.md
-拡張子: .md
-サイズ: 9.98 KB
-最終更新: 2025-06-05T03:07:52.834Z
-```
-
+Path: /worlds/udon/vrc-graphics/vrc-camera-settings.md
 ---
 title: "VRC Camera Settings"
 slug: "vrc-camera-settings"
@@ -303,7 +279,7 @@ This event may trigger every frame, or even multiple times per frame. It is reco
 <Tabs groupId="udon-compiler-language">
 <TabItem value="graph" label="Udon Graph">
 
-![Udon graph that prints screen size and FOV on Start and whenever it changes.](/img/worlds/udon/vrc-graphics/basic-camera-settings-example.png)
+[IMAGE: Udon graph that prints screen size and FOV on Start and whenever it changes.]
 
 </TabItem>
 <TabItem value="cs" label="UdonSharp">
@@ -345,17 +321,9 @@ public class CameraInfoDisplay : UdonSharpBehaviour
 
 ---
 
-## ドキュメント: vrc-quality-settings.md
+## Document: vrc-quality-settings.md
 
-```metadata
-階層: /worlds/udon/vrc-graphics/vrc-quality-settings.md
-ディレクトリ: worlds\udon\vrc-graphics
-ファイル名: vrc-quality-settings.md
-拡張子: .md
-サイズ: 2.28 KB
-最終更新: 2025-06-05T03:07:52.834Z
-```
-
+Path: /worlds/udon/vrc-graphics/vrc-quality-settings.md
 ---
 title: "VRC Quality Settings"
 slug: "vrc-quality-settings"
@@ -401,17 +369,9 @@ When a user changes graphics settings that affect an exposed property, the [OnVR
 
 ---
 
-## ドキュメント: vrchat-shader-globals.md
+## Document: vrchat-shader-globals.md
 
-```metadata
-階層: /worlds/udon/vrc-graphics/vrchat-shader-globals.md
-ディレクトリ: worlds\udon\vrc-graphics
-ファイル名: vrchat-shader-globals.md
-拡張子: .md
-サイズ: 1.34 KB
-最終更新: 2025-06-05T03:07:52.835Z
-```
-
+Path: /worlds/udon/vrc-graphics/vrchat-shader-globals.md
 ---
 title: "VRChat Shader Globals"
 slug: "vrchat-shader-globals"
@@ -441,4 +401,4 @@ The following shader globals are currently available:
 
 ---
 
-# ドキュメント終了
+# End of Documentation

@@ -1,29 +1,21 @@
-# midi 統合ドキュメント
+# midi Documentation
 
-以下は自動収集された全ドキュメントのコンテンツです。各セクションの始めにメタデータが記載されています。
+This document contains automatically collected documentation with metadata headers for each section.
 
 
 
 ---
 
-## ドキュメント: index.md
+## Document: index.md
 
-```metadata
-階層: /worlds/udon/midi/index.md
-ディレクトリ: worlds\udon\midi
-ファイル名: index.md
-拡張子: .md
-サイズ: 2.01 KB
-最終更新: 2025-06-05T03:07:52.814Z
-```
-
+Path: /worlds/udon/midi/index.md
 # Midi in Udon
 
 Since the 1980s, MIDI has connected musical instruments in imaginative ways. We've included it in VRChat so you can build worlds that respond to real-time instruments and prerecorded performances. 
 
 >Read more about [MIDI on Wikipedia](https://en.wikipedia.org/wiki/MIDI).
 
-![image](/img/worlds/index-215557268-2d85f551-8fff-4990-a95a-c8a2d412d6a2.png)
+[IMAGE: image]
 
 There are two ways to work with MIDI in your Udon worlds:
 - ## [Realtime](realtime-midi) data from an instrument plugged into your computer.
@@ -56,17 +48,9 @@ Outputs:
 
 ---
 
-## ドキュメント: midi-playback.md
+## Document: midi-playback.md
 
-```metadata
-階層: /worlds/udon/midi/midi-playback.md
-ディレクトリ: worlds\udon\midi
-ファイル名: midi-playback.md
-拡張子: .md
-サイズ: 6.02 KB
-最終更新: 2025-06-05T03:07:52.815Z
-```
-
+Path: /worlds/udon/midi/midi-playback.md
 import UnityVersionedLink from '@site/src/components/UnityVersionedLink.js';
 
 # Midi Playback
@@ -79,14 +63,14 @@ Files with the extension .mid are processed as MIDI assets. To get started with 
 1. Drag and drop them somewhere into your Assets folder. The MIDI file must have the extension .mid, the audio file can be of any <UnityVersionedLink versionKey="minor" url="https://docs.unity3d.com/<VERSION>/Documentation/Manual/class-AudioClip.html">type supported by Unity</UnityVersionedLink> (.aif, .wav, .mp3, .ogg).
 2. Select the MIDI file and set its AudioClip to the matching audio file.
 
-![image](/img/worlds/midi-playback-214464414-32af9c18-c003-49ed-bd12-dd431367db56.png)
+[IMAGE: image]
 
 3. It's imperative that the BPM for your MIDI file is set correctly. If the data seems like it doesn't match the audio, this is likely the issue. You can override the BPM here by toggling on "Override Bpm" and supplying the right value. Even better would be to edit your MIDI file and add the correct BPM.
 
 
 ## Component: VRCMidiPlayer
 
-![VRCMidiPlayer](/img/worlds/midi-playback-215556799-a546e119-afdb-441f-8019-70ee50b6c008.png)
+[IMAGE: VRCMidiPlayer]
 
 This is the brains of the operation. It works similarly to an Audio Source but uses a Midi Asset instead. It sends MIDI [Note On](/worlds/udon/midi#midinoteon) and [Note Off](/worlds/udon/midi#midinoteoff) events to all target UdonBehaviours.
 
@@ -120,7 +104,7 @@ Midi File
 ### Example: MidiPlaybackScene
 
 <video controls>
-  <source src="https://user-images.githubusercontent.com/737888/214626843-53a4c069-ea69-423a-926d-e2ce024c9819.mp4"/>
+  <source src="[IMAGE_URL]
 </video>
 
 Example Central includes [a simple MIDI playback example](/worlds/examples/midi-playback). You can load it from the menu bar under VRChat SDK > Samples > MidiPlayback.
@@ -164,17 +148,9 @@ A MidiBlock represents a whole Midi Note event from On to Off, and some helpful 
 
 ---
 
-## ドキュメント: realtime-midi.md
+## Document: realtime-midi.md
 
-```metadata
-階層: /worlds/udon/midi/realtime-midi.md
-ディレクトリ: worlds\udon\midi
-ファイル名: realtime-midi.md
-拡張子: .md
-サイズ: 2.42 KB
-最終更新: 2025-06-05T03:07:52.815Z
-```
-
+Path: /worlds/udon/midi/realtime-midi.md
 # Realtime Midi
 
 You can use MIDI devices to control your Udon world in realtime using MIDI Notes and controller changes.
@@ -183,7 +159,7 @@ You can use MIDI devices to control your Udon world in realtime using MIDI Notes
 
 To get started with Midi in your scene, add a **VRC Midi Listener** component to one of your GameObjects.
 
-![VRCMidiListener](/img/worlds/realtime-midi-215557542-bf65a6ef-47d0-4e2f-8d39-337847db461c.png)
+[IMAGE: VRCMidiListener]
 
 This component informs VRChat that you want to receive MIDI events and starts up the MIDI system if needed. **You need to select the events you want to receive** by pressing the 'Active Events' toggles to select them - no events are selected by default, so turn them on before you start testing. **You also need to choose an UdonBehaviour** that will receive these events by selecting it as the 'Behaviour' on the VRC Midi Listener. This UdonBehaviour can be on the same GameObject as the MIDI Listener, or any other object.
 
@@ -193,9 +169,9 @@ When you start your scene, you may notice a **VRCMidiHandler** GameObject that i
 
 You can test your MIDI events in the Unity Editor by selecting your device through the VRChat SDK. It is saved in your Editor preferences, so Unity will remember your device for every project.
 
-![Midi Utility Window](/img/worlds/realtime-midi-215557576-5414eb63-a857-4334-8a8c-05f3b6436773.png)
+[IMAGE: Midi Utility Window]
 
-![Midi Utility Selector](/img/worlds/realtime-midi-215557616-8cc3fd99-0fe4-4564-9413-cc805708cf89.png)
+[IMAGE: Midi Utility Selector]
 
 ## Device Selection - Runtime
 
@@ -209,4 +185,4 @@ Visit the  [Udon Midi Test](https://vrchat.com/home/world/wrld_f8bc6485-dcdf-464
 
 ---
 
-# ドキュメント終了
+# End of Documentation

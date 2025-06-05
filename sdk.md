@@ -1,22 +1,14 @@
-# sdk 統合ドキュメント
+# sdk Documentation
 
-以下は自動収集された全ドキュメントのコンテンツです。各セクションの始めにメタデータが記載されています。
+This document contains automatically collected documentation with metadata headers for each section.
 
 
 
 ---
 
-## ドキュメント: build-pipeline-callbacks-and-interfaces.md
+## Document: build-pipeline-callbacks-and-interfaces.md
 
-```metadata
-階層: /sdk/build-pipeline-callbacks-and-interfaces.md
-ディレクトリ: sdk
-ファイル名: build-pipeline-callbacks-and-interfaces.md
-拡張子: .md
-サイズ: 2.24 KB
-最終更新: 2025-06-05T03:07:52.757Z
-```
-
+Path: /sdk/build-pipeline-callbacks-and-interfaces.md
 ---
 title: "Build Pipeline Callbacks and Interfaces"
 slug: "build-pipeline-callbacks-and-interfaces"
@@ -95,17 +87,9 @@ This interface allows you to perform some logic before the VRChat SDK starts bui
 
 ---
 
-## ドキュメント: detecting-vrcsdk.md
+## Document: detecting-vrcsdk.md
 
-```metadata
-階層: /sdk/detecting-vrcsdk.md
-ディレクトリ: sdk
-ファイル名: detecting-vrcsdk.md
-拡張子: .md
-サイズ: 2.39 KB
-最終更新: 2025-06-05T03:07:52.758Z
-```
-
+Path: /sdk/detecting-vrcsdk.md
 import CurrentUnityVersion from '@site/src/components/UnityVersionedText.js';
 import UnityVersionedLink  from '@site/src/components/UnityVersionedLink.js';
 
@@ -149,22 +133,14 @@ Currently, in the VRChat SDK, all those symbol usages are migrated to Version De
 
 ---
 
-## ドキュメント: example-central.md
+## Document: example-central.md
 
-```metadata
-階層: /sdk/example-central.md
-ディレクトリ: sdk
-ファイル名: example-central.md
-拡張子: .md
-サイズ: 3.13 KB
-最終更新: 2025-06-05T03:07:52.758Z
-```
-
+Path: /sdk/example-central.md
 # Example Central
 
 Example Central provides examples for the VRChat SDK, which you can browse, download and modify to learn from for your own projects.
 
-![Example Central Window Layout](/img/sdk/example-central/ec-layout.png)
+[IMAGE: Example Central Window Layout]
 
 :::info
 
@@ -180,11 +156,11 @@ Example Central has only recently been released.
 ## Basic Usage
 Open the window from the Unity Editor Menu under "VRChat SDK > 🏠 Example Central"
 
-![Opening Example Central From Menu](/img/sdk/example-central/ec-menu.png)
+[IMAGE: Opening Example Central From Menu]
 
 Example Central has two main sections - a listing of examples on the left, and information about the selected example on the right.
 
-![Example Central Window Layout](/img/sdk/example-central/ec-overlay.png)
+[IMAGE: Example Central Window Layout]
 
 * Browse the list and select an example to see more information about it.
 * Once selected, the example's details are shown on the right.
@@ -227,7 +203,7 @@ Visit the example world in VRChat to get a better understanding of how the examp
 
 The gear icon (⚙) beside the search box opens up the settings of Example Central. 
 
-![Example Central Window Layout](/img/sdk/example-central/ec-settings.png)
+[IMAGE: Example Central Window Layout]
 
 There is one setting:
 - Show Creator Economy Examples
@@ -248,17 +224,9 @@ What do you think of Example Central?
 
 ---
 
-## ドキュメント: index.md
+## Document: index.md
 
-```metadata
-階層: /sdk/index.md
-ディレクトリ: sdk
-ファイル名: index.md
-拡張子: .md
-サイズ: 4.79 KB
-最終更新: 2025-06-05T03:07:52.759Z
-```
-
+Path: /sdk/index.md
 ---
 sidebar_position: -1
 ---
@@ -345,17 +313,9 @@ If there are any errors, even with a brand new empty project, [please contact ou
 
 ---
 
-## ドキュメント: public-sdk-api.md
+## Document: public-sdk-api.md
 
-```metadata
-階層: /sdk/public-sdk-api.md
-ディレクトリ: sdk
-ファイル名: public-sdk-api.md
-拡張子: .md
-サイズ: 4.05 KB
-最終更新: 2025-06-05T03:07:52.759Z
-```
-
+Path: /sdk/public-sdk-api.md
 ---
 title: "Public SDK API"
 slug: "public-sdk-api"
@@ -472,17 +432,9 @@ We're going to make our best effort to provide a stable API, but it's still subj
 
 ---
 
-## ドキュメント: sdk-troubleshooting.md
+## Document: sdk-troubleshooting.md
 
-```metadata
-階層: /sdk/sdk-troubleshooting.md
-ディレクトリ: sdk
-ファイル名: sdk-troubleshooting.md
-拡張子: .md
-サイズ: 3.12 KB
-最終更新: 2025-06-05T03:07:52.759Z
-```
-
+Path: /sdk/sdk-troubleshooting.md
 ---
 title: "SDK Troubleshooting"
 slug: "sdk-troubleshooting"
@@ -531,17 +483,9 @@ Sorry about that! Please browse our [official knowledgebase](http://help.vrchat.
 
 ---
 
-## ドキュメント: updating-the-sdk.md
+## Document: updating-the-sdk.md
 
-```metadata
-階層: /sdk/updating-the-sdk.md
-ディレクトリ: sdk
-ファイル名: updating-the-sdk.md
-拡張子: .md
-サイズ: 5.30 KB
-最終更新: 2025-06-05T03:07:52.759Z
-```
-
+Path: /sdk/updating-the-sdk.md
 ---
 title: "Updating the SDK"
 slug: "updating-the-sdk"
@@ -637,17 +581,9 @@ If you are updating from a previous version of Unity, we [have a guide for updat
 
 ---
 
-## ドキュメント: vrcpipelinemanager.md
+## Document: vrcpipelinemanager.md
 
-```metadata
-階層: /sdk/vrcpipelinemanager.md
-ディレクトリ: sdk
-ファイル名: vrcpipelinemanager.md
-拡張子: .md
-サイズ: 1.60 KB
-最終更新: 2025-06-05T03:07:52.763Z
-```
-
+Path: /sdk/vrcpipelinemanager.md
 ---
 title: "VRCPipelineManager"
 slug: "vrcpipelinemanager"
@@ -677,11 +613,11 @@ Blueprint IDs can only be of the following format where 0 is replaced with [0-9]
 Any other ID format will not be accepted. This is normally done automatically, so you shouldn't ever have to create your own Blueprint ID-- just click "Attach" and one will be generated for you.
 :::
 
-![vrcpipelinemanager-7d57e76-Unity_2017-12-10_01-35-44.png](/img/sdk/vrcpipelinemanager-7d57e76-Unity_2017-12-10_01-35-44.png)
+[IMAGE: vrcpipelinemanager-7d57e76-Unity_2017-12-10_01-35-44.png]
 
 If you have a blueprint id that you want to upload to you can attach a new one with the `Attach (Optional)` button
 
-![vrcpipelinemanager-db63e77-Unity_2017-12-10_01-37-47.png](/img/sdk/vrcpipelinemanager-db63e77-Unity_2017-12-10_01-37-47.png)
+[IMAGE: vrcpipelinemanager-db63e77-Unity_2017-12-10_01-37-47.png]
 
 :::caution TIP
 
@@ -691,4 +627,4 @@ Don't have more than one PipelineManager in the scene when building a world! You
 
 ---
 
-# ドキュメント終了
+# End of Documentation

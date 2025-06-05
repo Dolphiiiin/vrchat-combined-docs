@@ -1,22 +1,14 @@
-# players 統合ドキュメント
+# players Documentation
 
-以下は自動収集された全ドキュメントのコンテンツです。各セクションの始めにメタデータが記載されています。
+This document contains automatically collected documentation with metadata headers for each section.
 
 
 
 ---
 
-## ドキュメント: getting-players.md
+## Document: getting-players.md
 
-```metadata
-階層: /worlds/udon/players/getting-players.md
-ディレクトリ: worlds\udon\players
-ファイル名: getting-players.md
-拡張子: .md
-サイズ: 2.69 KB
-最終更新: 2025-06-05T03:07:52.820Z
-```
-
+Path: /worlds/udon/players/getting-players.md
 ---
 title: "Getting Players"
 slug: "getting-players"
@@ -53,7 +45,7 @@ This is how you get all the Players in your world so you can go through them in 
 <Tabs groupId="udon-compiler-language">
 <TabItem value="graph" label="Udon Graph">
 
-![The bare minimum for a working call to GetPlayers. A better approach would be to construct VRCPlayerApi[] as a variable so you can reuse it.](/img/worlds/graphgetplayers.png)
+[IMAGE: The bare minimum for a working call to GetPlayers. A better approach would be to construct VRCPlayerApi[] as a variable so you can reuse it.]
 
 </TabItem>
 <TabItem value="cs" label="UdonSharp">
@@ -112,17 +104,9 @@ You will be able to pass in an array of VRCPlayerApi objects and a tag and the m
 
 ---
 
-## ドキュメント: index.md
+## Document: index.md
 
-```metadata
-階層: /worlds/udon/players/index.md
-ディレクトリ: worlds\udon\players
-ファイル名: index.md
-拡張子: .md
-サイズ: 5.01 KB
-最終更新: 2025-06-05T03:07:52.822Z
-```
-
+Path: /worlds/udon/players/index.md
 ---
 sidebar_position: 1
 ---
@@ -155,7 +139,7 @@ import TabItem from '@theme/TabItem';
 <Tabs groupId="udon-compiler-language">
 <TabItem value="graph" label="Udon Graph">
 
-![An Udon Graph screenshot showing the OnPlayerLeft event connected to an IsValid node.](/img/worlds/player-isvalid.png)
+[IMAGE: An Udon Graph screenshot showing the OnPlayerLeft event connected to an IsValid node.]
 
 </TabItem>
 <TabItem value="cs" label="UdonSharp">
@@ -276,17 +260,9 @@ Gets all available languages a player can select in VRChat's settings. The value
 
 ---
 
-## ドキュメント: player-audio.md
+## Document: player-audio.md
 
-```metadata
-階層: /worlds/udon/players/player-audio.md
-ディレクトリ: worlds\udon\players
-ファイル名: player-audio.md
-拡張子: .md
-サイズ: 3.95 KB
-最終更新: 2025-06-05T03:07:52.823Z
-```
-
+Path: /worlds/udon/players/player-audio.md
 # Player Audio
 
 import Tabs from '@theme/Tabs';
@@ -297,7 +273,7 @@ Players have two sources of audio: the voice coming through their microphone, an
 <Tabs groupId="udon-compiler-language">
 <TabItem value="graph" label="Udon Graph">
 
-![Setting the player's voice gain in Udon Graph.](/img/worlds/player-audio-8e50220-setvoicegain.png)
+[IMAGE: Setting the player's voice gain in Udon Graph.]
 
 </TabItem>
 <TabItem value="cs" label="UdonSharp">
@@ -365,17 +341,9 @@ This sets whether the audio source should use a pre-configured custom curve. Def
 
 ---
 
-## ドキュメント: player-avatar-scaling.md
+## Document: player-avatar-scaling.md
 
-```metadata
-階層: /worlds/udon/players/player-avatar-scaling.md
-ディレクトリ: worlds\udon\players
-ファイル名: player-avatar-scaling.md
-拡張子: .md
-サイズ: 5.46 KB
-最終更新: 2025-06-05T03:07:52.823Z
-```
-
+Path: /worlds/udon/players/player-avatar-scaling.md
 ---
 title: "Player Avatar Scaling"
 slug: "player-avatar-scaling"
@@ -409,7 +377,7 @@ Currently, avatar scaling is operating in the player-controlled mode by default.
 ## Disabling player-controlled scaling via the website
 If you simply wish to disable the avatar scaling system in your world, you can log into the [My Worlds section of the VRChat Website](https://vrchat.com/home/content/worlds), select your world, toggle it off, and save your changes.
 
-![It's really easy!](/img/worlds/udon/website_avatar_scaling_enabled.png)
+[IMAGE: It's really easy!]
 
 When you disable avatar scaling via the website, the system is disabled for players in your world entirely. They will only be able to use your world at their default scale, and the menu components for avatar scaling will be disabled. 
 
@@ -486,17 +454,9 @@ Returns the configured eye height for the target player's avatar. This function 
 
 ---
 
-## ドキュメント: player-collisions.md
+## Document: player-collisions.md
 
-```metadata
-階層: /worlds/udon/players/player-collisions.md
-ディレクトリ: worlds\udon\players
-ファイル名: player-collisions.md
-拡張子: .md
-サイズ: 2.99 KB
-最終更新: 2025-06-05T03:07:52.824Z
-```
-
+Path: /worlds/udon/players/player-collisions.md
 import UnityVersionedLink from '@site/src/components/UnityVersionedLink.js';
 
 # Player Collisions
@@ -511,7 +471,7 @@ If you want to detect when a player has entered or exited an area, your best bet
 - **OnPlayerTriggerStay** is called on frames while a player's capsule is inside a Trigger Collider
 - **OnPlayerTriggerExit** is called when a player's capsule exits a Trigger Collider.
 
-![A simple Box Collider with 'Is Trigger' checked.](/img/worlds/player-collisions-6d9aaf6-trigger-collider.png)
+[IMAGE: A simple Box Collider with 'Is Trigger' checked.]
 
 To use these events, add an object with a [collider](https://docs.unity3d.com/Manual/collider-shapes-introduction.html) component and enable the 'Is Trigger' box on the collider. A trigger collider allows objects and players pass through it and calls events when those objects have colliders. You can learn more about <UnityVersionedLink versionKey="minor" url="https://docs.unity3d.com/<VERSION>/Documentation/Manual/CollidersOverview.html">Collision in Unity's documentation</UnityVersionedLink>.
 
@@ -538,26 +498,18 @@ These events WILL NOT be called when a player 'walks into' a stationary object. 
 ## Particles
 Finally, you can use **OnPlayerParticleCollision** to detect when a Particle colliders with a player, assuming that Particle System has Collision and Send Collision Messages turned on.
 
-![This Particle System has the Collision module turned on, is set to 'World' and '3D' modes, with 'Send Collision Messages' turned on.](/img/worlds/player-collisions-40d1f44-particle-collisions.png)
+[IMAGE: This Particle System has the Collision module turned on, is set to 'World' and '3D' modes, with 'Send Collision Messages' turned on.]
 ## Examples
 
 The [Udon example scene](https://creators.vrchat.com/worlds/examples/udon-example-scene/) demonstrates how to use all three methods of detecting player collisions. 
 
-![Check out the Udon Example Scene to see how these events can be used.](/img/worlds/player-collisions-f98c33a-udonexamplescene-collisions.png)
+[IMAGE: Check out the Udon Example Scene to see how these events can be used.]
 
 ---
 
-## ドキュメント: player-forces.md
+## Document: player-forces.md
 
-```metadata
-階層: /worlds/udon/players/player-forces.md
-ディレクトリ: worlds\udon\players
-ファイル名: player-forces.md
-拡張子: .md
-サイズ: 1.75 KB
-最終更新: 2025-06-05T03:07:52.824Z
-```
-
+Path: /worlds/udon/players/player-forces.md
 ---
 title: "Player Forces"
 slug: "player-forces"
@@ -607,17 +559,9 @@ Set to true to keep a Player stuck in place, turning off their Locomotion. Note 
 
 ---
 
-## ドキュメント: player-positions.md
+## Document: player-positions.md
 
-```metadata
-階層: /worlds/udon/players/player-positions.md
-ディレクトリ: worlds\udon\players
-ファイル名: player-positions.md
-拡張子: .md
-サイズ: 4.56 KB
-最終更新: 2025-06-05T03:07:52.825Z
-```
-
+Path: /worlds/udon/players/player-positions.md
 ---
 title: "Player Positions"
 slug: "player-positions"
@@ -717,4 +661,4 @@ Do not teleport players during network updates (e.g. [OnDeserialization](/worlds
 
 ---
 
-# ドキュメント終了
+# End of Documentation

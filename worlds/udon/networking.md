@@ -1,22 +1,14 @@
-# networking 統合ドキュメント
+# networking Documentation
 
-以下は自動収集された全ドキュメントのコンテンツです。各セクションの始めにメタデータが記載されています。
+This document contains automatically collected documentation with metadata headers for each section.
 
 
 
 ---
 
-## ドキュメント: debugging.md
+## Document: debugging.md
 
-```metadata
-階層: /worlds/udon/networking/debugging.md
-ディレクトリ: worlds\udon\networking
-ファイル名: debugging.md
-拡張子: .md
-サイズ: 2.03 KB
-最終更新: 2025-06-05T03:07:52.815Z
-```
-
+Path: /worlds/udon/networking/debugging.md
 # Debugging Network Issues
 
 The [World Debug Views](/worlds/udon/world-debug-views) are useful tools that can help you understand the ownership and network state of objects and data in your scene.
@@ -79,17 +71,9 @@ For further networking troubleshooting, explore these topics:
 
 ---
 
-## ドキュメント: events.md
+## Document: events.md
 
-```metadata
-階層: /worlds/udon/networking/events.md
-ディレクトリ: worlds\udon\networking
-ファイル名: events.md
-拡張子: .md
-サイズ: 19.34 KB
-最終更新: 2025-06-05T03:07:52.816Z
-```
-
+Path: /worlds/udon/networking/events.md
 # Network Events
 
 import Tabs from '@theme/Tabs';
@@ -150,7 +134,7 @@ Follow the example below to trigger a custom network event for players in your i
 <Tabs groupId="udon-compiler-language">
 <TabItem value="graph" label="Udon Graph">
 
-![Udon graph for an object that logs a message when it is interacted with.](/img/worlds/udon/networking/custom-event-example-graph.png)
+[IMAGE: Udon graph for an object that logs a message when it is interacted with.]
 
 1. Ensure that your UdonBehaviour's sync mode is set to "Continuous" or "Manual", not "None".
 2. Create an "Event Custom" node.
@@ -223,7 +207,7 @@ To send parameters from a "Send Custom Network Event" node, choose the overload 
 
 For example, here is a simple graph receiving a string and an integer:
 
-![Udon graph that sends an event with 2 parameters of different types on Interact.](/img/worlds/udon/networking/custom-event-parameters-example-graph.png)
+[IMAGE: Udon graph that sends an event with 2 parameters of different types on Interact.]
 
 </TabItem>
 
@@ -400,17 +384,9 @@ Note that `Component` targeting relies on component indices (order), meaning it 
 
 ---
 
-## ドキュメント: index.md
+## Document: index.md
 
-```metadata
-階層: /worlds/udon/networking/index.md
-ディレクトリ: worlds\udon\networking
-ファイル名: index.md
-拡張子: .md
-サイズ: 7.21 KB
-最終更新: 2025-06-05T03:07:52.816Z
-```
-
+Path: /worlds/udon/networking/index.md
 # Networking
 
 import Tabs from '@theme/Tabs';
@@ -443,7 +419,7 @@ There are two types of sync available:
 <Tabs groupId="udon-compiler-language">
 <TabItem value="graph" label="Udon Graph">
 
-![The Variables window in an Udon Graph shows the variables you've created, and lets you edit their properties.](/img/worlds/index-e057e35-slider-program-variables.png)
+[IMAGE: The Variables window in an Udon Graph shows the variables you've created, and lets you edit their properties.]
 
 In the image above, we have three different variables, with the 'synced' box checked for the 'sliderValue' variable. The Owner of this GameObject will be in charge of this variable value, and their changes will be sent to everyone else.
 
@@ -463,7 +439,7 @@ In the code above, we have three different variables, with the 'UdonSynced' attr
 
 
 ### Example: Synced Slider
-![](/img/worlds/udon-networking-8472b6b-synced-slider.png)
+[IMAGE: Image]
 
 In this example, the Owner of a Slider syncs its value to everyone else. Note that this is meant to illustrate the concepts - we'll release a separate example that goes into the nitty-gritty 'how-to' details.
 
@@ -479,7 +455,7 @@ When a new Player joins a instance, all of the synced variables in that world ar
 Unlike variables, **events do not stick around**—they happen and then disappear. If we used an Event in the Synced Slider example above, any new Players who joined the instance would not have their Sliders synced up. So events are useful for things that you want to happen **right away** for everyone who's in the instance **right now**.
 
 ### Example: Bubble Gun
-![](/img/worlds/udon-networking-33702b1-bubble-gun-shooting.png)
+[IMAGE: Image]
 
 In this example, we have an object with a particle system and an animator that spins its bubble wand and generates bubble particles. We want this to happen for everyone in the world when the user holding the wand presses the trigger.
 
@@ -490,7 +466,7 @@ To make this happen for everyone, we tie the **OnPickupUseDown** event which is 
 <Tabs groupId="udon-compiler-language">
 <TabItem value="graph" label="Udon Graph">
 
-![Networked pickup particles in the Udon Graph](/img/worlds/udon-networking-e21b3b0-bubble-gun-graph.png)
+[IMAGE: Networked pickup particles in the Udon Graph]
 
 </TabItem>
 <TabItem value="cs" label="UdonSharp">
@@ -546,17 +522,9 @@ See the navigation bar for the full list of networking-related topics to learn a
 
 ---
 
-## ドキュメント: late-joiners.md
+## Document: late-joiners.md
 
-```metadata
-階層: /worlds/udon/networking/late-joiners.md
-ディレクトリ: worlds\udon\networking
-ファイル名: late-joiners.md
-拡張子: .md
-サイズ: 2.06 KB
-最終更新: 2025-06-05T03:07:52.817Z
-```
-
+Path: /worlds/udon/networking/late-joiners.md
 # Late Joiners & Sync Issues
 
 When a player joins a VRChat instance after some synchronized variables have been changed, they need to be caught up to the latest state of the world. This guide explains how to ensure late joiners experience a consistent and synchronized world.
@@ -611,17 +579,9 @@ This saves you from needing to change the Owner of the door to the player who In
 
 ---
 
-## ドキュメント: network-components.md
+## Document: network-components.md
 
-```metadata
-階層: /worlds/udon/networking/network-components.md
-ディレクトリ: worlds\udon\networking
-ファイル名: network-components.md
-拡張子: .md
-サイズ: 9.83 KB
-最終更新: 2025-06-05T03:07:52.817Z
-```
-
+Path: /worlds/udon/networking/network-components.md
 import UnityVersionedLink from '@site/src/components/UnityVersionedLink.js';
 
 # Network Components
@@ -730,17 +690,9 @@ Late joiners will have the objects automatically made active or inactive where a
 
 ---
 
-## ドキュメント: network-details.md
+## Document: network-details.md
 
-```metadata
-階層: /worlds/udon/networking/network-details.md
-ディレクトリ: worlds\udon\networking
-ファイル名: network-details.md
-拡張子: .md
-サイズ: 5.72 KB
-最終更新: 2025-06-05T03:07:52.817Z
-```
-
+Path: /worlds/udon/networking/network-details.md
 # Networking Specs & Tricks
 
 Networking in Udon can be challenging! Try to keep things simple until you're more experienced.
@@ -842,17 +794,9 @@ Udon *periodically* checks the visibility of all mesh renderer children of synch
 
 ---
 
-## ドキュメント: network-id-utility.md
+## Document: network-id-utility.md
 
-```metadata
-階層: /worlds/udon/networking/network-id-utility.md
-ディレクトリ: worlds\udon\networking
-ファイル名: network-id-utility.md
-拡張子: .md
-サイズ: 4.28 KB
-最終更新: 2025-06-05T03:07:52.818Z
-```
-
+Path: /worlds/udon/networking/network-id-utility.md
 # Network ID Utility
 A network ID is the identifier that is used to determine which object is which when it comes to networking. In most cases, you don’t need to worry about this, but it can come up when working with cross-platform worlds where players are technically loading two different versions of your world. 
 
@@ -870,25 +814,25 @@ This utility allows you to save and transfer network IDs between scenes or proje
 You should only need to use this utility if you are developing a cross-platform world and your different versions are in different scenes or projects.
 :::
 
-![network-id-utility-9936cee-image1.png](/img/worlds/network-id-utility-9936cee-image1.png)
+[IMAGE: network-id-utility-9936cee-image1.png]
 
 When using this tool, you will see a list of all your network IDs in the entire scene. If you don’t have this yet, you can click Regenerate Scene IDs.
-![network-id-utility-05130bf-image4.png](/img/worlds/network-id-utility-05130bf-image4.png)
+[IMAGE: network-id-utility-05130bf-image4.png]
 
 When you are ready to transfer network IDs from one scene to another, click on the **Export** button to save the file somewhere. Then go to the other scene and click **Import**, and select that file.
 
 **Network IDs in this format are saved as a path to the object.** As such, try to keep the path to each object the same between your scenes. Other objects in the scene that do not have any networking (such as meshes) do not matter and they can be different between your scenes, as long as they do not conflict with something that does need to be synced.
-![network-id-utility-3b30a4e-image5.png](/img/worlds/network-id-utility-3b30a4e-image5.png)
+[IMAGE: network-id-utility-3b30a4e-image5.png]
 
 If everything matches between your two scenes, you should see one big block with an **Accept All** button. Go ahead and click that, and you’re good to go!
 
 ## Resolving Conflicts
 
 There are several conflict resolution tools within this utility.
-![network-id-utility-22a9bcf-image3.png](/img/worlds/network-id-utility-22a9bcf-image3.png)
+[IMAGE: network-id-utility-22a9bcf-image3.png]
 
 Here is an example of an object that exists in the file but does not exist in the scene. The file says that there is a network ID at this path, but it can’t find an object with that path. At this point, you can choose to either ignore it or specify a different object. If you know for sure that this is an object which doesn’t need to exist in this scene, then you can safely ignore it. However, if it is an object that should exist in your scene but simply has a different name, then you can select it. Once you’ve resolved this conflict, it will move down to the section where you can accept the network ID.
-![network-id-utility-c5175f8-image2.png](/img/worlds/network-id-utility-c5175f8-image2.png)
+[IMAGE: network-id-utility-c5175f8-image2.png]
 
 Here's another example where an object says it has the network ID of 25, but the file says that a different path should have 25. 
 
@@ -898,17 +842,9 @@ If you need to resolve these conflicts, you can choose to either click the Ignor
 
 ---
 
-## ドキュメント: network-stats.md
+## Document: network-stats.md
 
-```metadata
-階層: /worlds/udon/networking/network-stats.md
-ディレクトリ: worlds\udon\networking
-ファイル名: network-stats.md
-拡張子: .md
-サイズ: 2.31 KB
-最終更新: 2025-06-05T03:07:52.818Z
-```
-
+Path: /worlds/udon/networking/network-stats.md
 # Network Stats
 A number of networking stats are available to Udon via the `VRC.SDK3.Network.Stats` static class.
 
@@ -964,17 +900,9 @@ All game object statistics will return the default value if the object is not sy
 
 ---
 
-## ドキュメント: ownership.md
+## Document: ownership.md
 
-```metadata
-階層: /worlds/udon/networking/ownership.md
-ディレクトリ: worlds\udon\networking
-ファイル名: ownership.md
-拡張子: .md
-サイズ: 4.13 KB
-最終更新: 2025-06-05T03:07:52.818Z
-```
-
+Path: /worlds/udon/networking/ownership.md
 # Object Ownership
 
 ## Introduction
@@ -1032,7 +960,7 @@ public override void OnOwnershipTransferred(VRCPlayerApi newOwner)
 ## Transfer Events Diagram
 This image shows the order of events so you can understand the steps involved in successfully transferring ownership of an object.
 
-![](/img/worlds/udon-networking-813f99e-OnOwnershipRequest_Activity.svg)
+[IMAGE: Image]
 
 ## The Instance Master
 
@@ -1072,17 +1000,9 @@ For further details, explore these networking topics:
 
 ---
 
-## ドキュメント: performance.md
+## Document: performance.md
 
-```metadata
-階層: /worlds/udon/networking/performance.md
-ディレクトリ: worlds\udon\networking
-ファイル名: performance.md
-拡張子: .md
-サイズ: 2.89 KB
-最終更新: 2025-06-05T03:07:52.819Z
-```
-
+Path: /worlds/udon/networking/performance.md
 # Performance Considerations
 
 ## Introduction
@@ -1142,17 +1062,9 @@ For further insights into optimizing networking, explore these related guides:
 
 ---
 
-## ドキュメント: variables.md
+## Document: variables.md
 
-```metadata
-階層: /worlds/udon/networking/variables.md
-ディレクトリ: worlds\udon\networking
-ファイル名: variables.md
-拡張子: .md
-サイズ: 3.64 KB
-最終更新: 2025-06-05T03:07:52.819Z
-```
-
+Path: /worlds/udon/networking/variables.md
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
@@ -1169,7 +1081,7 @@ This guide covers how network variables work, when to use them, and best practic
 
 VRChat synchronizes variables if you tick the "synced" checkox.
 
-![An Udon Graph screenshot showing the OnPlayerLeft event connected to an IsValid node.](/img/worlds/udon/networking/graph-synced-variable.png)
+[IMAGE: An Udon Graph screenshot showing the OnPlayerLeft event connected to an IsValid node.]
 
 </TabItem>
 <TabItem value="cs" label="UdonSharp">
@@ -1208,7 +1120,7 @@ There are two types of syncing available:
 
 ### Setting the Sync Mode
 
-![Showing how to set the Sync Type in the inspector](/img/worlds/udon/networking/set-sync-inspector.png)
+[IMAGE: Showing how to set the Sync Type in the inspector]
 
 You can use the Synchronization dropdown in the inspector for an UdonBehaviour to set its sync mode, as shown in the image above.
 
@@ -1240,4 +1152,4 @@ Make sure to learn about how to sync variables for [late joiners](/worlds/udon/n
 
 ---
 
-# ドキュメント終了
+# End of Documentation

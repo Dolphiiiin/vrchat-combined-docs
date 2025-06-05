@@ -1,22 +1,14 @@
-# root 統合ドキュメント
+# root Documentation
 
-以下は自動収集された全ドキュメントのコンテンツです。各セクションの始めにメタデータが記載されています。
+This document contains automatically collected documentation with metadata headers for each section.
 
 
 
 ---
 
-## ドキュメント: getting-started.md
+## Document: getting-started.md
 
-```metadata
-階層: /getting-started.md
-ディレクトリ: .
-ファイル名: getting-started.md
-拡張子: .md
-サイズ: 2.52 KB
-最終更新: 2025-06-05T03:07:52.747Z
-```
-
+Path: /getting-started.md
 ---
 sidebar_position: -99
 ---
@@ -59,17 +51,9 @@ To make a VRChat avatar, you must first create or find a 3D character, then ensu
 
 ---
 
-## ドキュメント: roadmap.md
+## Document: roadmap.md
 
-```metadata
-階層: /roadmap.md
-ディレクトリ: .
-ファイル名: roadmap.md
-拡張子: .md
-サイズ: 3.34 KB
-最終更新: 2025-06-05T03:07:52.755Z
-```
-
+Path: /roadmap.md
 ---
 sidebar_position: 100
 ---
@@ -115,4 +99,4 @@ Please keep in mind that this list is subject to change. It also doesn’t inclu
 
 ---
 
-# ドキュメント終了
+# End of Documentation

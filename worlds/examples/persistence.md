@@ -1,22 +1,14 @@
-# persistence 統合ドキュメント
+# persistence Documentation
 
-以下は自動収集された全ドキュメントのコンテンツです。各セクションの始めにメタデータが記載されています。
+This document contains automatically collected documentation with metadata headers for each section.
 
 
 
 ---
 
-## ドキュメント: health-bar.md
+## Document: health-bar.md
 
-```metadata
-階層: /worlds/examples/persistence/health-bar.md
-ディレクトリ: worlds\examples\persistence
-ファイル名: health-bar.md
-拡張子: .md
-サイズ: 1.85 KB
-最終更新: 2025-06-05T03:07:52.792Z
-```
-
+Path: /worlds/examples/persistence/health-bar.md
 ---
 description: "Save player health amounts in a PlayerObject."
 sidebar_custom_props:
@@ -26,7 +18,7 @@ import HowToImportExample from '/docs/worlds/examples/persistence/_how-to-import
 
 # Health Bar
 
-![Health Bar World Preview](/img/worlds/examples/persistence/health-bar.jpg)
+[IMAGE: Health Bar World Preview]
 
 A simple health bar which uses a PlayerObject to sync and persist players' health amounts.
 
@@ -67,17 +59,9 @@ You can customize the prefabs by changing their parameters:
 
 ---
 
-## ドキュメント: index.md
+## Document: index.md
 
-```metadata
-階層: /worlds/examples/persistence/index.md
-ディレクトリ: worlds\examples\persistence
-ファイル名: index.md
-拡張子: .md
-サイズ: 320 B
-最終更新: 2025-06-05T03:07:52.792Z
-```
-
+Path: /worlds/examples/persistence/index.md
 ---
 sidebar_custom_props:
     description: Learn about Persistence by adding prefabs to your world.
@@ -94,17 +78,9 @@ import DocCardList from '@theme/DocCardList';
 
 ---
 
-## ドキュメント: leaderboard.md
+## Document: leaderboard.md
 
-```metadata
-階層: /worlds/examples/persistence/leaderboard.md
-ディレクトリ: worlds\examples\persistence
-ファイル名: leaderboard.md
-拡張子: .md
-サイズ: 1.61 KB
-最終更新: 2025-06-05T03:07:52.792Z
-```
-
+Path: /worlds/examples/persistence/leaderboard.md
 ---
 description: "Save and display high scores with PlayerData."
 sidebar_custom_props:
@@ -114,7 +90,7 @@ import HowToImportExample from '/docs/worlds/examples/persistence/_how-to-import
 
 # Leaderboard
 
-![Leaderboard World Preview](/img/worlds/examples/persistence/leaderboard.jpg)
+[IMAGE: Leaderboard World Preview]
 
 A leaderboard which uses PlayerData to persist and display high scores.
 
@@ -144,17 +120,9 @@ The Scroll View's content transform has a Vertical Layout Group which makes all 
 
 ---
 
-## ドキュメント: persistent-idle-game.md
+## Document: persistent-idle-game.md
 
-```metadata
-階層: /worlds/examples/persistence/persistent-idle-game.md
-ディレクトリ: worlds\examples\persistence
-ファイル名: persistent-idle-game.md
-拡張子: .md
-サイズ: 1.88 KB
-最終更新: 2025-06-05T03:07:52.792Z
-```
-
+Path: /worlds/examples/persistence/persistent-idle-game.md
 ---
 description: "Save points & upgrades in a simple Idle Game."
 sidebar_custom_props:
@@ -164,7 +132,7 @@ import HowToImportExample from '/docs/worlds/examples/persistence/_how-to-import
 
 # Persistent Idle Game
 
-![Persistent Idle Game World Preview](/img/worlds/examples/persistence/persistent-idle-game.png)
+[IMAGE: Persistent Idle Game World Preview]
 
 This scene implements a simple [idle game](https://en.wikipedia.org/wiki/Incremental_game) that uses PlayerData to save the points and auto-clicker count for each player.
 
@@ -194,17 +162,9 @@ Reloading the scene loads the points and auto-clicker value using `POINTS_KEY` a
 
 ---
 
-## ドキュメント: persistent-pen.md
+## Document: persistent-pen.md
 
-```metadata
-階層: /worlds/examples/persistence/persistent-pen.md
-ディレクトリ: worlds\examples\persistence
-ファイル名: persistent-pen.md
-拡張子: .md
-サイズ: 2.50 KB
-最終更新: 2025-06-05T03:07:52.793Z
-```
-
+Path: /worlds/examples/persistence/persistent-pen.md
 ---
 description: "Save Pen Lines with PlayerObjects."
 sidebar_custom_props:
@@ -214,7 +174,7 @@ import HowToImportExample from '/docs/worlds/examples/persistence/_how-to-import
 
 # Persistent Pen
 
-![Persistent Idle Game World Preview](/img/worlds/examples/persistence/persistent-pen.jpg)
+[IMAGE: Persistent Idle Game World Preview]
 
 This example allows players to use a pen to draw up to 20 colored lines. Lines are synchronized for all players. The eraser can highlight and delete lines drawn by the local player.
 
@@ -259,17 +219,9 @@ We plan to make the following improvements to this example in the future:
 
 ---
 
-## ドキュメント: playerdata-types.md
+## Document: playerdata-types.md
 
-```metadata
-階層: /worlds/examples/persistence/playerdata-types.md
-ディレクトリ: worlds\examples\persistence
-ファイル名: playerdata-types.md
-拡張子: .md
-サイズ: 2.21 KB
-最終更新: 2025-06-05T03:07:52.793Z
-```
-
+Path: /worlds/examples/persistence/playerdata-types.md
 ---
 description: "Demonstrates data types supported by the PlayerData interface."
 sidebar_custom_props:
@@ -279,7 +231,7 @@ import HowToImportExample from '/docs/worlds/examples/persistence/_how-to-import
 
 # Player Data Types
 
-![Player Data Types World Preview](/img/worlds/examples/persistence/playerdata_types.jpg)
+[IMAGE: Player Data Types World Preview]
 
 A barebones examples that demonstrates data types supported by the PlayerData interface. 
 
@@ -338,17 +290,9 @@ If the player data type is not recognized, it outputs an error message indicatin
 
 ---
 
-## ドキュメント: position-sync.md
+## Document: position-sync.md
 
-```metadata
-階層: /worlds/examples/persistence/position-sync.md
-ディレクトリ: worlds\examples\persistence
-ファイル名: position-sync.md
-拡張子: .md
-サイズ: 1.44 KB
-最終更新: 2025-06-05T03:07:52.794Z
-```
-
+Path: /worlds/examples/persistence/position-sync.md
 ---
 description: "Save and restore player positions using PlayerObjects."
 sidebar_custom_props:
@@ -358,7 +302,7 @@ import HowToImportExample from '/docs/worlds/examples/persistence/_how-to-import
 
 # Position Sync
 
-![Position Sync World Preview](/img/worlds/examples/persistence/position-sync.png)
+[IMAGE: Position Sync World Preview]
 
 A simple PlayerObject prefab which saves each player's position and rotation, then restores them when they rejoin the world.
 
@@ -393,17 +337,9 @@ If you are standing on the ground, the script will save your position and rotati
 
 ---
 
-## ドキュメント: post-processing-settings.md
+## Document: post-processing-settings.md
 
-```metadata
-階層: /worlds/examples/persistence/post-processing-settings.md
-ディレクトリ: worlds\examples\persistence
-ファイル名: post-processing-settings.md
-拡張子: .md
-サイズ: 1.60 KB
-最終更新: 2025-06-05T03:07:52.794Z
-```
-
+Path: /worlds/examples/persistence/post-processing-settings.md
 ---
 description: "Save and load bloom settings with PlayerData."
 sidebar_custom_props:
@@ -413,7 +349,7 @@ import HowToImportExample from '/docs/worlds/examples/persistence/_how-to-import
 
 # Post-Processing Settings
 
-![Persistent Post-Processing Settings World Preview](/img/worlds/examples/persistence/post-processing-weight-slider.png)
+[IMAGE: Persistent Post-Processing Settings World Preview]
 
 This scene saves and loads its bloom settings by saving the weight of a PostProcessing Volume into PlayerData.
 
@@ -440,17 +376,9 @@ Whenever PlayerData is updated, the `OnPlayerDataUpdated` event will trigger on 
 
 ---
 
-## ドキュメント: simple-rpg.md
+## Document: simple-rpg.md
 
-```metadata
-階層: /worlds/examples/persistence/simple-rpg.md
-ディレクトリ: worlds\examples\persistence
-ファイル名: simple-rpg.md
-拡張子: .md
-サイズ: 2.24 KB
-最終更新: 2025-06-05T03:07:52.795Z
-```
-
+Path: /worlds/examples/persistence/simple-rpg.md
 ---
 description: "Save RPG-like player classes and levels."
 sidebar_custom_props:
@@ -460,7 +388,7 @@ import HowToImportExample from '/docs/worlds/examples/persistence/_how-to-import
 
 # Simple RPG
 
-![RPG World Preview](/img/worlds/examples/persistence/simple-rpg.jpg)
+[IMAGE: RPG World Preview]
 
 This scene contains an example of a simple RPG experience where you can level up, change class, and defeat enemies.
 
@@ -497,17 +425,9 @@ Enemies respawn 10–15 seconds after being killed.
 
 ---
 
-## ドキュメント: unlock-items.md
+## Document: unlock-items.md
 
-```metadata
-階層: /worlds/examples/persistence/unlock-items.md
-ディレクトリ: worlds\examples\persistence
-ファイル名: unlock-items.md
-拡張子: .md
-サイズ: 1.70 KB
-最終更新: 2025-06-05T03:07:52.795Z
-```
-
+Path: /worlds/examples/persistence/unlock-items.md
 ---
 description: "Unlock items forever, using PlayerData."
 sidebar_custom_props:
@@ -517,7 +437,7 @@ import HowToImportExample from '/docs/worlds/examples/persistence/_how-to-import
 
 # Unlock Items
 
-![Unlock Items World Preview](/img/worlds/examples/persistence/unlock_items.jpg)
+[IMAGE: Unlock Items World Preview]
 
 How to persistently unlock items using PlayerData, using simple in-world achievements as a demo.
 
@@ -555,17 +475,9 @@ For each achievement that is unlocked during the `UpdateStats` check, the `Unloc
 
 ---
 
-## ドキュメント: _how-to-import.mdx
+## Document: _how-to-import.mdx
 
-```metadata
-階層: /worlds/examples/persistence/_how-to-import.mdx
-ディレクトリ: worlds\examples\persistence
-ファイル名: _how-to-import.mdx
-拡張子: .mdx
-サイズ: 432 B
-最終更新: 2025-06-05T03:07:52.792Z
-```
-
+Path: /worlds/examples/persistence/_how-to-import.mdx
 ## Importing the Example
 Follow the steps below to add this example to your Unity project:
 1. Open [the Example Central Window](https://creators.vrchat.com/sdk/example-central) from the window from the Unity Editor Menu under "VRChat SDK > 🏠 Example Central"
@@ -574,4 +486,4 @@ Follow the steps below to add this example to your Unity project:
 
 ---
 
-# ドキュメント終了
+# End of Documentation

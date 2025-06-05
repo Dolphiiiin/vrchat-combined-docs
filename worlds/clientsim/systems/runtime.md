@@ -1,56 +1,32 @@
-# runtime 統合ドキュメント
+# runtime Documentation
 
-以下は自動収集された全ドキュメントのコンテンツです。各セクションの始めにメタデータが記載されています。
+This document contains automatically collected documentation with metadata headers for each section.
 
 
 
 ---
 
-## ドキュメント: blacklist-manager.md
+## Document: blacklist-manager.md
 
-```metadata
-階層: /worlds/clientsim/systems/runtime/blacklist-manager.md
-ディレクトリ: worlds\clientsim\systems\runtime
-ファイル名: blacklist-manager.md
-拡張子: .md
-サイズ: 289 B
-最終更新: 2025-06-05T03:07:52.768Z
-```
-
+Path: /worlds/clientsim/systems/runtime/blacklist-manager.md
 # Blacklist Manager
 The BlacklistManager is an interface into Udon’s blacklist system. Its only job is to add an object’s hierarchy into the blacklist. This is used when spawning players through the [PlayerManager](player-manager.md) as well as spawning the ClientSim system itself.
 
 
 ---
 
-## ドキュメント: event-dispatcher.md
+## Document: event-dispatcher.md
 
-```metadata
-階層: /worlds/clientsim/systems/runtime/event-dispatcher.md
-ディレクトリ: worlds\clientsim\systems\runtime
-ファイル名: event-dispatcher.md
-拡張子: .md
-サイズ: 570 B
-最終更新: 2025-06-05T03:07:52.769Z
-```
-
+Path: /worlds/clientsim/systems/runtime/event-dispatcher.md
 # Event Dispatcher and Events
 
 The EventDispatcher is responsible for notifying other systems when specific events happen within ClientSim. A behaviour can subscribe to an event type or send an event of specific type to all of ClientSim without knowing what will handle it. The EventDispatcher is just a collection of event types paired with event handlers. This method decouples the different systems in ClientSim without needing to create a direct dependency. All events sent must extend the IClientSimEvent interface, but can contain any data needed with the event.
 
 ---
 
-## ドキュメント: helpers.md
+## Document: helpers.md
 
-```metadata
-階層: /worlds/clientsim/systems/runtime/helpers.md
-ディレクトリ: worlds\clientsim\systems\runtime
-ファイル名: helpers.md
-拡張子: .md
-サイズ: 2.85 KB
-最終更新: 2025-06-05T03:07:52.769Z
-```
-
+Path: /worlds/clientsim/systems/runtime/helpers.md
 # VRCSDK Helpers
 
 The Helper components are added to an object to help with handling the behavior of VRC SDK components. The role of these components remains the same compared to CyanEmu and Phase 2, although some logic not specific to the function of the object itself has been stripped out. As an example, in CyanEmu the CyanEmuPickupHelper script handled the logic for holding pickups. Now this behavior has been moved outside the pickup helper class, and into the pickup management system. The PickupHelper code now only provides data for how the PlayerHand should handle the pickup.
@@ -86,17 +62,9 @@ Using these two interface types, the Helper classes are ways of wrapping VRChat 
 
 ---
 
-## ドキュメント: highlight-manager.md
+## Document: highlight-manager.md
 
-```metadata
-階層: /worlds/clientsim/systems/runtime/highlight-manager.md
-ディレクトリ: worlds\clientsim\systems\runtime
-ファイル名: highlight-manager.md
-拡張子: .md
-サイズ: 1.39 KB
-最終更新: 2025-06-05T03:07:52.770Z
-```
-
+Path: /worlds/clientsim/systems/runtime/highlight-manager.md
 # HighlightManager
 
 The HighlightManager will take an object and display an outline highlight effect for that object. This system wraps VRChat’s HighlightFX class. HighlightFX only takes a single renderer, whereas the HighlightManager takes a GameObject. Matching how VRChat handles highlighting objects, all renderers on the object and on its children are used for highlighting. Renderers that are disabled, have a null mesh, or are part of a static batch are ignored. If an object has no valid renderers, then a Highlight Proxy is used based on the first collider on the object. The Highlight Proxy will copy the transform values of the original mesh and also apply the collider size and scale to make it appear that the collider is being highlighted. The HighlightManager is used to visualize the results from the [PlayerRaycaster](player.md#playerraycaster) system. There is no set limit to the number of objects that can be highlighted, but only 2 objects are expected to be highlighted at once through ClientSim, one object per player hand. The HighlightManager links to the VRCSDK API for InputManager.EnableObjectHighlight. This hook only takes in renderers though and does not go through the full steps of finding children objects and creating proxies. 
@@ -107,34 +75,18 @@ The HighlightManager currently shows only a preview for how the object will look
 
 ---
 
-## ドキュメント: index.md
+## Document: index.md
 
-```metadata
-階層: /worlds/clientsim/systems/runtime/index.md
-ディレクトリ: worlds\clientsim\systems\runtime
-ファイル名: index.md
-拡張子: .md
-サイズ: 96 B
-最終更新: 2025-06-05T03:07:52.771Z
-```
-
+Path: /worlds/clientsim/systems/runtime/index.md
 # Runtime Systems
 
 These systems help simulate things that happen at Runtime in VRChat worlds.
 
 ---
 
-## ドキュメント: input.md
+## Document: input.md
 
-```metadata
-階層: /worlds/clientsim/systems/runtime/input.md
-ディレクトリ: worlds\clientsim\systems\runtime
-ファイル名: input.md
-拡張子: .md
-サイズ: 1.82 KB
-最終更新: 2025-06-05T03:07:52.771Z
-```
-
+Path: /worlds/clientsim/systems/runtime/input.md
 # Input
 
 In ClientSim, all input calls are in one class to handle input and send events. The ClientSimInputManager uses the new Input System, allowing for event-driven input. It uses the PlayerInput component to gain access to the specific input events based on the Input Bindings displayed below. Since the new Unity Input System package is not included by default, and Unity requires a special setting to enable, all references to the Input System are wrapped in define conditions, which prevents errors when importing into new projects.
@@ -154,17 +106,9 @@ The UdonInput system is part of the InputManager Prefab, which subscribes to the
 
 ---
 
-## ドキュメント: interactive-layer-provider.md
+## Document: interactive-layer-provider.md
 
-```metadata
-階層: /worlds/clientsim/systems/runtime/interactive-layer-provider.md
-ディレクトリ: worlds\clientsim\systems\runtime
-ファイル名: interactive-layer-provider.md
-拡張子: .md
-サイズ: 441 B
-最終更新: 2025-06-05T03:07:52.772Z
-```
-
+Path: /worlds/clientsim/systems/runtime/interactive-layer-provider.md
 # InteractiveLayerProvider
 
 The InteractiveLayerProvider simply listens to menu open state events and provides a layer mask for which layers are currently interactive. When the menu is open, only the UI and UIMenu layers are interactive. When the menu is closed, all other layers, excluding MirrorReflection, are interactive. InteractiveLayerProvider is used by [Raycasters](player.md#raycaster) and the [ClientSimInputModule](input.md).
@@ -172,49 +116,33 @@ The InteractiveLayerProvider simply listens to menu open state events and provid
 
 ---
 
-## ドキュメント: main.md
+## Document: main.md
 
-```metadata
-階層: /worlds/clientsim/systems/runtime/main.md
-ディレクトリ: worlds\clientsim\systems\runtime
-ファイル名: main.md
-拡張子: .md
-サイズ: 686 B
-最終更新: 2025-06-05T03:07:52.772Z
-```
-
+Path: /worlds/clientsim/systems/runtime/main.md
 # Client Sim Main
 
 ClientSimMain is the central point of ClientSim that handles initialization and destruction of ClientSim. It is contained in the ClientSimSystem prefab. On creation, all core systems will be initialized with their dependencies. This system also maintains all the implementations of the VRCSDK hooks to link VRC components to the ClientSim Helpers. ClientSimMain is a singleton to ensure only one instance is running at a time and to help easily pass information from Editor Windows and Tests. None of the runtime systems within ClientSim depend on ClientSimMain being a singleton.
 
-![ClientSimSystem Hierarchy](/img/worlds/clientsim/client-sim-main-hierarchy.png)
+[IMAGE: ClientSimSystem Hierarchy]
 
 ---
 
-## ドキュメント: menu.md
+## Document: menu.md
 
-```metadata
-階層: /worlds/clientsim/systems/runtime/menu.md
-ディレクトリ: worlds\clientsim\systems\runtime
-ファイル名: menu.md
-拡張子: .md
-サイズ: 3.48 KB
-最終更新: 2025-06-05T03:07:52.772Z
-```
-
+Path: /worlds/clientsim/systems/runtime/menu.md
 # Client Sim Menu
 
 The ClientSimMenu has four pages that can be displayed depending on the situation. The menu is now positioned in world space instead of being an overlay to the camera. It will render on top of everything to ensure players can use the menu.
 
 ## Warning Page
 
-![Warning](/img/worlds/clientsim/warning.png)
+[IMAGE: Warning]
 
 The Warning page will be displayed every time ClientSim starts. This page informs the user that ClientSim is not the same as VRChat, and there will be differences. It only has one button, which the user must press to dismiss the page and close the menu.
 
 ## Pause Page
 
-![Warning](/img/worlds/clientsim/pause.png)
+[IMAGE: Warning]
 
 The Pause page is displayed whenever the user opens the menu after accepting the Warning page. This page has three sections: Actions, Player Info, and Settings.
 
@@ -246,65 +174,41 @@ The Settings section provides options to change the current ClientSim Runtime Se
 
 ## Delay Start Page
 
-![Delay](/img/worlds/clientsim/delay.png)
+[IMAGE: Delay]
 
 The Delay Start page is displayed whenever the [ClientSim Settings](settings.md) has a non zero value for how long ClientSim should be delayed before starting. This page will dismiss automatically when ClientSim starts. If the player controller was spawned, the Warning page will then be displayed. The user cannot close out of this page and must wait the duration or exit playmode.
 
 ## Invalid Settings Page
 
-![Invalid Settings](/img/worlds/clientsim/invalid-settings.png)
+[IMAGE: Invalid Settings]
 
 The Invalid Settings page is displayed when the user has Unity Project Settings that are not set up to use ClientSim. This can happen when ClientSim has just imported, or if the user modifies a setting that ClientSim relies on. When this is displayed, the [Settings Window](../editor/settings-window.md) is forced to be displayed so that users can click the buttons needed to modify project settings. In the case the player does not have the correct Unity Input settings, the buttons on the menu will do nothing. There is no way to get past this page except to exit playmode and correct the invalid settings.
 
 ---
 
-## ドキュメント: player-manager.md
+## Document: player-manager.md
 
-```metadata
-階層: /worlds/clientsim/systems/runtime/player-manager.md
-ディレクトリ: worlds\clientsim\systems\runtime
-ファイル名: player-manager.md
-拡張子: .md
-サイズ: 501 B
-最終更新: 2025-06-05T03:07:52.772Z
-```
-
+Path: /worlds/clientsim/systems/runtime/player-manager.md
 # Player Manager
 The PlayerManager system is responsible for VRCPlayerApi data during ClientSim’s runtime. This system handles creating and destroying players, managing who is the current master, and sending the related [Events](event-dispatcher.md) such as OnPlayerJoin, OnPlayerLeft, and OnNewMaster. The PlayerManager is similar to how it was in CyanEmu, but this time is an instanced class rather than static. Most of the VRCPlayerApi SDK hooks are linked to static functions within this class.
 
 ---
 
-## ドキュメント: player-spawner.md
+## Document: player-spawner.md
 
-```metadata
-階層: /worlds/clientsim/systems/runtime/player-spawner.md
-ディレクトリ: worlds\clientsim\systems\runtime
-ファイル名: player-spawner.md
-拡張子: .md
-サイズ: 304 B
-最終更新: 2025-06-05T03:07:52.772Z
-```
-
+Path: /worlds/clientsim/systems/runtime/player-spawner.md
 # Player Spawner
 The PlayerSpawner system is responsible for spawning and initializing local and remote players. Players are spawned from a prefab, set to the location of a spawn point provided by the [SceneManager](scene-manager.md), and then initialized through the [PlayerManager](player-manager.md).
 
 ---
 
-## ドキュメント: player.md
+## Document: player.md
 
-```metadata
-階層: /worlds/clientsim/systems/runtime/player.md
-ディレクトリ: worlds\clientsim\systems\runtime
-ファイル名: player.md
-拡張子: .md
-サイズ: 8.15 KB
-最終更新: 2025-06-05T03:07:52.772Z
-```
-
+Path: /worlds/clientsim/systems/runtime/player.md
 # Player
 
 The ClientSim representation of a player has been split into many components compared to CyanEmu. Each component handles a different aspect of the player. Below you can see the hierarchy of both the Local and Remote player prefabs.
-![Local Player Hierarchy](/img/worlds/clientsim/player-local-hierarchy.png)![Remote Player Hierarchy](/img/worlds/clientsim/player-remote-hierarchy.png)
+[IMAGE: Local Player Hierarchy][IMAGE: Remote Player Hierarchy]
 
 ## ClientSimPlayer
 
@@ -362,49 +266,25 @@ The ClientSimReticle system is responsible for displaying a reticle icon in the 
 
 ---
 
-## ドキュメント: runtime-loader.md
+## Document: runtime-loader.md
 
-```metadata
-階層: /worlds/clientsim/systems/runtime/runtime-loader.md
-ディレクトリ: worlds\clientsim\systems\runtime
-ファイル名: runtime-loader.md
-拡張子: .md
-サイズ: 451 B
-最終更新: 2025-06-05T03:07:52.772Z
-```
-
+Path: /worlds/clientsim/systems/runtime/runtime-loader.md
 # RuntimeLoader
 The RuntimeLoader is a static class responsible for starting ClientSim on entering playmode. It uses the InitializeOnLoad Unity hook to check the settings instance to see if ClientSim should start, and creates an instance of ClientSimMain. This class also handles deleting editor-only objects in the scene. In order to allow for testability of ClientSim, a few methods are provided to set test settings and event dispatcher overrides.
 
 ---
 
-## ドキュメント: scene-manager.md
+## Document: scene-manager.md
 
-```metadata
-階層: /worlds/clientsim/systems/runtime/scene-manager.md
-ディレクトリ: worlds\clientsim\systems\runtime
-ファイル名: scene-manager.md
-拡張子: .md
-サイズ: 273 B
-最終更新: 2025-06-05T03:07:52.773Z
-```
-
+Path: /worlds/clientsim/systems/runtime/scene-manager.md
 # Scene Manager
 The SceneManager system is mainly a wrapper for the VRC_SceneDescriptor. It provides an interface into VRC scene details such as getting a spawn point and respawn height. This system also handles copying over reference camera settings to the player camera.
 
 ---
 
-## ドキュメント: settings.md
+## Document: settings.md
 
-```metadata
-階層: /worlds/clientsim/systems/runtime/settings.md
-ディレクトリ: worlds\clientsim\systems\runtime
-ファイル名: settings.md
-拡張子: .md
-サイズ: 1.51 KB
-最終更新: 2025-06-05T03:07:52.774Z
-```
-
+Path: /worlds/clientsim/systems/runtime/settings.md
 # Settings
 
 The ClientSim Settings are not a system, but data on how to run ClientSim.
@@ -453,17 +333,9 @@ Is the local player the instance owner?
 
 ---
 
-## ドキュメント: synced-object-manager.md
+## Document: synced-object-manager.md
 
-```metadata
-階層: /worlds/clientsim/systems/runtime/synced-object-manager.md
-ディレクトリ: worlds\clientsim\systems\runtime
-ファイル名: synced-object-manager.md
-拡張子: .md
-サイズ: 1008 B
-最終更新: 2025-06-05T03:07:52.775Z
-```
-
+Path: /worlds/clientsim/systems/runtime/synced-object-manager.md
 # SyncedObjectManager
 
 The SyncedObjectManager keeps track of all initialized synced objects (IClientSimSyncable) in the scene. These synced objects are put into two lists: one list for all synced objects, and another for all position-synced objects. The SyncedObjectManager currently has only two main functions. The first is to check all position-synced objects to verify they are above the respawn height. If they fall below the respawn height, they are respawned to their start position or destroyed, depending on the settings in the [SceneManager](scene-manager.md). The second function is to ensure objects have the correct owners when a player leaves. The manager listens for the OnPlayerLeft [Event](event-dispatcher.md), goes through all objects to check if that player was the  owner, and then sets those objects to be owned by the master player instead. This ownership transfer happens before Udon Programs are notified of the player leaving.
@@ -473,34 +345,18 @@ VRC.SDK3.ClientSim.ClientSimSyncedObjectManager
 
 ---
 
-## ドキュメント: tooltip-manager.md
+## Document: tooltip-manager.md
 
-```metadata
-階層: /worlds/clientsim/systems/runtime/tooltip-manager.md
-ディレクトリ: worlds\clientsim\systems\runtime
-ファイル名: tooltip-manager.md
-拡張子: .md
-サイズ: 647 B
-最終更新: 2025-06-05T03:07:52.775Z
-```
-
+Path: /worlds/clientsim/systems/runtime/tooltip-manager.md
 # TooltipManager
 
 The TooltipManager will display text in the world above a given interactable object. Tooltips in ClientSim only display text, unlike VRChat which also displays an icon of the respective button needed to use the interact. In SDK3, it appears that the option to set a tooltip location for an interactable is ignored. Tooltips always display at the top center of the first collider on the interactable object. There is no set limit to the number of tooltips that can be displayed, but only 2 tooltips are expected through ClientSim, one per player hand. Displaying tooltips can be disabled in the [ClientSimSettings](settings.md).
 
 ---
 
-## ドキュメント: udon-manager.md
+## Document: udon-manager.md
 
-```metadata
-階層: /worlds/clientsim/systems/runtime/udon-manager.md
-ディレクトリ: worlds\clientsim\systems\runtime
-ファイル名: udon-manager.md
-拡張子: .md
-サイズ: 693 B
-最終更新: 2025-06-05T03:07:52.775Z
-```
-
+Path: /worlds/clientsim/systems/runtime/udon-manager.md
 # UdonManager
 
 The UdonManager keeps track of all initialized UdonBehaviours in the scene. Note that with the VRCSDK, an UdonBehaviour will not initialize if it does not have a program. This means that legacy position-synced UdonBehaviours without programs are not tracked, even with the SyncedObjectManager. The UdonManager has two main roles. The first is to notify all Udon Helpers when ClientSim has finished initializing, which allows UdonBehaviours to start. The second is to listen for certain ClientSim [Events](event-dispatcher.md) to forward to all UdonBehaviours. Currently the UdonManager only forwards the following events:
@@ -511,17 +367,9 @@ The UdonManager keeps track of all initialized UdonBehaviours in the scene. Note
 
 ---
 
-## ドキュメント: unity-event-system.md
+## Document: unity-event-system.md
 
-```metadata
-階層: /worlds/clientsim/systems/runtime/unity-event-system.md
-ディレクトリ: worlds\clientsim\systems\runtime
-ファイル名: unity-event-system.md
-拡張子: .md
-サイズ: 2.27 KB
-最終更新: 2025-06-05T03:07:52.775Z
-```
-
+Path: /worlds/clientsim/systems/runtime/unity-event-system.md
 # Unity Event System
 
 ClientSim uses two classes to translate actions into Unity’s EventSystem. These classes decouple Unity’s old input system into values based on ClientSim’s current bindings and match VRChat’s interactive UI object filtering. 
@@ -542,4 +390,4 @@ The ClientSimInputModule extends Unity’s StandaloneInputModule. This system pr
 
 ---
 
-# ドキュメント終了
+# End of Documentation

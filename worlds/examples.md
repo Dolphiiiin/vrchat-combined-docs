@@ -1,22 +1,14 @@
-# examples 統合ドキュメント
+# examples Documentation
 
-以下は自動収集された全ドキュメントのコンテンツです。各セクションの始めにメタデータが記載されています。
+This document contains automatically collected documentation with metadata headers for each section.
 
 
 
 ---
 
-## ドキュメント: ai-navigation.md
+## Document: ai-navigation.md
 
-```metadata
-階層: /worlds/examples/ai-navigation.md
-ディレクトリ: worlds\examples
-ファイル名: ai-navigation.md
-拡張子: .md
-サイズ: 4.70 KB
-最終更新: 2025-06-05T03:07:52.785Z
-```
-
+Path: /worlds/examples/ai-navigation.md
 ---
 description: "NPCs that follow you."
 sidebar_custom_props:
@@ -30,7 +22,7 @@ import HowToImportExample from '/docs/worlds/examples/_how-to-import.mdx';
 
 ## Example World
 
-![example world](/img/worlds/ai-navigation-world.jpg)
+[IMAGE: example world]
 
 Udon can use [AI Navigation](/worlds/udon/ai-navigation). This example shows you how it can be used for pathfinding and creating NPC characters that walk around in your world.
 
@@ -88,17 +80,9 @@ After making a copy of the scene, try some of these ideas to evolve the scene fu
 
 ---
 
-## ドキュメント: detect-controller-collide.md
+## Document: detect-controller-collide.md
 
-```metadata
-階層: /worlds/examples/detect-controller-collide.md
-ディレクトリ: worlds\examples
-ファイル名: detect-controller-collide.md
-拡張子: .md
-サイズ: 4.00 KB
-最終更新: 2025-06-05T03:07:52.786Z
-```
-
+Path: /worlds/examples/detect-controller-collide.md
 ---
 title: Detect Controller Collide
 description: "Detect a Character Controller colliding with something."
@@ -108,7 +92,7 @@ sidebar_custom_props:
 import HowToImportExample from '/docs/worlds/examples/_how-to-import.mdx';
 import UnityVersionedLink from '@site/src/components/UnityVersionedLink.js';
 
-![Detect Controller Collide](/img/worlds/examples/detect-controller-collide.png)
+[IMAGE: Detect Controller Collide]
 
 The Unity event <UnityVersionedLink versionKey="minor" url="https://docs.unity3d.com/<VERSION>/Documentation/ScriptReference/MonoBehaviour.OnControllerColliderHit.html">OnControllerColliderHit</UnityVersionedLink> is useful for knowing when a <UnityVersionedLink versionKey="minor" url="https://docs.unity3d.com/<VERSION>/Documentation/ScriptReference/CharacterController.html">CharacterController</UnityVersionedLink> has collided with another object. VRChat adds the event [OnControllerColliderHitPlayer](/worlds/udon/players/player-collisions#physics) to detect when a CharacterController collides with another Player. This event includes a `ControllerColliderPlayerHit` struct with a reference to the [VRCPlayerApi](https://udonsharp.docs.vrchat.com/vrchat-api/#vrcplayerapi) object for the player that was collided with.
 
@@ -152,17 +136,9 @@ The graph has four events:
 
 ---
 
-## ドキュメント: image-loading.md
+## Document: image-loading.md
 
-```metadata
-階層: /worlds/examples/image-loading.md
-ディレクトリ: worlds\examples
-ファイル名: image-loading.md
-拡張子: .md
-サイズ: 8.76 KB
-最終更新: 2025-06-05T03:07:52.786Z
-```
-
+Path: /worlds/examples/image-loading.md
 ---
 description: "Loading a remote image."
 sidebar_custom_props:
@@ -212,7 +188,7 @@ When the files in the "Web" directory are edited, the website is re-published. A
 
 7. Select the **SlideshowFrame** in your scene's Inspector.
 
-8. In the **SlideshowFrame** component, set the **Image Urls** array size to match the number of images you want to load, then update the URLs to match your image URLs. If you're using GitHub Pages, the URLs will be in the format `https://<your-github-username>.github.io/<your-repo-name>/1.jpg`.
+8. In the **SlideshowFrame** component, set the **Image Urls** array size to match the number of images you want to load, then update the URLs to match your image URLs. If you're using GitHub Pages, the URLs will be in the format `[IMAGE_URL]`.
 
 9. Update the **String Url** to match your caption URL. If you're using GitHub Pages, the URL will be in the format `https://<your-github-username>.github.io/<your-repo-name>/captions.csv`.
 
@@ -229,7 +205,7 @@ If you're using GitHub to host the images and captions, make sure you've committ
 The most important objects to inspect in the scene are [TheFrame](#theframe) and [SlideshowFrame](#slideshowframe). 
 
 
-![image](https://user-images.githubusercontent.com/737888/219288603-2fc2753b-27a1-4f61-ad22-a51df527907d.png)
+[IMAGE: image]
 
 ### TheFrame
 
@@ -243,7 +219,7 @@ TheFrame is a GameObject with a couple of important pieces:
 
 The **SlideshowFrame** `UdonBehaviour` has all of the logic to download the images and captions from the web server.
 
-![image](https://user-images.githubusercontent.com/737888/219288738-ace09705-18d4-4f8e-bb45-792ff662bf7b.png)
+[IMAGE: image]
 
 It has these public variables:
 * **Image Urls**: An `Array` of all the `VRCUrls` for the images to download.
@@ -292,7 +268,7 @@ If the String downloads successfully, split it up line-by-line into separate str
 <Tabs groupId="udon-compiler-language">
 <TabItem value="graph" label="Udon Graph">
 
-![An example of how to use image loading in the Udon Graph. The Udon Graph can't use newline characters directly, so an integer conversion to a character is used instead.](/img/worlds/string-load-graph-example.png)
+[IMAGE: An example of how to use image loading in the Udon Graph. The Udon Graph can't use newline characters directly, so an integer conversion to a character is used instead.]
 
 </TabItem>
 <TabItem value="cs" label="UdonSharp">
@@ -347,17 +323,9 @@ View the [main Image Loading docs page](/worlds/udon/image-loading) for full det
 
 ---
 
-## ドキュメント: index.md
+## Document: index.md
 
-```metadata
-階層: /worlds/examples/index.md
-ディレクトリ: worlds\examples
-ファイル名: index.md
-拡張子: .md
-サイズ: 224 B
-最終更新: 2025-06-05T03:07:52.787Z
-```
-
+Path: /worlds/examples/index.md
 ---
 title: "Examples"
 sidebar_position: 1
@@ -373,17 +341,9 @@ import DocCardList from '@theme/DocCardList';
 
 ---
 
-## ドキュメント: midi-playback.md
+## Document: midi-playback.md
 
-```metadata
-階層: /worlds/examples/midi-playback.md
-ディレクトリ: worlds\examples
-ファイル名: midi-playback.md
-拡張子: .md
-サイズ: 7.92 KB
-最終更新: 2025-06-05T03:07:52.787Z
-```
-
+Path: /worlds/examples/midi-playback.md
 ---
 title: MIDI Playback
 description: "Play synchronized MIDI and audio files."
@@ -396,7 +356,7 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 <video controls>
-  <source src="https://user-images.githubusercontent.com/737888/214626843-53a4c069-ea69-423a-926d-e2ce024c9819.mp4"/>
+  <source src="[IMAGE_URL]
 </video>
 
 This example plays back a [MIDI file](https://midi.org/standard-midi-files) synchronized to an audio file made from the MIDI. You can use this to synchronize events in your world from a MIDI track, to tie music and visuals together for an immersive experience.
@@ -452,7 +412,7 @@ Here's a breakdown of what happens in the MidiGrid Program.
 
 **Start Event:**
 
-![Start event for the midi playback example in the Udon Graph](/img/worlds/midi/midi-sample-graph-start.png)
+[IMAGE: Start event for the midi playback example in the Udon Graph]
 
 On Start, it goes through each object in the `grids` array, finds the 'Image' component on its child, and sets its `enabled` value to `false`, effectively hiding all the Images to start.
 
@@ -460,12 +420,12 @@ It also waits 1 second after loading and then calls `Play()` on the VRCMidiPlaye
 
 **Note Events:**
 
-![Midi note on event for the midi playback example in the Udon Graph](/img/worlds/midi/midi-sample-graph-on.png)
+[IMAGE: Midi note on event for the midi playback example in the Udon Graph]
 
 
 When it receives a `Midi Note On` event, it will loop through each entry in the `channels` array and check if the incoming note's channel matches one of the entries. If a match is found, that number is used as the `index` for the `grids` array to find the matching grid. The incoming note is run through `int.Remainder()` to find its index in the octave - a C will be 0, a C# will be 1, etc. This index is used to find the right child of the grid, and then set `enabled` on the 'Image' to `true`. Finally, the note's channel and note number are logged to the console. 
 
-![Midi note off event for the midi playback example in the Udon Graph](/img/worlds/midi/midi-sample-graph-off.png)
+[IMAGE: Midi note off event for the midi playback example in the Udon Graph]
 
 When the script receives a `Midi Note Off` event, it goes through a similar process as above. To hide the 'Image' component again, it sets `enabled` to `false`.
 
@@ -539,17 +499,9 @@ public class LogoButton : UdonSharpBehaviour
 
 ---
 
-## ドキュメント: minimap.md
+## Document: minimap.md
 
-```metadata
-階層: /worlds/examples/minimap.md
-ディレクトリ: worlds\examples
-ファイル名: minimap.md
-拡張子: .md
-サイズ: 2.40 KB
-最終更新: 2025-06-05T03:07:52.788Z
-```
-
+Path: /worlds/examples/minimap.md
 ---
 title: Minimap
 description: "Displays a live minimap using Graphics.Blit"
@@ -558,7 +510,7 @@ sidebar_custom_props:
 ---
 import HowToImportExample from '/docs/worlds/examples/_how-to-import.mdx';
 
-![Minimap Example World](/img/worlds/examples/minimap-example-world.png)
+[IMAGE: Minimap Example World]
 
 This example includes a minimap that you can pickup and take around the world with you. Your position is shown as a blue dot on the map, and other players are shown as green dots.
 
@@ -598,17 +550,9 @@ If you're going to use this Example Prefab in your world, don't forget to adjust
 
 ---
 
-## ドキュメント: mute-others.md
+## Document: mute-others.md
 
-```metadata
-階層: /worlds/examples/mute-others.md
-ディレクトリ: worlds\examples
-ファイル名: mute-others.md
-拡張子: .md
-サイズ: 3.20 KB
-最終更新: 2025-06-05T03:07:52.788Z
-```
-
+Path: /worlds/examples/mute-others.md
 ---
 description: "Mute and unmute other players."
 sidebar_custom_props:
@@ -618,7 +562,7 @@ import HowToImportExample from '/docs/worlds/examples/_how-to-import.mdx';
 
 # Mute Others
 
-![Mute Others World Preview](/img/worlds/examples/mute-others.jpg)
+[IMAGE: Mute Others World Preview]
 
 This example shows how to mute and unmute other players.
 
@@ -635,7 +579,7 @@ Press the button labeled "Mute Players" to mute all the other players who are in
 
 ## Technical Breakdown
 
-![Mute Others Inspector](/img/worlds/examples/mute-others-inspector.png)
+[IMAGE: Mute Others Inspector]
 
 There is a single U# program on the "PlayerMuteLogic" GameObject which contains all the logic for the demo.
 
@@ -648,7 +592,7 @@ After flipping the value of this variable, `OnMuteUpdated()` is called, which fe
 When unmuted, the value is restored to `_defaultVoiceDistance` which is 25 unless you change it in the inspector, so their voices can be heard for the default distance of 25 meters.
 This function also changes the text on the button, which is referenced as `_buttonLabel`.
 
-![Inspectors for changing button text](/img/worlds/examples/mute-others-inspector-2.png)
+[IMAGE: Inspectors for changing button text]
 
 The messages to display for each state are easily changeable in the inspector, as `Message Muted` and `Message Unmuted`.
 
@@ -666,17 +610,9 @@ Can you update this prefab to only mute some players? One approach would be to d
 
 ---
 
-## ドキュメント: player-join-zones.md
+## Document: player-join-zones.md
 
-```metadata
-階層: /worlds/examples/player-join-zones.md
-ディレクトリ: worlds\examples
-ファイル名: player-join-zones.md
-拡張子: .md
-サイズ: 10.73 KB
-最終更新: 2025-06-05T03:07:52.795Z
-```
-
+Path: /worlds/examples/player-join-zones.md
 ---
 description: "Basic lobby functionality."
 sidebar_custom_props:
@@ -686,7 +622,7 @@ import HowToImportExample from '/docs/worlds/examples/_how-to-import.mdx';
 
 # Player Join Zones
 
-![Player Join Zones World Preview](/img/worlds/examples/player-join-zones.png)
+[IMAGE: Player Join Zones World Preview]
 
 This example shows how to collect players based on their position, and handle basic lobby functionality, enabling users to join a game, play it, see results, then start a new game. It can be used to build opt-in experiences, like a game played by only some of the players in the instance. It also shows how to randomly choose a player to make larger, and extend the prefab’s logic with additional modes.
 
@@ -789,17 +725,9 @@ The "Graph Listener" canvas demonstrates this, updating a display with the lates
 
 ---
 
-## ドキュメント: screen-canvas.md
+## Document: screen-canvas.md
 
-```metadata
-階層: /worlds/examples/screen-canvas.md
-ディレクトリ: worlds\examples
-ファイル名: screen-canvas.md
-拡張子: .md
-サイズ: 4.12 KB
-最終更新: 2025-06-05T03:07:52.795Z
-```
-
+Path: /worlds/examples/screen-canvas.md
 ---
 description: "2D UI canvas for Mobile and Desktop users."
 sidebar_custom_props:
@@ -809,7 +737,7 @@ import HowToImportExample from '/docs/worlds/examples/_how-to-import.mdx';
 
 # Screen Canvas
 
-![Screen Canvas World Preview](/img/worlds/examples/screen-canvas/screen-canvas.jpg)
+[IMAGE: Screen Canvas World Preview]
 
 This example shows how to create a Screen-Space UI Canvas for users on 2D screens like Mobile and non-VR Desktop. It also demonstrates how to teleport the user to a destination position and rotation.
 
@@ -822,13 +750,13 @@ This example requires TextMeshPro, a window will show offering to "Import TMP Es
 
 When entering the world with a non-VR display like a Mobile Device or a Windows PC with a monitor, a thick white outline will be visible around the edges of the display, as well as a button that reads "Teleport". Press this button - on mobile, a simple screen-tap will activate it. On Desktop, hold the Tab key to free your cursor from the center of the screen and press it. Either way, you are teleported to a second spot in the world, in front of another canvas which reads "Second Location / Here you are!".
 
-![Second Location Screenshot](/img/worlds/examples/screen-canvas/screen-canvas-second-location.jpg)
+[IMAGE: Second Location Screenshot]
 
 When you visit the world using a VR display, the canvas is hidden, rather than being stuck to your face with no way to use the button.
 
 ### Extras
 
-![VRCButtonLayout in Game, Hierarchy and Inspector](/img/worlds/examples/screen-canvas/screen-canvas-vrcbuttonlayout.jpg)
+[IMAGE: VRCButtonLayout in Game, Hierarchy and Inspector]
 
 The `VRCButtonLayout` object is a helpful tool for showing where different buttons in the VRChat Mobile UI will appear so you can try to work around them. It is tagged `EditorOnly` and will not be uploaded with your world.
 
@@ -840,37 +768,29 @@ This section explains the two Graph Programs which provide the above functionali
 
 ### HideInVR
 
-![Graph Program to Hide Object in VR](/img/worlds/examples/screen-canvas/screen-canvas-hideinvr-graph.png)
+[IMAGE: Graph Program to Hide Object in VR]
 
 This program runs on `Start`, and deactivates the ScreenCanvas and its UdonPrograms by checking the value of `IsUserInVR` for the local player, and calling `GameObject.SetActive(false)` if they are. If they are not in VR, no further action is needed.
 This program is provided separately from the teleportation functionality below to make it easy to add to a variety of objects.
 
 ### TeleportToTarget
 
-![Graph Program to Teleport Local Player](/img/worlds/examples/screen-canvas/screen-canvas-teleport-localplayer-graph.png)
+[IMAGE: Graph Program to Teleport Local Player]
 
 This program is triggered by the Button, which targets its `_Trigger` custom event. It has a public `target` Transform variable. When triggered, it calls `Transform.GetPositionAndRotation()` on the `target`, then passes the position and rotation to `VRCPlayerApi.TeleportTo(position,rotation)` to move the player.
 You can change the value of the target to update the location, or move the `TeleportTarget` transform. Note that the transform has a child Sprite to show the spot on the ground where the player will be teleported, as a convenience. This Sprite is a child of the main transform because it requires a rotation that we do not want to apply to the player when they teleport.
 
 ## Known Issue
 
-![Scene view of large canvas](/img/worlds/examples/screen-canvas/screen-canvas-knownissue.png)
+[IMAGE: Scene view of large canvas]
 
 In ClientSim, the collider generated for the ScreenCanvas is always placed at (0,0,0) and covers the whole size of the canvas. In the VRChat Client, the existing collider is used and appears in the proper position. In order to make the scene usable in ClientSim, the initial spawn location is offset to place the user in front of the generated Collider.
 
 ---
 
-## ドキュメント: udon.md
+## Document: udon.md
 
-```metadata
-階層: /worlds/examples/udon.md
-ディレクトリ: worlds\examples
-ファイル名: udon.md
-拡張子: .md
-サイズ: 4.50 KB
-最終更新: 2025-06-05T03:07:52.800Z
-```
-
+Path: /worlds/examples/udon.md
 ---
 sidebar_position: -1
 description: "Very simple Udon programs in Udon Graph and UdonSharp."
@@ -892,7 +812,7 @@ This behaviour rotates a game object (such as a cube) by 90 degrees every second
 <Tabs groupId="udon-compiler-language">
 <TabItem value="graph" label="Udon Graph">
 
-![An Udon Graph for a spinning cube.](\img\worlds\udon\examples\spinning-cube.png)
+[IMAGE: An Udon Graph for a spinning cube.]
 
 </TabItem>
 <TabItem value="cs" label="UdonSharp">
@@ -920,7 +840,7 @@ This behaviour uses [Interact](/worlds/udon/graph/event-nodes/#interact) to allo
 <Tabs groupId="udon-compiler-language">
 <TabItem value="graph" label="Udon Graph">
 
-![An Udon Graph that disables an object when interacting with it. It has several comments. For example, it demonstrates that leaving "instance" empty in the "Get gameObject" node causes it to retrieve to game object that this script is attached to.](\img\worlds\udon\examples\interact.png)
+[IMAGE: An Udon Graph that disables an object when interacting with it. It has several comments. For example, it demonstrates that leaving "instance" empty in the "Get gameObject" node causes it to retrieve to game object that this script is attached to.]
 
 </TabItem>
 <TabItem value="cs" label="UdonSharp">
@@ -949,7 +869,7 @@ This behaviour uses [Interact](/worlds/udon/graph/event-nodes/#interact) and [Te
 <Tabs groupId="udon-compiler-language">
 <TabItem value="graph" label="Udon Graph">
 
-![An Udon Graph program that teleports the player to a target position. Comment points out that "targetPosition" must be defined as "public" to allow setting it in the inspector for instances of this script.](\img\worlds\udon\examples\teleport-player.png)
+[IMAGE: An Udon Graph program that teleports the player to a target position. Comment points out that "targetPosition" must be defined as "public" to allow setting it in the inspector for instances of this script.]
 
 </TabItem>
 <TabItem value="cs" label="UdonSharp">
@@ -979,7 +899,7 @@ This behaviour shows how to interact with other behaviours. UdonBehaviours can c
 <Tabs groupId="udon-compiler-language">
 <TabItem value="graph" label="Udon Graph">
 
-![An Udon Graph that communicates with other graph programs. Public variables and custom event names from other scripts are specified as constant strings and fed into the "symbolName" parameter of various nodes.](\img\worlds\udon\examples\custom-events.png)
+[IMAGE: An Udon Graph that communicates with other graph programs. Public variables and custom event names from other scripts are specified as constant strings and fed into the "symbolName" parameter of various nodes.]
 
 </TabItem>
 <TabItem value="cs" label="UdonSharp">
@@ -1024,17 +944,9 @@ public class SomeExample : UdonSharpBehaviour
 
 ---
 
-## ドキュメント: _how-to-import.mdx
+## Document: _how-to-import.mdx
 
-```metadata
-階層: /worlds/examples/_how-to-import.mdx
-ディレクトリ: worlds\examples
-ファイル名: _how-to-import.mdx
-拡張子: .mdx
-サイズ: 432 B
-最終更新: 2025-06-05T03:07:52.785Z
-```
-
+Path: /worlds/examples/_how-to-import.mdx
 ## Importing the Example
 Follow the steps below to add this example to your Unity project:
 1. Open [the Example Central Window](https://creators.vrchat.com/sdk/example-central) from the window from the Unity Editor Menu under "VRChat SDK > 🏠 Example Central"
@@ -1043,4 +955,4 @@ Follow the steps below to add this example to your Unity project:
 
 ---
 
-# ドキュメント終了
+# End of Documentation

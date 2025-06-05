@@ -1,22 +1,14 @@
-# contribute 統合ドキュメント
+# contribute Documentation
 
-以下は自動収集された全ドキュメントのコンテンツです。各セクションの始めにメタデータが記載されています。
+This document contains automatically collected documentation with metadata headers for each section.
 
 
 
 ---
 
-## ドキュメント: accessibility.md
+## Document: accessibility.md
 
-```metadata
-階層: /contribute/accessibility.md
-ディレクトリ: contribute
-ファイル名: accessibility.md
-拡張子: .md
-サイズ: 2.51 KB
-最終更新: 2025-06-05T03:07:52.736Z
-```
-
+Path: /contribute/accessibility.md
 # Accessibility
 
 import BrowserWindow from '@site/src/components/BrowserWindow';
@@ -61,13 +53,13 @@ Use a short phrase or one or two sentences. Long descriptions interrupt the read
 For example:
 
 ```md
-![An avatar with a backpack walks into a blue, holographic world. It's surrounded by floating objects from Unity and Udon.](/img/homepage/ill-overview.png)
+[IMAGE: An avatar with a backpack walks into a blue, holographic world. It's surrounded by floating objects from Unity and Udon.]
 ```
 
 ```mdx-code-block
 <BrowserWindow>
 ```
-![An avatar with a backpack walks into a blue, holographic world with floating Unity objects and Udon Graph elements .](/img/homepage/ill-overview.png)
+[IMAGE: An avatar with a backpack walks into a blue, holographic world with floating Unity objects and Udon Graph elements .]
 ```mdx-code-block
 </BrowserWindow>
 ```
@@ -76,17 +68,9 @@ For example:
 
 ---
 
-## ドキュメント: index.md
+## Document: index.md
 
-```metadata
-階層: /contribute/index.md
-ディレクトリ: contribute
-ファイル名: index.md
-拡張子: .md
-サイズ: 609 B
-最終更新: 2025-06-05T03:07:52.737Z
-```
-
+Path: /contribute/index.md
 ---
 sidebar_position: 50
 ---
@@ -109,17 +93,9 @@ Use the "Feedback" button to suggest simple changes. We'll take care of it!
 
 ---
 
-## ドキュメント: style.md
+## Document: style.md
 
-```metadata
-階層: /contribute/style.md
-ディレクトリ: contribute
-ファイル名: style.md
-拡張子: .md
-サイズ: 9.00 KB
-最終更新: 2025-06-05T03:07:52.738Z
-```
-
+Path: /contribute/style.md
 # Style guide
 
 import BrowserWindow from '@site/src/components/BrowserWindow';
@@ -252,17 +228,9 @@ VRChat's Creation documentation has a wide audience. Some pages are meant for be
 
 ---
 
-## ドキュメント: syntax.md
+## Document: syntax.md
 
-```metadata
-階層: /contribute/syntax.md
-ディレクトリ: contribute
-ファイル名: syntax.md
-拡張子: .md
-サイズ: 8.15 KB
-最終更新: 2025-06-05T03:07:52.738Z
-```
-
+Path: /contribute/syntax.md
 # Syntax guide
 
 import BrowserWindow from '@site/src/components/BrowserWindow';
@@ -470,7 +438,7 @@ import TabItem from '@theme/TabItem';
 <Tabs groupId="udon-compiler-language">
 <TabItem value="graph" label="Udon Graph">
 
-![Three Udon Graph nodes that gets all players.](/img/worlds/graphgetplayers.png)
+[IMAGE: Three Udon Graph nodes that gets all players.]
 
 </TabItem>
 <TabItem value="cs" label="UdonSharp">
@@ -494,7 +462,7 @@ import TabItem from '@theme/TabItem';
 <Tabs groupId="udon-compiler-language">
 <TabItem value="graph" label="Udon Graph">
 
-![A screenshot of the Udon Graph.](/img/worlds/graphgetplayers.png)
+[IMAGE: A screenshot of the Udon Graph.]
 
 </TabItem>
 <TabItem value="cs" label="UdonSharp">
@@ -514,4 +482,4 @@ VRCPlayerApi.GetPlayers(players);
 
 ---
 
-# ドキュメント終了
+# End of Documentation

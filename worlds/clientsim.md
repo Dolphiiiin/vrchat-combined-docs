@@ -1,29 +1,21 @@
-# clientsim 統合ドキュメント
+# clientsim Documentation
 
-以下は自動収集された全ドキュメントのコンテンツです。各セクションの始めにメタデータが記載されています。
+This document contains automatically collected documentation with metadata headers for each section.
 
 
 
 ---
 
-## ドキュメント: index.md
+## Document: index.md
 
-```metadata
-階層: /worlds/clientsim/index.md
-ディレクトリ: worlds\clientsim
-ファイル名: index.md
-拡張子: .md
-サイズ: 3.80 KB
-最終更新: 2025-06-05T03:07:52.764Z
-```
-
+Path: /worlds/clientsim/index.md
 ---
 sidebar_position: 0
 ---
 
 # ClientSim
 
-![ClientSim screenshot. The Scene view shows the local player and a remote player. The Game view shows ClientSim's "Pause" menu, with buttons to respawn the player, spawn remote players, close the menu, and various other options. The ClientSim Settings window and PlayerData window are also visible.](/img/worlds/clientsim/clientsim-screenshot.png)
+[IMAGE: ClientSim screenshot. The Scene view shows the local player and a remote player. The Game view shows ClientSim's "Pause" menu, with buttons to respawn the player, spawn remote players, close the menu, and various other options. The ClientSim Settings window and PlayerData window are also visible.]
 
 ClientSim, short for client simulator, is a part of the Worlds SDK that replicates VRChat client behavior in the Unity editor and can be used to speed up development.
 
@@ -84,24 +76,16 @@ ClientSim only executes this event if it's part of a synced Player Object.
 
 ---
 
-## ドキュメント: playerdata-editor-window.md
+## Document: playerdata-editor-window.md
 
-```metadata
-階層: /worlds/clientsim/playerdata-editor-window.md
-ディレクトリ: worlds\clientsim
-ファイル名: playerdata-editor-window.md
-拡張子: .md
-サイズ: 2.45 KB
-最終更新: 2025-06-05T03:07:52.765Z
-```
-
+Path: /worlds/clientsim/playerdata-editor-window.md
 # PlayerData Editor
 
 ClientSim can simulate the VRChat SDK's "Persistence" feature. The PlayerData editor window allows you to debug persistent data in your world. You can open it by going to "VRChat SDK" > "ClientSim PlayerData".
 
 ## Usage
 
-![ClientSim PlayerData Window](/img/worlds/clientsim/clientsim-player-data-window.png)
+[IMAGE: ClientSim PlayerData Window]
 
 1. A dropdown for selecting which player's PlayerData to display.
 	* By default, the local player is selected.
@@ -125,24 +109,16 @@ The data for PlayerData can be found in the root of your project (next to the As
 
 ---
 
-## ドキュメント: playerObject-editor.md
+## Document: playerObject-editor.md
 
-```metadata
-階層: /worlds/clientsim/playerObject-editor.md
-ディレクトリ: worlds\clientsim
-ファイル名: playerObject-editor.md
-拡張子: .md
-サイズ: 1.17 KB
-最終更新: 2025-06-05T03:07:52.765Z
-```
-
+Path: /worlds/clientsim/playerObject-editor.md
 # PlayerObject Editor
 
 ClientSim can simulate how PlayerObjects work. When entering play mode, PlayerObjects will be spawned in, and their synced properties restored.
 
 ## Usage
 
-![ClientSim PlayerObject Inspector](/img/worlds/clientsim/clientsim-playerobject.png)
+[IMAGE: ClientSim PlayerObject Inspector]
 
 When you enter play mode, ClientSim spawns PlayerObjects and restores their persistent properties. Select any PlayerObject in your [Hierarchy window](https://docs.unity3d.com/Manual/Hierarchy.html) to see its `ClientSimNetworkingView` and `ClientSimNetworkIdHolder` components. 
 
@@ -158,4 +134,4 @@ The data used by ClientSim for PlayerObjects is stored in your project at `proje
 
 ---
 
-# ドキュメント終了
+# End of Documentation

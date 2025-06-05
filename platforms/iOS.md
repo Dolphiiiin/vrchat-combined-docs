@@ -1,22 +1,14 @@
-# iOS 統合ドキュメント
+# iOS Documentation
 
-以下は自動収集された全ドキュメントのコンテンツです。各セクションの始めにメタデータが記載されています。
+This document contains automatically collected documentation with metadata headers for each section.
 
 
 
 ---
 
-## ドキュメント: build-test-mobile.md
+## Document: build-test-mobile.md
 
-```metadata
-階層: /platforms/iOS/build-test-mobile.md
-ディレクトリ: platforms\iOS
-ファイル名: build-test-mobile.md
-拡張子: .md
-サイズ: 5.59 KB
-最終更新: 2025-06-05T03:07:52.753Z
-```
-
+Path: /platforms/iOS/build-test-mobile.md
 ---
 sidebar_position: 0
 ---
@@ -39,7 +31,7 @@ You must install Unity's iOS Build Support module to build or publish VRChat wor
 2. Find the install for the Unity version that your project uses (the current recommended version is [<CurrentUnityVersion/>](/sdk/upgrade/current-unity-version/)).
   - If your install lists "iOS" below the Editor path, then the module is already installed, and you can [set up your project](#set-up-your-project-to-target-ios).
 
-![Unity Install with iOS Module](/img/platforms/unity-hub-modules.png)
+[IMAGE: Unity Install with iOS Module]
 
 3. Click on the gear icon next to that install and click "Add modules".
 4. Find "iOS Build Support". Check the box next to "iOS Build Support" to include it.
@@ -89,7 +81,7 @@ If you find that you are unable to establish connection between your iOS device 
 
 - Make sure you have allowed local network access on your SDK machine. On Windows, local network access requests appear as a prompt titled "Windows Security," on which you must click "Allow access" with the Public networks checkbox checked.
 
-![Windows local network access permission prompt](/img/platforms/windows-local-network.png)
+[IMAGE: Windows local network access permission prompt]
 
 - It's possible you've disallowed access previously and the prompt does not reappear. In this case you must locate the rule in Windows Defender Firewall and allow it.
     - To quickly test if this is the issue, you can temporarily disable the firewall, although it's much safer to follow the steps below to allow Unity access to your local network.
@@ -99,7 +91,7 @@ If you find that you are unable to establish connection between your iOS device 
     2. In the list of inbound rules, look for any titled "Unity Editor"
     3. Delete any rules titled "Unity Editor" that have a red circle with a cross through it
     
-![Disallowed Windows firewall rule for Unity Editor](/img/platforms/windows-firewall-rule.png)
+[IMAGE: Disallowed Windows firewall rule for Unity Editor]
 
     4. Relaunch the Unity editor. Once launched (and with iOS selected as the platform) you should see the "Windows Security" asking for local network permission.
 
@@ -109,17 +101,9 @@ If you find that you are unable to establish connection between your iOS device 
 
 ---
 
-## ドキュメント: index.md
+## Document: index.md
 
-```metadata
-階層: /platforms/iOS/index.md
-ディレクトリ: platforms\iOS
-ファイル名: index.md
-拡張子: .md
-サイズ: 1.25 KB
-最終更新: 2025-06-05T03:07:52.753Z
-```
-
+Path: /platforms/iOS/index.md
 # iOS
 
 :::warning
@@ -143,24 +127,16 @@ Guidelines that refer to "Android" or "Quest" apply to iOS, too. Use these guide
 
 ---
 
-## ドキュメント: setting-up-unity-for-creating-ios-content.md
+## Document: setting-up-unity-for-creating-ios-content.md
 
-```metadata
-階層: /platforms/iOS/setting-up-unity-for-creating-ios-content.md
-ディレクトリ: platforms\iOS
-ファイル名: setting-up-unity-for-creating-ios-content.md
-拡張子: .md
-サイズ: 1.63 KB
-最終更新: 2025-06-05T03:07:52.753Z
-```
-
+Path: /platforms/iOS/setting-up-unity-for-creating-ios-content.md
 # Setting up Unity for Creating iOS Content
 :::warning
 VRChat on iOS is currently in Beta. Please report issues on [Canny](https://feedback.vrchat.com/ios-mobile-beta).
 :::
 This page explains how to publish your World or Avatar on iOS.
 
-![Building for iOS instructions](/img/setting-up-unity-for-creating-ios-content-iOSContent-QuickStart.png)
+[IMAGE: Building for iOS instructions]
 
 If you're starting a brand new project, this won't take long at all. However, if you're converting a Windows or Android platform project to an iOS platform project, the SDK has to reimport your assets appropriately. This can take quite a while for larger projects.
 
@@ -189,4 +165,4 @@ That's it! Your content is now available on iOS! Note that you must **upload** y
 
 ---
 
-# ドキュメント終了
+# End of Documentation

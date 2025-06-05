@@ -1,22 +1,14 @@
-# products 統合ドキュメント
+# products Documentation
 
-以下は自動収集された全ドキュメントのコンテンツです。各セクションの始めにメタデータが記載されています。
+This document contains automatically collected documentation with metadata headers for each section.
 
 
 
 ---
 
-## ドキュメント: avatar.md
+## Document: avatar.md
 
-```metadata
-階層: /economy/products/avatar.md
-ディレクトリ: economy\products
-ファイル名: avatar.md
-拡張子: .md
-サイズ: 8.06 KB
-最終更新: 2025-06-05T03:07:52.741Z
-```
-
+Path: /economy/products/avatar.md
 ---
 description: "Give access to uploaded avatars."
 sidebar_custom_props:
@@ -116,7 +108,7 @@ import Column from '@site/src/components/Column';
     - Click "Create Product." 
 </Column>
 <Column>
-![Creat product](/img/economy/products/avatar/create-product.png "Create  Product")
+[IMAGE: Creat product]
 </Column>
 </Columns>
 
@@ -127,7 +119,7 @@ import Column from '@site/src/components/Column';
 2. Select "Avatar Product" and click "Next."
 </Column>
 <Column>
-![Choose product type avatar](/img/economy/products/avatar/create-product-avatar.png "Avatar Product")
+[IMAGE: Choose product type avatar]
 </Column>
 </Columns>
 
@@ -142,7 +134,7 @@ import Column from '@site/src/components/Column';
 - Ensure that your avatar and all details abide by the Creator Economy [content guidelines](/economy/guidelines).
 </Column>
 <Column>
-![Review avataravatar](/img/economy/products/avatar/create-product-avatar-properties.png "Review Product")
+[IMAGE: Review avataravatar]
 </Column>
 </Columns>
 
@@ -158,7 +150,7 @@ import Column from '@site/src/components/Column';
 - Click "Submit for Review."
 </Column>
 <Column>
-![Review avataravatar](/img/economy/products/avatar/create-product-avatar-confirm.png "Review Product")
+[IMAGE: Review avataravatar]
 </Column>
 </Columns>
 
@@ -209,17 +201,9 @@ Review the Creator Economy [content guidelines](/economy/guidelines) to learn mo
 
 ---
 
-## ドキュメント: index.md
+## Document: index.md
 
-```metadata
-階層: /economy/products/index.md
-ディレクトリ: economy\products
-ファイル名: index.md
-拡張子: .md
-サイズ: 515 B
-最終更新: 2025-06-05T03:07:52.741Z
-```
-
+Path: /economy/products/index.md
 ---
 sidebar_position: 1
 sidebar_custom_props:
@@ -243,17 +227,9 @@ import DocCardList from '@theme/DocCardList';
 
 ---
 
-## ドキュメント: paid-role.md
+## Document: paid-role.md
 
-```metadata
-階層: /economy/products/paid-role.md
-ディレクトリ: economy\products
-ファイル名: paid-role.md
-拡張子: .md
-サイズ: 3.00 KB
-最終更新: 2025-06-05T03:07:52.741Z
-```
-
+Path: /economy/products/paid-role.md
 ---
 description: "Gives access to group features."
 sidebar_custom_props:
@@ -291,7 +267,7 @@ The text and screenshots in this section use the outdated term "paid role" inste
 4. Choose **Create Paid Role**.
     1. Note: You will be prompted to agree to the Tilia Terms of Service before you can set up paid roles. [Read on setting up with Tilia here.](/economy/getting-started)
 
-![Create paid role](/img/economy/products/PaidRoles-CreatePaidRole.png "Click Create Paid Role")
+[IMAGE: Create paid role]
 
 :::warning known issue
 
@@ -302,7 +278,7 @@ You cannot create more than five (paid) roles with the "View all members" permis
 5. Enter a name and description for your role.
 6. You can set any role-specific permissions here.
 
-![Edit paid role](/img/economy/products/PaidRoles-EditPaidRole.png "Click Edit Paid Role")
+[IMAGE: Edit paid role]
 
 7. Click the Save button. You’ve made your first paid role!
 
@@ -320,17 +296,9 @@ When creating a subscription role, please keep the following restrictions in min
 
 ---
 
-## ドキュメント: udon.md
+## Document: udon.md
 
-```metadata
-階層: /economy/products/udon.md
-ディレクトリ: economy\products
-ファイル名: udon.md
-拡張子: .md
-サイズ: 2.34 KB
-最終更新: 2025-06-05T03:07:52.741Z
-```
-
+Path: /economy/products/udon.md
 ---
 description: "Gives access to world features."
 sidebar_custom_props:
@@ -353,19 +321,19 @@ Before you can use Udon products in your world, you need to create them on the V
 2. Go to the **Marketplace** tab in the left-hand sidebar, then open **Storefront**.
 3. Scroll down and select **My Products**.
 
-![How to create Udon products on VRChat.com..](/img/economy/products/web-create-udon-product-button.png)
+[IMAGE: How to create Udon products on VRChat.com..]
 
 4. Click on **Create Udon Product**.
 5. Enter a display name.
 6. Add a description and image for your Udon product. This is optional, but we recommend doing so.
 
-![How to create Udon products on VRChat.com..](/img/economy/products/web-create-udon-product-popup.png)
+[IMAGE: How to create Udon products on VRChat.com..]
 
 7. Click **Create**. 
 
 ## Editing Udon products
 
-![How to create Udon products on VRChat.com..](/img/economy/products/web-create-udon-product-list-entry.png)
+[IMAGE: How to create Udon products on VRChat.com..]
 
 1. Click "Edit" next to any Udon product.
 2. Change the name, description, or upload an image.
@@ -373,7 +341,7 @@ Before you can use Udon products in your world, you need to create them on the V
 
 You can change the product's name, description, image, and the 'Owner Names in Udon' setting. Any changes you make will apply to all your VRChat worlds without needing to reupload them. 
 
-![How to create Udon products on VRChat.com..](/img/economy/products/web-enable-owner-names-in-udon.png)
+[IMAGE: How to create Udon products on VRChat.com..]
 
 If you'd like to use the VRChat SDK's [Store.ListProductOwners](/economy/sdk/udon-documentation#storelistproductowners) to list the owners of a Udon product in your world, 'Owner Names in Udon' must be enabled.
 
@@ -388,4 +356,4 @@ Adding an Udon product to your store is just the first step. You need to actuall
 
 ---
 
-# ドキュメント終了
+# End of Documentation

@@ -1,22 +1,14 @@
-# systems 統合ドキュメント
+# systems Documentation
 
-以下は自動収集された全ドキュメントのコンテンツです。各セクションの始めにメタデータが記載されています。
+This document contains automatically collected documentation with metadata headers for each section.
 
 
 
 ---
 
-## ドキュメント: architecture.md
+## Document: architecture.md
 
-```metadata
-階層: /worlds/clientsim/systems/architecture.md
-ディレクトリ: worlds\clientsim\systems
-ファイル名: architecture.md
-拡張子: .md
-サイズ: 1.39 KB
-最終更新: 2025-06-05T03:07:52.766Z
-```
-
+Path: /worlds/clientsim/systems/architecture.md
 # Architecture
 
 The architecture of ClientSim has a focus on small components with an event based observer pattern, mixed with manual dependency injection where each class is initialized only with the dependencies it needs. The included player controller is based on generic dependency providers, which allows for the eventual extension to using VR without rewriting the core systems.
@@ -31,34 +23,18 @@ ClientSim’s architecture uses a manually-handled dependency injection. On crea
 
 ---
 
-## ドキュメント: index.md
+## Document: index.md
 
-```metadata
-階層: /worlds/clientsim/systems/index.md
-ディレクトリ: worlds\clientsim\systems
-ファイル名: index.md
-拡張子: .md
-サイズ: 222 B
-最終更新: 2025-06-05T03:07:52.768Z
-```
-
+Path: /worlds/clientsim/systems/index.md
 # Systems
 
 This documentation includes details on how the systems within ClientSim work if you'd like to understand them better, troubleshoot them or contribute to this Project! Choose a topic on the left to get started.
 
 ---
 
-## ドキュメント: script-execution-order.md
+## Document: script-execution-order.md
 
-```metadata
-階層: /worlds/clientsim/systems/script-execution-order.md
-ディレクトリ: worlds\clientsim\systems
-ファイル名: script-execution-order.md
-拡張子: .md
-サイズ: 2.83 KB
-最終更新: 2025-06-05T03:07:52.775Z
-```
-
+Path: /worlds/clientsim/systems/script-execution-order.md
 # Script Execution Order
 
 | Execution Order | System Name          | Description                                                                                                                                                    |
@@ -78,4 +54,4 @@ This documentation includes details on how the systems within ClientSim work if 
 
 ---
 
-# ドキュメント終了
+# End of Documentation

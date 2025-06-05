@@ -1,22 +1,14 @@
-# video-players 統合ドキュメント
+# video-players Documentation
 
-以下は自動収集された全ドキュメントのコンテンツです。各セクションの始めにメタデータが記載されています。
+This document contains automatically collected documentation with metadata headers for each section.
 
 
 
 ---
 
-## ドキュメント: index.md
+## Document: index.md
 
-```metadata
-階層: /worlds/udon/video-players/index.md
-ディレクトリ: worlds\udon\video-players
-ファイル名: index.md
-拡張子: .md
-サイズ: 5.71 KB
-最終更新: 2025-06-05T03:07:52.830Z
-```
-
+Path: /worlds/udon/video-players/index.md
 # Video Players
 
 You can add video players to your VRChat world with the SDK's `VRCAVProVideoPlayer` or `VRCUnityVideoPlayer`.
@@ -31,7 +23,7 @@ Are you looking for community-created video player prefabs? Try [VideoTXL](https
 
 The easiest way to put a Video Player in your Udon world is by using one of the Prefabs, which you can find in `Packages/VRChat SDK - Worlds/Samples/UdonExampleScene/Prefabs/VideoPlayers`.
 
-![The two Video Player prefabs, ready to drop into your world.](/img/worlds/video-players-aae04e6-video-player-prefabs.png)
+[IMAGE: The two Video Player prefabs, ready to drop into your world.]
 
 Both of these prefabs will play a video of your choosing, synchronized for everyone in your world. They won't loop - the graph turns off looping for now to get sync to work. If you want them to loop, turn on 'Loop' and remove the UdonBehaviour.
 
@@ -101,22 +93,14 @@ When encoding your videos, we strongly recommend uploading a web-optimized versi
 - In HandBrake, tick the 'Web Optimized' checkbox.
 - Other software should have similar options for enabling fast start.
 
-![Enabling Fast Start](/img/worlds/video-players-dc8e54f-image.png)
+[IMAGE: Enabling Fast Start]
 
 
 ---
 
-## ドキュメント: www-whitelist.md
+## Document: www-whitelist.md
 
-```metadata
-階層: /worlds/udon/video-players/www-whitelist.md
-ディレクトリ: worlds\udon\video-players
-ファイル名: www-whitelist.md
-拡張子: .md
-サイズ: 1.72 KB
-最終更新: 2025-06-05T03:07:52.830Z
-```
-
+Path: /worlds/udon/video-players/www-whitelist.md
 ---
 title: "Video Player Allowlist"
 slug: "www-whitelist"
@@ -163,4 +147,4 @@ The services listed below are inherently trusted and are permitted with our defa
 
 ---
 
-# ドキュメント終了
+# End of Documentation

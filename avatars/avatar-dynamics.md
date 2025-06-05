@@ -1,22 +1,14 @@
-# avatar-dynamics 統合ドキュメント
+# avatar-dynamics Documentation
 
-以下は自動収集された全ドキュメントのコンテンツです。各セクションの始めにメタデータが記載されています。
+This document contains automatically collected documentation with metadata headers for each section.
 
 
 
 ---
 
-## ドキュメント: contacts.md
+## Document: contacts.md
 
-```metadata
-階層: /avatars/avatar-dynamics/contacts.md
-ディレクトリ: avatars\avatar-dynamics
-ファイル名: contacts.md
-拡張子: .md
-サイズ: 6.41 KB
-最終更新: 2025-06-05T03:07:52.731Z
-```
-
+Path: /avatars/avatar-dynamics/contacts.md
 ---
 title: "Contacts"
 slug: "contacts"
@@ -32,7 +24,7 @@ The amount of contacts on your avatar affect its [performance rank](/avatars/ava
 
 ## VRCContactSender
 The Contact Sender component defines a volume of space that will send a Contact signal upon contact with a Contact Receiver.
-![contacts-59b6e82-2022-04-19_11-53-01_Unity.png](/img/avatars/contacts-59b6e82-2022-04-19_11-53-01_Unity.png)
+[IMAGE: contacts-59b6e82-2022-04-19_11-53-01_Unity.png]
 - `Root Transform` - Transform where this contact is placed. If empty, we use this game object's transform.
 
 ### Shape
@@ -49,7 +41,7 @@ This section contains settings allowing you to adjust and define how this Contac
 - `Collision Tags` - List of strings that specify what it can affect/be affected by. For a successful collision to occur, both the sender and receiver need at least one matching pair of strings. Collision tags are case sensitive.
 
 As an example, the tags below will cause the Sender to send a contact signal when they come into contact with the default Head [ContactReceiver](/avatars/avatar-dynamics/contacts/#vrccontactreceiver) or any custom [ContactReceiver](/avatars/avatar-dynamics/contacts/#vrccontactreceiver) with the tag `Face`-- note the capital F!
-![contacts-de34d55-2022-04-19_11-53-34_NVIDIA_Share.png](/img/avatars/contacts-de34d55-2022-04-19_11-53-34_NVIDIA_Share.png)
+[IMAGE: contacts-de34d55-2022-04-19_11-53-34_NVIDIA_Share.png]
 ### Standard Colliders
 A set of "Standard Colliders" are defined in the Avatar Descriptor, in a new section called “Colliders”. This section lets you define a number of standard colliders that exist on every avatar. These will be setup automatically if you don’t touch this, but they may also be tweaked to exactly fit your avatar. These colliders do not affect the performance rating.
 
@@ -67,7 +59,7 @@ These colliders act primarily as Contact Senders that other people can detect wi
 
 ## VRCContactReceiver
 The Contact Receiver component defines a volume of space that will receive a Contact signal upon contact with a Contact Sender. It will then set an [Animator Parameter](/avatars/animator-parameters) in a certain way, as defined by the user.
-![contacts-6f84ac4-2022-04-19_11-57-25_NVIDIA_Share.png](/img/avatars/contacts-6f84ac4-2022-04-19_11-57-25_NVIDIA_Share.png)
+[IMAGE: contacts-6f84ac4-2022-04-19_11-57-25_NVIDIA_Share.png]
 - `Root Transform` - Transform where this contact is placed. If empty, we use this game object's transform.
 
 ### Shape
@@ -107,17 +99,9 @@ If you want to have a more precise measurement of proximity, you need to adjust 
 
 ---
 
-## ドキュメント: debugging-avatar-dynamics.md
+## Document: debugging-avatar-dynamics.md
 
-```metadata
-階層: /avatars/avatar-dynamics/debugging-avatar-dynamics.md
-ディレクトリ: avatars\avatar-dynamics
-ファイル名: debugging-avatar-dynamics.md
-拡張子: .md
-サイズ: 1.96 KB
-最終更新: 2025-06-05T03:07:52.732Z
-```
-
+Path: /avatars/avatar-dynamics/debugging-avatar-dynamics.md
 # Debugging Avatar Components
 
 As Avatar Components can get fairly complex, it’s understandably easy to make a mistake while building your avatar. To help with both testing and debugging problems, we’ve provided users with a few tools to help make the process easier.
@@ -145,17 +129,9 @@ Additionally, even if no animation controller is set up, you can still look at e
 
 ---
 
-## ドキュメント: index.md
+## Document: index.md
 
-```metadata
-階層: /avatars/avatar-dynamics/index.md
-ディレクトリ: avatars\avatar-dynamics
-ファイル名: index.md
-拡張子: .md
-サイズ: 940 B
-最終更新: 2025-06-05T03:07:52.732Z
-```
-
+Path: /avatars/avatar-dynamics/index.md
 ---
 sidebar_position: 0
 ---
@@ -175,17 +151,9 @@ Learn more about PhysBones and Contacts by trying out the SDK's example avatar (
 
 ---
 
-## ドキュメント: physbones.md
+## Document: physbones.md
 
-```metadata
-階層: /avatars/avatar-dynamics/physbones.md
-ディレクトリ: avatars\avatar-dynamics
-ファイル名: physbones.md
-拡張子: .md
-サイズ: 20.74 KB
-最終更新: 2025-06-05T03:07:52.732Z
-```
-
+Path: /avatars/avatar-dynamics/physbones.md
 # Physbones
 
 PhysBones is a set of components that lets you add secondary motion to avatars, permitting you to add motion to things like hair, tails, ears, clothing, and more! Using these well will make your avatar seem more dynamic and real.
@@ -202,7 +170,7 @@ Additionally, PhysBones can be interacted with by you and other people! If you'v
 
 Although not designed as such, PhysBones also serves as a reasonable cloth substitute until such time that we implement our own Cloth component.
 
-![](/img/avatars/physbones-ca9ee06-2022-05-04_18-23-09_Unity.png)
+[IMAGE: Image]
 
 ### Versions
 
@@ -268,7 +236,7 @@ In fact, most PhysBones settings allow for the use of Curves! Learn how to use t
 
 :::
 
-![physbones-054e326-2022-04-19_11-32-12_Unity.png](/img/avatars/physbones-054e326-2022-04-19_11-32-12_Unity.png)
+[IMAGE: physbones-054e326-2022-04-19_11-32-12_Unity.png]
 
 `Pull` - Amount of force used to return bones to their rest position.  
 `Spring` - Amount bones will wobble when trying to reach their rest position. Only available in Simplified Integration Type.  
@@ -301,19 +269,19 @@ Additionally, when configuring options for Limits, a visualization of those limi
 
 #### Angle
 
-![physbones-b7abe1f-2022-04-19_11-49-26_Unity.png](/img/avatars/physbones-b7abe1f-2022-04-19_11-49-26_Unity.png)
+[IMAGE: physbones-b7abe1f-2022-04-19_11-49-26_Unity.png]
 
 `Angle` means the bone chain will be limited to some `Max Angle`, centered on an axis as defined by `Rotation`. This is visualized as a Cone in the Scene view.
 
 #### Hinge
 
-![physbones-b7723cc-2022-04-19_11-50-04_Unity.png](/img/avatars/physbones-b7723cc-2022-04-19_11-50-04_Unity.png)
+[IMAGE: physbones-b7723cc-2022-04-19_11-50-04_Unity.png]
 
 `Hinge` means that the bone chain will be limited to some `Max Angle` along the plane defined by the `Rotation`. This is visualized as a slice of a circle, similar to a pizza or a pie.
 
 #### Polar
 
-![physbones-824db3c-2022-04-19_11-51-22_Unity.gif](/img/avatars/physbones-824db3c-2022-04-19_11-51-22_Unity.gif)
+[IMAGE: physbones-824db3c-2022-04-19_11-51-22_Unity.gif]
 
 `Polar` is a bit more complicated. If you take a `Hinge` and sweep it across `Yaw` by some amount, you get a segment of a sphere in `Polar` coordinates. You can configure `Max Pitch` and `Max Yaw` to adjust the size of the segment, and use `Rotation` to define where that segment is located on the sphere. The visualization for `Polar` is especially helpful.
 
@@ -423,7 +391,7 @@ The bounding box only accounts for bones with collision and a radius greater tha
 
 Defines a collider that will affect PhysBones that are configured correctly.
 
-![](/img/avatars/physbones-ac38f46-2022-05-04_18-35-11_Unity.png)
+[IMAGE: Image]
 
 `Root Transform` - Transform where this collider is placed. If empty, we use this game object's transform.  
 `Shape Type` - Type of collision shape used by this collider. You can choose between a Sphere, Capsule, or Plane collider.  
@@ -483,17 +451,9 @@ At a later time, we will give a deprecation date with _plenty_ of time to allow 
 
 ---
 
-## ドキュメント: vrc-headchop.md
+## Document: vrc-headchop.md
 
-```metadata
-階層: /avatars/avatar-dynamics/vrc-headchop.md
-ディレクトリ: avatars\avatar-dynamics
-ファイル名: vrc-headchop.md
-拡張子: .md
-サイズ: 5.41 KB
-最終更新: 2025-06-05T03:07:52.732Z
-```
-
+Path: /avatars/avatar-dynamics/vrc-headchop.md
 # Head Chop
 
 When wearing an avatar, VRChat automatically "chops off" the avatar's head bone by setting its transform scale to almost 0. This stops the head from clipping into view from the user's first-person perspective. `VRCHeadChop` is an optional avatar component that controls which specific bones are scaled down for head chopping, allowing avatar creators to:
@@ -503,7 +463,7 @@ When wearing an avatar, VRChat automatically "chops off" the avatar's head bone 
 `VRCHeadChop` only affects how the avatar appears from the perspective of the user wearing it. It doesn't affect what the avatar looks like in mirrors or to other players.
 
 ## Component properties
-![vrcheadchop-618b6e18-2024-02-06_11-48-10_Unity.png](/img/avatars/vrcheadchop-f0de7579-2024-03-15_19-46-28_Unity.png)
+[IMAGE: vrcheadchop-618b6e18-2024-02-06_11-48-10_Unity.png]
 
 | Property |  | Description |
 | ---- | ---- | ---- |
@@ -534,13 +494,13 @@ This causes the hair bones to be fully visible from your first-person perspectiv
 
 For example, the sample Avatar Dynamics robot included with the SDK has hair and a pair of animal ears. We can keep those parts of the head visible from first-person while hiding the rest of the head by using the following setup. In this example, we're also setting the apply conditions to "VR Only", so the extra parts only appear when playing in VR.
 
-![vrcheadchop-618b6e18-2024-02-06_11-48-10_Unity.png](/img/avatars/vrcheadchop-example-setup-f0de7579-2024-03-15_19-52-11_Unity.png)
+[IMAGE: vrcheadchop-618b6e18-2024-02-06_11-48-10_Unity.png]
 
 Notice that we don't need to list any of the child transforms of the bones we want to show (for example each individual hair strand) since they'll be shown along with the root bones anyway. It also doesn't matter which transform you add the `VRCHeadChop` component to - all that matters is the list of transforms that you set for it in the inspector.
 
 This has the following result; the hair and ears have been scaled back up so they can be seen from first-person, while the eyes are still scaled away so they don't block your view.
 
-![vrcheadchop-618b6e18-2024-02-06_11-48-10_Unity.png](/img/avatars/vrcheadchop-example-result-f0de7579-2024-03-15_20-12-17_Unity.png)
+[IMAGE: vrcheadchop-618b6e18-2024-02-06_11-48-10_Unity.png]
 
 You can also set the enabled state of this component using an animator - if the component is disabled, it won't have any effect until it's enabled again. This can used to set up expression toggles that control whether certain parts of the avatar are visible in first-person or not. It's recommended that you do this so players using your avatars have the option of turning off first-person visible features if they want to. The global scale can be controlled with an animator if you want to give finer control over how much the bones get scaled away.
 
@@ -553,4 +513,4 @@ One additional way of using this component is to hide things elsewhere on the av
 
 ---
 
-# ドキュメント終了
+# End of Documentation

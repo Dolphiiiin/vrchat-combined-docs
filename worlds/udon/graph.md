@@ -1,22 +1,14 @@
-# graph 統合ドキュメント
+# graph Documentation
 
-以下は自動収集された全ドキュメントのコンテンツです。各セクションの始めにメタデータが記載されています。
+This document contains automatically collected documentation with metadata headers for each section.
 
 
 
 ---
 
-## ドキュメント: event-nodes.md
+## Document: event-nodes.md
 
-```metadata
-階層: /worlds/udon/graph/event-nodes.md
-ディレクトリ: worlds\udon\graph
-ファイル名: event-nodes.md
-拡張子: .md
-サイズ: 8.79 KB
-最終更新: 2025-06-05T03:07:52.811Z
-```
-
+Path: /worlds/udon/graph/event-nodes.md
 # Event Nodes
 
 This is a list of Udon Nodes that are considered "Events".
@@ -245,17 +237,9 @@ All nodes in this list have the type `System.Void`.
 
 ---
 
-## ドキュメント: graph-elements.md
+## Document: graph-elements.md
 
-```metadata
-階層: /worlds/udon/graph/graph-elements.md
-ディレクトリ: worlds\udon\graph
-ファイル名: graph-elements.md
-拡張子: .md
-サイズ: 2.26 KB
-最終更新: 2025-06-05T03:07:52.811Z
-```
-
+Path: /worlds/udon/graph/graph-elements.md
 ---
 title: "Graph Elements"
 slug: "graph-elements"
@@ -268,7 +252,7 @@ When you build programs in the graph, you mostly use Nodes. There are a few othe
 
 ## Groups
 Groups are helpful for organizing and describing your graph. They don't *change* the way your graphs function or compile.
-![You can select elements and right-click to get the *Create Group* function.](/img/worlds/graph-elements-e9a0713-create-group.gif)
+[IMAGE: You can select elements and right-click to get the *Create Group* function.]
 To create Groups, you can:
 * Right-Click in the graph and choose 'Create Group', then drag and drop elements into the group.
 * Select elements with a box-drag or by holding Ctrl while you click on them, then right-click on the graph and choose 'Create Group', or press 'Ctrl+G' for quick grouping.
@@ -285,25 +269,17 @@ Currently, nested groups are not supported. The current grouping behavior is to 
 ## Comments
 
 Comments are simple blocks of text that you can place near items that need more information.
-![A comment next to a node.](/img/worlds/graph-elements-80881a1-simple-comment.png)
+[IMAGE: A comment next to a node.]
 You can create comments by right-clicking on the Graph and choosing *Create Comment*. They can be added to groups, as well. You can use comments and groups together for ultimate readability!
-![The 'SendEventOnTimer' graph included in the VRChat Examples folder uses groups and comments to explain what's happening in the graph.](/img/worlds/graph-elements-ab506db-comments-and-groups.png)
+[IMAGE: The 'SendEventOnTimer' graph included in the VRChat Examples folder uses groups and comments to explain what's happening in the graph.]
 ## Noodles
 The noodles of a graph are what connect everything together, and how Udon gets its name! They connect nodes together through their ports. They are colored according to the ports to which they connect, so if you connect two ports with different types, you'll see the color change halfway through. In Unity documentation and elsewhere, they are called 'edges' - so if you see a reference to edges, they're talking about our tasty noodles.
 
 ---
 
-## ドキュメント: index.md
+## Document: index.md
 
-```metadata
-階層: /worlds/udon/graph/index.md
-ディレクトリ: worlds\udon\graph
-ファイル名: index.md
-拡張子: .md
-サイズ: 6.92 KB
-最終更新: 2025-06-05T03:07:52.811Z
-```
-
+Path: /worlds/udon/graph/index.md
 ---
 sidebar_position: -1
 ---
@@ -315,7 +291,7 @@ The Udon Node Graph is the default interface for creation of Udon programs. This
 
 You can open up the Udon Graph window using the Menu Item under **VRChatSDK > Udon Graph**, or by clicking the **Open Udon Graph** button on an UdonBehaviour Component.
 
-![The Udon Window](/img/worlds/index-a1d7f43-open-graph.png)
+[IMAGE: The Udon Window]
 
 If you open the window through the Menu command, you'll see the welcome screen, which has a changelog and some settings.
 
@@ -325,12 +301,12 @@ You can close tabs, by clicking the X in the corner of the tab you want to close
 
 ## Flow
 The Flow of your graph defines which nodes will run, and the order in which they'll do it.
-![](/img/worlds/index-f9c508c-simple-branching.png)
+[IMAGE: Image]
 
 The triangles in the picture above are the _Flow_ ports, and they trigger in order from left to right, following the noodles that connect them. To understand what is happening in Udon graphs and to make your own, _follow the flow_. 
 
 There is a "Highlight flow" toggle on the topbar, which, when enabled, will highlight the nodes connected via the flow edges, allowing you to quickly see how does the program arrive to the particular node. 
-![](/img/worlds/index-2139dee-simple-flow-highlight.png)
+[IMAGE: Image]
 
 If the node doesn't have any flow connections, then nothing will happen.
 
@@ -369,11 +345,11 @@ Press and hold one of the following keys, then click anywhere on the graph to cr
 * L+Click logs the value of the selected node 
 * Press and hold "Shift+F", then click on a node that outputs an array type, to generate a foreach loop automatically
 Many of these features are also available in the right-click menus for their respective nodes.
-![Making for loops the easy way!](/img/worlds/index-87b33a4-for-loop.gif)
+[IMAGE: Making for loops the easy way!]
 ### Drag and Drop for GameObjects and Components
 
 If you want to add interactivity to a GameObject or Component, you can drag and drop them from your hierarchy to the graph. For example, you can drag and drop a Light component by grabbing dragging from the 'Light' title onto the graph.
-![Easy way to get a reference to a Light component so you can play with it.](/img/worlds/index-6238d1e-light-component.jpg)
+[IMAGE: Easy way to get a reference to a Light component so you can play with it.]
 Creating nodes via Drag and Drop this way creates Variables that are tied to your GameObject or Component, so you'll see a new variable appear in the Variables window, and a node which is actually a "Get Variable" node which is automatically set up to get your new Component.
 
 ### Drag and Drop for Variables
@@ -383,14 +359,14 @@ You can create variables of any type by pressing the **+** button in the Variabl
 ### Searching for Nodes
 
 Press the **Spacebar** to open up Quick Search, then type in the first few letters of the class you want to interact with.
-![](/img/worlds/index-08df7d3-gameobject-search.png)
+[IMAGE: Image]
 
 This method of searching works best if you know Unity's basic classes and object types. There are other ways of searching, see: [Searching for nodes](/worlds/udon/graph/searching-for-nodes)
 
 ## Compiling the Graph
 The graph automatically compiles in the background at regular intervals. When this happens, you'll see a flash in the upper-right corner of your graph, and the Status box will turn green if things went well, or red if there's an issue. In either case, you can click on the Status box to see the Assembly Code that was generated, or the errors if there was a problem.
 
-![The status box shows 'OK' and we can see the Variables declared at the top of this Assembly.](/img/worlds/index-fc0a2c0-assembly.png)
+[IMAGE: The status box shows 'OK' and we can see the Variables declared at the top of this Assembly.]
 ## Running the Graph
 There are two ways to run the graphs in your scene before you upload them to VRChat.
 
@@ -400,13 +376,13 @@ You can use Unity's Play Button to run your scene directly in the editor to test
 
 ### Running Build & Test
 Use the VRChat SDK Window to do Local Testing. This takes slightly longer as it bundles your content into an offline world and launches the actual VRChat client to give you an Avatar that can Interact with objects and VRCPlayerAPI requests.
-![The simplest way to test Sync features is to launch 2 local clients.](/img/worlds/index-32da932-local-testing-2.png)
+[IMAGE: The simplest way to test Sync features is to launch 2 local clients.]
 
 To test Synced variables and NetworkEvents, you'll need two clients - you can use the 'Number of Clients' field to launch up to 8 local clients that will launch in a private test world. They will all have the same DisplayName, but they'll otherwise be recognized as separate players so you can test out your interactions.
 
 If 'Force Non-VR' doesn't work for you, then switch to the 'Settings' tab of the VRChat SDK Window and set your VRChat Client Path to point at your actual VRChat installation.
 
-![Installed Client Path setting in the VRChat SDK](/img/worlds/index-6d24b40-client-path.png)
+[IMAGE: Installed Client Path setting in the VRChat SDK]
 
 ## Uploading Your World
 You will be able to Build & Test as soon as you [make a VRChat Account](https://vrchat.com/home/register). In order to publish a world so others can visit, you need to spend some time in VRChat - visit worlds, make some friends and get inspired!
@@ -414,17 +390,9 @@ You will be able to Build & Test as soon as you [make a VRChat Account](https://
 
 ---
 
-## ドキュメント: searching-for-nodes.md
+## Document: searching-for-nodes.md
 
-```metadata
-階層: /worlds/udon/graph/searching-for-nodes.md
-ディレクトリ: worlds\udon\graph
-ファイル名: searching-for-nodes.md
-拡張子: .md
-サイズ: 2.34 KB
-最終更新: 2025-06-05T03:07:52.812Z
-```
-
+Path: /worlds/udon/graph/searching-for-nodes.md
 ---
 title: "Searching for Nodes"
 slug: "searching-for-nodes"
@@ -436,13 +404,13 @@ updatedAt: "2022-10-18T23:45:45.454Z"
 
 Press the **Spacebar** to open up Quick Search, then type in the first few letters of the class you want to interact with.
 
-![](/img/worlds/searching-for-nodes-b2c9ea7-gameobject-search.png)
+[IMAGE: Image]
 
 ## Full Search
 
 Press **Tab** to open up Full Search, then you can search for any method on any object. For GameObject.GetName, you could just search for 'getname' and see all the objects that have a way to get the name of the object. You could also search directly for 'gameobject.getname' and you will be directed to exactly the right node. This search method is slower than Quick Search, so it should be used only when you're not sure which class to look for in Quick Search.
 
-![image](/img/worlds/searching-for-nodes-0f8fb2b-fullsearch.png)
+[IMAGE: image]
 ## Search Bar
 
 There is a searchbar at the top of the Udon Graph Sidebar which allows you to search through your graph. 
@@ -450,32 +418,24 @@ You can use "Ctrl+F" to to focus it from the Graph Window.
 The search will begin to return results after you enter more than 3 characters.
 Pressing "Enter" when there are search results, will jump between the results, in the order of "best match first".
 
-![](/img/worlds/searching-for-nodes-4647159-search.png)
+[IMAGE: Image]
 
 ## Focused Search
 
 This mode is turned off by default, so first you need to go to your Welcome Screen by clicking on 'Welcome' in the upper-left corner of a graph. Then check the box next to 'Focus Search On Selected Node'. This gives you a shortcut to skip to Quick Search part two - if you have a GameObject.GetName node, you can select it and press **Spacebar** to open up a search for more **GameObject** methods.
 
-![Search on particular classes by pressing **Spacebar** with a Node selected](/img/worlds/searching-for-nodes-3ef349a-focused-search.png)
+[IMAGE: Search on particular classes by pressing **Spacebar** with a Node selected]
 ## Search on Noodle Drop
 
 This mode is also off by default - you'll need to open your Welcome Screen and check the box next to 'Search on Noodle Drop'. Once it's on, you can drag a noodle from any port and drop it into empty space to open up a search for **any** node that could connect to that port. This works forwards and backwards, and will also search for Variables that could be connected.
 
-![image](/img/worlds/searching-for-nodes-8656333-portsearch.gif)
+[IMAGE: image]
 
 ---
 
-## ドキュメント: special-nodes.md
+## Document: special-nodes.md
 
-```metadata
-階層: /worlds/udon/graph/special-nodes.md
-ディレクトリ: worlds\udon\graph
-ファイル名: special-nodes.md
-拡張子: .md
-サイズ: 5.67 KB
-最終更新: 2025-06-05T03:07:52.812Z
-```
-
+Path: /worlds/udon/graph/special-nodes.md
 # Special Nodes
 
 The "Special" category contains nodes for custom variables, custom events, flow control, and communicating with other UdonBehaviours.
@@ -584,17 +544,9 @@ Check the page on [Network Events](/worlds/udon/networking/events) for more deta
 
 ---
 
-## ドキュメント: type-nodes.md
+## Document: type-nodes.md
 
-```metadata
-階層: /worlds/udon/graph/type-nodes.md
-ディレクトリ: worlds\udon\graph
-ファイル名: type-nodes.md
-拡張子: .md
-サイズ: 4.44 KB
-最終更新: 2025-06-05T03:07:52.812Z
-```
-
+Path: /worlds/udon/graph/type-nodes.md
 ---
 title: "Type Nodes"
 slug: "type-nodes"
@@ -739,4 +691,4 @@ Type definition for `VRC.SDKBase.VRCPlayerApi+TrackingDataType`.
 
 ---
 
-# ドキュメント終了
+# End of Documentation
